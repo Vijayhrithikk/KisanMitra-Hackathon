@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#16a34a"/>
+      <stop offset="100%" style="stop-color:#15803d"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#grad)"/>
+  <!-- Wheat grain emoji-style -->
+  <g transform="translate(50, 50) scale(0.9)">
+    <!-- Center stalk -->
+    <path d="M0 40 L0 -10" stroke="#fff" stroke-width="3" fill="none"/>
+    <!-- Left grains -->
+    <ellipse cx="-8" cy="-5" rx="6" ry="12" fill="#FCD34D" transform="rotate(-20, -8, -5)"/>
+    <ellipse cx="-10" cy="10" rx="5" ry="10" fill="#FCD34D" transform="rotate(-25, -10, 10)"/>
+    <ellipse cx="-7" cy="25" rx="4" ry="8" fill="#FCD34D" transform="rotate(-15, -7, 25)"/>
+    <!-- Right grains -->
+    <ellipse cx="8" cy="-5" rx="6" ry="12" fill="#FCD34D" transform="rotate(20, 8, -5)"/>
+    <ellipse cx="10" cy="10" rx="5" ry="10" fill="#FCD34D" transform="rotate(25, 10, 10)"/>
+    <ellipse cx="7" cy="25" rx="4" ry="8" fill="#FCD34D" transform="rotate(15, 7, 25)"/>
+    <!-- Top grain -->
+    <ellipse cx="0" cy="-20" rx="5" ry="10" fill="#FCD34D"/>
+    <!-- Whiskers -->
+    <path d="M0 -30 L0 -40" stroke="#FCD34D" stroke-width="2"/>
+    <path d="M-5 -28 L-10 -38" stroke="#FCD34D" stroke-width="1.5"/>
+    <path d="M5 -28 L10 -38" stroke="#FCD34D" stroke-width="1.5"/>
+  </g>
+</svg>

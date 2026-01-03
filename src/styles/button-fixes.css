@@ -1,0 +1,207 @@
+/* =================================================================
+   BUTTON FIXES - Clean, Consistent Styling
+   ================================================================= */
+
+/* Reset all button defaults */
+button {
+    font-family: inherit;
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Primary action buttons */
+.btn-primary,
+.primary-btn,
+.soil-upload-btn,
+button[type="submit"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #16A34A 0%, #15803D 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 14px 20px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    box-shadow: 0 2px 8px rgba(22, 163, 74, 0.2) !important;
+    min-height: 48px !important;
+    transition: all 0.2s ease !important;
+}
+
+.btn-primary:active,
+.primary-btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 1px 4px rgba(22, 163, 74, 0.2) !important;
+}
+
+/* Secondary buttons */
+.btn-secondary,
+.secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: white !important;
+    color: #16A34A !important;
+    border: 2px solid #16A34A !important;
+    border-radius: 12px !important;
+    padding: 12px 20px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    min-height: 48px !important;
+    transition: all 0.2s ease !important;
+}
+
+.btn-secondary:active {
+    background: #F0FDF4 !important;
+    transform: scale(0.98);
+}
+
+/* Icon-only buttons */
+.header-left button,
+.icon-btn,
+.close-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+    border-radius: 10px !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    border: none !important;
+    color: white !important;
+    padding: 0 !important;
+    transition: all 0.2s ease !important;
+}
+
+.header-left button:active {
+    background: rgba(255, 255, 255, 0.3) !important;
+    transform: scale(0.92);
+}
+
+/* Search/Action buttons in forms */
+.min-search-form button,
+.search-btn {
+    width: 52px !important;
+    height: 52px !important;
+    min-width: 52px !important;
+    min-height: 52px !important;
+    border-radius: 12px !important;
+    background: linear-gradient(135deg, #16A34A, #15803D) !important;
+    border: none !important;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+}
+
+/* Disabled state */
+button:disabled,
+.btn-primary:disabled,
+.btn-secondary:disabled {
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+}
+
+/* Fix for buttons in cards */
+.rec-card button,
+.listing-card button {
+    margin-top: 12px;
+}
+
+/* Action button groups */
+.button-group {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.button-group button {
+    flex: 1;
+}
+
+/* Small variant buttons */
+.btn-sm {
+    padding: 8px 16px !important;
+    font-size: 13px !important;
+    min-height: 36px !important;
+}
+
+/* Full width buttons */
+.btn-block {
+    width: 100%;
+    display: flex;
+}
+
+/* Outline buttons */
+.btn-outline {
+    background: transparent !important;
+    border: 2px solid #E5E7EB !important;
+    color: #6B7280 !important;
+}
+
+.btn-outline:active {
+    background: #F9FAFB !important;
+}
+
+/* Danger/Delete buttons */
+.btn-danger {
+    background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%) !important;
+    color: white !important;
+    border: none !important;
+}
+
+/* Success buttons */
+.btn-success {
+    background: linear-gradient(135deg, #16A34A 0%, #15803D 100%) !important;
+    color: white !important;
+    border: none !important;
+}
+
+/* Loading state */
+.btn-loading {
+    position: relative;
+    color: transparent !important;
+}
+
+.btn-loading::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Fix button text alignment */
+button {
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Remove button outline on focus */
+button:focus {
+    outline: none;
+}
+
+/* Fix button overflow */
+button {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

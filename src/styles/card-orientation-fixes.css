@@ -1,0 +1,96 @@
+/* Universal Card Orientation & Layout Fixes */
+/* This file addresses small layout and alignment issues across the app */
+
+/* === CARD ORIENTATION IMPROVEMENTS === */
+
+/* Ensure all cards have proper flex layout */
+[class*="card"],
+[class*="-card"] {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+
+/* Card headers centered */
+[class*="header"] {
+    text-align: center;
+    width: 100%;
+}
+
+/* === GRID ALIGNMENT === */
+
+[class*="grid"] {
+    display: grid;
+    width: 100%;
+    align-items: start;
+}
+
+/* === FLEX UTILITIES === */
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-start {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* === BADGE ALIGNMENT === */
+
+[class*="badge"],
+[class*="pill"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* === ICON FIXES === */
+
+[class*="icon"] {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* === RESPONSIVE STACKING === */
+
+@media (max-width: 768px) {
+    [class*="grid-"] {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* === PREVENT OVERFLOW === */
+
+[class*="card"] img {
+    max-width: 100%;
+    height: auto;
+}
+
+[class*="card"] {
+    word-break: break-word;
+    overflow: hidden;
+}
+
+/* === PROPER CENTERING === */
+
+.metric,
+.stat-item,
+[class*="metric"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

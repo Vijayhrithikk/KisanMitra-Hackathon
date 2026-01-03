@@ -1,0 +1,126 @@
+/* =================================================================
+   UNIVERSAL DESKTOP RESPONSIVE DESIGN
+   Apply this to all pages for consistent desktop experience
+   ================================================================= */
+
+/* Remove all 414px mobile constraints */
+@media (min-width: 1024px) {
+
+    /* Global containers */
+    .market-container,
+    .crop-recommendation,
+    .techniques-list,
+    .technique-detail,
+    .rentals-page,
+    .farmer-dashboard,
+    .buyer-dashboard,
+    .min-app,
+    .cart-container,
+    .wallet-container {
+        max-width: 1400px !important;
+        margin: 0 auto !important;
+    }
+
+    /* Fixed action bars at bottom */
+    .listing-actions,
+    .bottom-actions,
+    .fixed-footer {
+        max-width: 1400px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    /* Page padding */
+    .market-content,
+    .home-content,
+    .dashboard-content,
+    .listing-detail,
+    .cart-items-container {
+        padding: 32px 48px !important;
+    }
+
+    /* Grids - Desktop layouts */
+    .listings-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 24px !important;
+    }
+
+    .dashboard-stats {
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 20px !important;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 24px !important;
+    }
+
+    .rentals-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 24px !important;
+    }
+
+    /* Typography desktop scale */
+    h1,
+    .page-title {
+        font-size: 32px !important;
+    }
+
+    h2 {
+        font-size: 24px !important;
+    }
+
+    h3 {
+        font-size: 20px !important;
+    }
+
+    /* Card hover effects */
+    .listing-card:hover,
+    .feature-card:hover,
+    .rental-card:hover,
+    .technique-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+        transition: all 0.3s ease;
+    }
+
+    /* Hero sections */
+    .hero-section,
+    .min-hero {
+        padding: 60px 48px !important;
+    }
+
+    .hero-section h1 {
+        font-size: 48px !important;
+    }
+
+    .hero-section p {
+        font-size: 18px !important;
+    }
+}
+
+/* Extra large desktop (1440px+) */
+@media (min-width: 1440px) {
+    .listings-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+
+    .rentals-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+}
+
+/* Tablet breakpoint */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .listings-grid,
+    .features-grid,
+    .rentals-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+    }
+
+    .dashboard-stats {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}

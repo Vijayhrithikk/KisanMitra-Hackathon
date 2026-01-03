@@ -1,0 +1,394 @@
+/* =================================================================
+   PROFESSIONAL MVP-GRADE DESIGN SYSTEM
+   Modern dashboard aesthetics with premium polish
+   ================================================================= */
+
+:root {
+    /* Professional Color Palette */
+    --color-brand-primary: #10B981;
+    --color-brand-dark: #059669;
+    --color-brand-light: #34D399;
+
+    --color-bg-primary: #FAFAFA;
+    --color-bg-secondary: #F5F5F5;
+    --color-bg-elevated: #FFFFFF;
+
+    --color-text-primary: #0F172A;
+    --color-text-secondary: #475569;
+    --color-text-tertiary: #94A3B8;
+
+    --color-border: #E2E8F0;
+    --color-border-light: #F1F5F9;
+
+    /* Professional Shadows - Depth hierarchy */
+    --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+    /* Modern Typography */
+    --font-display: 'Inter', -apple-system, system-ui, sans-serif;
+    --font-body: 'Inter', -apple-system, system-ui, sans-serif;
+
+    /* Professional Spacing Scale */
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+
+    /* Smooth Animations */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Modern Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 20px;
+    --radius-2xl: 24px;
+}
+
+/* =================================================================
+   PROFESSIONAL CARD DESIGN
+   ================================================================= */
+
+@media (min-width: 1024px) {
+
+    /* Elevated cards with depth */
+    .rec-card,
+    .listing-card,
+    .feature-card,
+    .technique-card,
+    .rental-card,
+    .order-card-farmer,
+    .stat-card {
+        background: var(--color-bg-elevated);
+        border: 1px solid var(--color-border-light);
+        border-radius: var(--radius-lg) !important;
+        box-shadow: var(--shadow-sm) !important;
+        transition: all var(--transition-base);
+    }
+
+    /* Professional hover states */
+    .rec-card:hover,
+    .listing-card:hover,
+    .feature-card:hover {
+        border-color: var(--color-brand-light);
+        box-shadow: var(--shadow-lg) !important;
+        transform: translateY(-2px);
+    }
+
+    /* Glass morphism effect for premium cards */
+    .min-hero,
+    .context-card,
+    .wallet-summary {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: var(--shadow-md) !important;
+    }
+}
+
+/* =================================================================
+   MODERN DASHBOARD LAYOUT
+   ================================================================= */
+
+@media (min-width: 1024px) {
+
+    /* Professional page background */
+    body,
+    .app {
+        background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
+    }
+
+    /* Container with elevated design */
+    .min-app,
+    .market-container,
+    .dashboard-container {
+        background: var(--color-bg-primary);
+        border-left: 1px solid var(--color-border);
+        border-right: 1px solid var(--color-border);
+        box-shadow: var(--shadow-lg);
+    }
+
+    /* Professional header */
+    .min-header,
+    .market-header-simple,
+    .app-header {
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--color-border);
+        box-shadow: var(--shadow-xs);
+        padding: 16px 48px !important;
+    }
+
+    /* Premium section containers */
+    .rec-section,
+    .dashboard-content {
+        background: transparent;
+        padding: 32px 48px !important;
+    }
+}
+
+/* =================================================================
+   PROFESSIONAL TYPOGRAPHY
+   ================================================================= */
+
+@media (min-width: 1024px) {
+
+    /* Display hierarchy */
+    h1,
+    .hero-title {
+        font-size: 36px !important;
+        font-weight: 700 !important;
+        letter-spacing: -0.02em !important;
+        color: var(--color-text-primary) !important;
+        line-height: 1.2 !important;
+    }
+
+    h2,
+    .section-title {
+        font-size: 24px !important;
+        font-weight: 600 !important;
+        letter-spacing: -0.01em !important;
+        color: var(--color-text-primary) !important;
+    }
+
+    h3 {
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        color: var(--color-text-primary) !important;
+    }
+
+    p,
+    .body-text {
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+        color: var(--color-text-secondary) !important;
+    }
+
+    .hero-sub {
+        font-size: 17px !important;
+        line-height: 1.6 !important;
+        color: var(--color-text-secondary) !important;
+    }
+}
+
+/* =================================================================
+   PROFESSIONAL BUTTONS & INTERACTIONS
+   ================================================================= */
+
+@media (min-width: 1024px) {
+
+    /* Primary buttons */
+    .btn-primary,
+    .primary-btn,
+    .soil-upload-btn {
+        background: linear-gradient(135deg, var(--color-brand-primary) 0%, var(--color-brand-dark) 100%) !important;
+        border: none !important;
+        border-radius: var(--radius-md) !important;
+        padding: 12px 24px !important;
+        font-weight: 600 !important;
+        box-shadow: var(--shadow-sm) !important;
+        transition: all var(--transition-base) !important;
+    }
+
+    .btn-primary:hover,
+    .primary-btn:hover {
+        box-shadow: var(--shadow-md) !important;
+        transform: translateY(-1px) !important;
+    }
+
+    .btn-primary:active {
+        transform: translateY(0) !important;
+    }
+
+    /* Secondary buttons */
+    .btn-secondary {
+        background: var(--color-bg-elevated) !important;
+        border: 1.5px solid var(--color-border) !important;
+        border-radius: var(--radius-md) !important;
+        padding: 12px 24px !important;
+        font-weight: 500 !important;
+        transition: all var(--transition-base) !important;
+    }
+
+    .btn-secondary:hover {
+        border-color: var(--color-brand-primary) !important;
+        background: rgba(16, 185, 129, 0.05) !important;
+    }
+}
+
+/* =================================================================
+   MODERN INPUT & FORM DESIGN
+   ================================================================= */
+
+@media (min-width: 1024px) {
+
+    .input-wrapper,
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        background: var(--color-bg-elevated) !important;
+        border: 1.5px solid var(--color-border) !important;
+        border-radius: var(--radius-md) !important;
+        padding: 14px 16px !important;
+        font-size: 15px !important;
+        transition: all var(--transition-base) !important;
+    }
+
+    .input-wrapper:focus-within,
+    .form-group input:focus {
+        border-color: var(--color-brand-primary) !important;
+        box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1) !important;
+        outline: none !important;
+    }
+}
+
+/* =================================================================
+   PROFESSIONAL GRID LAYOUTS
+   ================================================================= */
+
+@media (min-width: 1024px) {
+
+    /* Enhanced grid spacing */
+    .rec-grid,
+    .listings-grid,
+    .features-grid {
+        gap: 24px !important;
+    }
+
+    .dashboard-stats {
+        gap: 20px !important;
+    }
+
+    /* Stats cards premium design */
+    .stat-card {
+        padding: 20px !important;
+        border-radius: var(--radius-lg) !important;
+    }
+
+    .stat-value {
+        font-size: 28px !important;
+        font-weight: 700 !important;
+    }
+}
+
+/* =================================================================
+   SMOOTH ANIMATIONS & MICRO-INTERACTIONS
+   ================================================================= */
+
+@media (min-width: 1024px) {
+
+    /* Fade in animation for cards */
+    .rec-card,
+    .listing-card,
+    .feature-card {
+        animation: fadeInUp 0.4s ease-out;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Smooth scroll */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Loading states */
+    .loading-spinner {
+        animation: spin 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+}
+
+/* =================================================================
+   PROFESSIONAL BADGES & STATUS
+   ================================================================= */
+
+@media (min-width: 1024px) {
+
+    .badge,
+    .status-badge,
+    .confidence-badge {
+        padding: 6px 12px !important;
+        border-radius: 6px !important;
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        letter-spacing: 0.3px !important;
+    }
+
+    .badge-success {
+        background: rgba(16, 185, 129, 0.1) !important;
+        color: #059669 !important;
+    }
+
+    .badge-warning {
+        background: rgba(245, 158, 11, 0.1) !important;
+        color: #D97706 !important;
+    }
+}
+
+/* =================================================================
+   PREMIUM SHADOWS & DEPTH
+   ================================================================= */
+
+@media (min-width: 1024px) {
+
+    /* Elevation system */
+    .min-hero {
+        box-shadow: var(--shadow-lg) !important;
+    }
+
+    .context-card {
+        box-shadow: var(--shadow-md) !important;
+    }
+
+    .rec-section {
+        box-shadow: var(--shadow-sm) !important;
+    }
+
+    /* Floating action buttons */
+    .listing-actions {
+        box-shadow: var(--shadow-xl) !important;
+        border-top: 1px solid var(--color-border) !important;
+        background: rgba(255, 255, 255, 0.98) !important;
+        backdrop-filter: blur(12px) !important;
+    }
+}
+
+/* =================================================================
+   PROFESSIONAL COLOR ACCENTS
+   ================================================================= */
+
+@media (min-width: 1024px) {
+
+    /* Brand color usage */
+    .text-primary,
+    .price-value,
+    .order-total {
+        color: var(--color-brand-primary) !important;
+    }
+
+    /* Section dividers */
+    .section-title::before {
+        background: linear-gradient(135deg, var(--color-brand-primary), var(--color-brand-light)) !important;
+        width: 4px !important;
+        height: 20px !important;
+        border-radius: 2px !important;
+    }
+}

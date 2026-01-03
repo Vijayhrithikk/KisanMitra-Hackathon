@@ -1,0 +1,453 @@
+/* =================================================================
+   PROFESSIONAL MOBILE DESIGN SYSTEM
+   Modern, aesthetic mobile-first UI with premium polish
+   ================================================================= */
+
+/* =================================================================
+   MOBILE COLOR PALETTE & VARIABLES
+   ================================================================= */
+
+:root {
+    /* Professional Mobile Colors */
+    --mobile-primary: #10B981;
+    --mobile-primary-dark: #059669;
+    --mobile-primary-light: #34D399;
+    --mobile-primary-ultra-light: #D1FAE5;
+
+    --mobile-bg: #FAFAFA;
+    --mobile-surface: #FFFFFF;
+    --mobile-elevated: #FFFFFF;
+
+    /* Mobile Text Hierarchy */
+    --mobile-text-primary: #0F172A;
+    --mobile-text-secondary: #475569;
+    --mobile-text-tertiary: #94A3B8;
+
+    /* Mobile Shadows - Touch-friendly depth */
+    --mobile-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
+    --mobile-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.08);
+    --mobile-shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+    --mobile-shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.12);
+
+    /* Touch Targets */
+    --touch-min: 44px;
+
+    /* Mobile Spacing */
+    --mobile-space-xs: 8px;
+    --mobile-space-sm: 12px;
+    --mobile-space-md: 16px;
+    --mobile-space-lg: 20px;
+    --mobile-space-xl: 24px;
+    --mobile-space-2xl: 32px;
+
+    /* Mobile Radius */
+    --mobile-radius-sm: 10px;
+    --mobile-radius-md: 14px;
+    --mobile-radius-lg: 18px;
+    --mobile-radius-xl: 22px;
+}
+
+/* =================================================================
+   PROFESSIONAL MOBILE BASE STYLES
+   ================================================================= */
+
+@media (max-width: 1023px) {
+
+    /* Smooth scrolling */
+    html {
+        scroll-behavior: smooth;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+        background: var(--mobile-bg);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overscroll-behavior-y: none;
+    }
+
+    /* Remove default iOS styling */
+    input,
+    textarea,
+    button {
+        -webkit-appearance: none;
+        appearance: none;
+        border-radius: 0;
+    }
+}
+
+/* =================================================================
+   MODERN MOBILE CARDS
+   ================================================================= */
+
+@media (max-width: 1023px) {
+
+    /* Professional card design */
+    .rec-card,
+    .listing-card,
+    .feature-card,
+    .order-card-farmer,
+    .stat-card {
+        background: var(--mobile-surface);
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        border-radius: var(--mobile-radius-md) !important;
+        box-shadow: var(--mobile-shadow-sm);
+        margin-bottom: var(--mobile-space-sm);
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Active state for touch */
+    .rec-card:active,
+    .listing-card:active,
+    .feature-card:active {
+        transform: scale(0.98);
+        box-shadow: var(--mobile-shadow-md);
+    }
+
+    /* Hero sections - modern mobile design */
+    .min-hero,
+    .context-card {
+        background: linear-gradient(135deg, #FFFFFF 0%, #FAFAFA 100%);
+        border: 1px solid rgba(0, 0, 0, 0.04);
+        border-radius: var(--mobile-radius-lg) !important;
+        box-shadow: var(--mobile-shadow-md);
+        padding: var(--mobile-space-lg) !important;
+        margin-bottom: var(--mobile-space-md) !important;
+    }
+}
+
+/* =================================================================
+   PROFESSIONAL MOBILE TYPOGRAPHY
+   ================================================================= */
+
+@media (max-width: 1023px) {
+
+    /* Optimized for mobile reading */
+    h1,
+    .hero-title {
+        font-size: 24px !important;
+        font-weight: 700 !important;
+        letter-spacing: -0.02em !important;
+        line-height: 1.25 !important;
+        color: var(--mobile-text-primary) !important;
+    }
+
+    h2,
+    .section-title {
+        font-size: 20px !important;
+        font-weight: 600 !important;
+        letter-spacing: -0.01em !important;
+        color: var(--mobile-text-primary) !important;
+    }
+
+    h3 {
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        color: var(--mobile-text-primary) !important;
+    }
+
+    p,
+    .body-text {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+        color: var(--mobile-text-secondary) !important;
+    }
+
+    .hero-sub {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+        color: var(--mobile-text-secondary) !important;
+    }
+
+    /* Section titles with accent */
+    .section-title::before {
+        content: '';
+        display: block;
+        width: 4px;
+        height: 20px;
+        background: linear-gradient(135deg, var(--mobile-primary), var(--mobile-primary-light));
+        border-radius: 2px;
+    }
+}
+
+/* =================================================================
+   MODERN MOBILE BUTTONS
+   ================================================================= */
+
+@media (max-width: 1023px) {
+
+    /* Touch-optimized buttons */
+    .btn-primary,
+    .primary-btn {
+        min-height: var(--touch-min) !important;
+        padding: 14px 20px !important;
+        background: linear-gradient(135deg, var(--mobile-primary) 0%, var(--mobile-primary-dark) 100%) !important;
+        border: none !important;
+        border-radius: var(--mobile-radius-md) !important;
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        color: white !important;
+        box-shadow: var(--mobile-shadow-md) !important;
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+
+    .btn-primary:active {
+        transform: scale(0.96) !important;
+        box-shadow: var(--mobile-shadow-sm) !important;
+    }
+
+    /* Secondary buttons */
+    .btn-secondary {
+        min-height: var(--touch-min) !important;
+        padding: 14px 20px !important;
+        background: white !important;
+        border: 2px solid var(--mobile-primary) !important;
+        border-radius: var(--mobile-radius-md) !important;
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        color: var(--mobile-primary) !important;
+    }
+
+    .btn-secondary:active {
+        background: var(--mobile-primary-ultra-light) !important;
+    }
+
+    /* Icon buttons */
+    .header-left button,
+    .close-btn,
+    .back-btn {
+        min-width: var(--touch-min) !important;
+        min-height: var(--touch-min) !important;
+        border-radius: var(--mobile-radius-sm) !important;
+        transition: all 0.2s !important;
+    }
+
+    .header-left button:active {
+        transform: scale(0.92) !important;
+        background: #E5E7EB !important;
+    }
+}
+
+/* =================================================================
+   PROFESSIONAL MOBILE INPUTS
+   ================================================================= */
+
+@media (max-width: 1023px) {
+
+    /* Modern input fields */
+    .input-wrapper,
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        min-height: var(--touch-min) !important;
+        background: var(--mobile-surface) !important;
+        border: 2px solid #E5E7EB !important;
+        border-radius: var(--mobile-radius-md) !important;
+        padding: 14px 16px !important;
+        font-size: 16px !important;
+        color: var(--mobile-text-primary) !important;
+        transition: all 0.2s !important;
+    }
+
+    .input-wrapper:focus-within,
+    .form-group input:focus {
+        border-color: var(--mobile-primary) !important;
+        box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1) !important;
+        outline: none !important;
+    }
+
+    /* Placeholder styling */
+    input::placeholder,
+    textarea::placeholder {
+        color: var(--mobile-text-tertiary) !important;
+    }
+}
+
+/* =================================================================
+   MODERN MOBILE HEADERS
+   ================================================================= */
+
+@media (max-width: 1023px) {
+
+    /* Professional sticky header */
+    .min-header,
+    .market-header-simple {
+        background: rgba(255, 255, 255, 0.98) !important;
+        backdrop-filter: blur(12px) !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+        box-shadow: var(--mobile-shadow-sm) !important;
+        padding: 12px 16px !important;
+    }
+
+    .min-brand,
+    .market-header-simple h1 {
+        font-size: 18px !important;
+        font-weight: 700 !important;
+        letter-spacing: -0.01em !important;
+    }
+}
+
+/* =================================================================
+   PROFESSIONAL MOBILE BADGES
+   ================================================================= */
+
+@media (max-width: 1023px) {
+
+    .badge,
+    .status-badge {
+        padding: 6px 12px !important;
+        border-radius: 8px !important;
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        letter-spacing: 0.3px !important;
+    }
+
+    .badge-success {
+        background: rgba(16, 185, 129, 0.12) !important;
+        color: #059669 !important;
+    }
+
+    .badge-warning {
+        background: rgba(245, 158, 11, 0.12) !important;
+        color: #D97706 !important;
+    }
+}
+
+/* =================================================================
+   MODERN BOTTOM SHEETS & MODALS
+   ================================================================= */
+
+@media (max-width: 1023px) {
+
+    /* Professional bottom sheet */
+    .soil-upload-modal,
+    .modal-overlay {
+        background: rgba(0, 0, 0, 0.4) !important;
+        backdrop-filter: blur(4px) !important;
+    }
+
+    .soil-upload-content,
+    .modal-content {
+        background: white;
+        border-radius: var(--mobile-radius-xl) var(--mobile-radius-xl) 0 0 !important;
+        box-shadow: var(--mobile-shadow-xl) !important;
+        padding: var(--mobile-space-lg) !important;
+    }
+
+    /* Modal handle */
+    .soil-upload-content::before,
+    .modal-content::before {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 4px;
+        background: #E5E7EB;
+        border-radius: 2px;
+        margin: -8px auto 16px;
+    }
+}
+
+/* =================================================================
+   SMOOTH MOBILE ANIMATIONS
+   ================================================================= */
+
+@media (max-width: 1023px) {
+
+    /* Fade in cards */
+    .rec-card,
+    .listing-card {
+        animation: mobileSlideUp 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    @keyframes mobileSlideUp {
+        from {
+            opacity: 0;
+            transform: translateY(16px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Ripple effect simulation */
+    .btn-primary:active::after,
+    .btn-secondary:active::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: inherit;
+        transform: translate(-50%, -50%) scale(0);
+        animation: ripple 0.6s ease-out;
+    }
+
+    @keyframes ripple {
+        to {
+            transform: translate(-50%, -50%) scale(2);
+            opacity: 0;
+        }
+    }
+}
+
+/* =================================================================
+   PROFESSIONAL MOBILE SPACING
+   ================================================================= */
+
+@media (max-width: 1023px) {
+
+    /* Proper spacing hierarchy */
+    .min-main,
+    .dashboard-content {
+        padding: var(--mobile-space-md) !important;
+    }
+
+    .rec-section {
+        padding: var(--mobile-space-md) !important;
+        margin-bottom: var(--mobile-space-md) !important;
+    }
+
+    /* Card spacing */
+    .rec-card {
+        padding: var(--mobile-space-md) !important;
+        margin-bottom: var(--mobile-space-sm) !important;
+    }
+
+    /* Grid gaps */
+    .rec-grid,
+    .listings-grid,
+    .features-grid {
+        gap: var(--mobile-space-sm) !important;
+    }
+}
+
+/* =================================================================
+   SAFE AREA INSETS (iPhone notch support)
+   ================================================================= */
+
+@media (max-width: 1023px) {
+    .min-header {
+        padding-top: max(12px, env(safe-area-inset-top)) !important;
+    }
+
+    .listing-actions,
+    .fixed-footer {
+        padding-bottom: max(16px, env(safe-area-inset-bottom)) !important;
+    }
+}
+
+/* =================================================================
+   PULL-TO-REFRESH INDICATOR
+   ================================================================= */
+
+@media (max-width: 1023px) {
+
+    /* Overscroll behavior */
+    body {
+        overscroll-behavior-y: contain;
+    }
+}

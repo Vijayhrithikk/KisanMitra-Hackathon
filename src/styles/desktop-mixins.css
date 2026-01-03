@@ -1,0 +1,129 @@
+/* Universal Desktop Design Mixin - Apply to all pages */
+
+/* Desktop Container Pattern */
+.desktop-container-mixin {
+    /* Mobile first */
+    width: 100%;
+    padding: 16px;
+}
+
+@media (min-width: 768px) {
+    .desktop-container-mixin {
+        padding: 24px 32px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .desktop-container-mixin {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 32px 48px;
+    }
+}
+
+/* Grid Patterns */
+.desktop-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+@media (min-width: 768px) {
+    .desktop-grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .desktop-grid-2 {
+        gap: 24px;
+    }
+}
+
+.desktop-grid-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+@media (min-width: 768px) {
+    .desktop-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .desktop-grid-3 {
+        gridTemplate-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+}
+
+.desktop-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+@media (min-width: 768px) {
+    .desktop-grid-4 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .desktop-grid-4 {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Typography Scale */
+@media (min-width: 1024px) {
+
+    h1,
+    .h1 {
+        font-size: 2.5rem !important;
+    }
+
+    h2,
+    .h2 {
+        font-size: 2rem !important;
+    }
+
+    h3,
+    .h3 {
+        font-size: 1.5rem !important;
+    }
+
+    .body-text {
+        font-size: 1rem !important;
+    }
+}
+
+/* Card Hover Effects (Desktop Only) */
+@media (min-width: 1024px) {
+    .desktop-hover-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+    }
+}
+
+/* Spacing Utilities */
+@media (min-width: 1024px) {
+    .desktop-padding-lg {
+        padding: 48px !important;
+    }
+
+    .desktop-margin-bottom {
+        margin-bottom: 32px !important;
+    }
+
+    .desktop-gap-lg {
+        gap: 32px !important;
+    }
+}

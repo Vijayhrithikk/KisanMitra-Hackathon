@@ -1,0 +1,63 @@
+/* Mobile Restricted Page Styles */
+
+.mobile-restricted {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: linear-gradient(135deg, #8B5A2B 0%, #6B4423 100%);
+}
+
+.restricted-content {
+    background: white;
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    max-width: 320px;
+}
+
+.restricted-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF3E0;
+    border-radius: 50%;
+    color: #8B5A2B;
+}
+
+.restricted-content h2 {
+    font-size: 1.5rem;
+    margin: 0 0 12px;
+    color: var(--color-text-primary);
+}
+
+.restricted-content p {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    margin: 0 0 20px;
+    line-height: 1.5;
+}
+
+.restricted-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    background: #FFF8E1;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #8B5A2B;
+    margin-bottom: 24px;
+}
+
+.restricted-info svg {
+    flex-shrink: 0;
+}
+
+.mobile-restricted .btn {
+    width: 100%;
+}

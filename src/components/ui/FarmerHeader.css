@@ -1,0 +1,295 @@
+/* Farmer Portal Header & Sidebar Styles */
+
+:root {
+    --farmer-primary: #8B5A2B;
+    /* Earthy brown */
+    --farmer-primary-dark: #6B4423;
+    --farmer-primary-light: #D4A574;
+    --farmer-accent: #F4A460;
+    /* Sandy brown */
+    --farmer-bg: #FAF7F2;
+    /* Warm off-white */
+    --farmer-sidebar-bg: #2D2013;
+    /* Dark brown */
+    --farmer-sidebar-text: #E8DDD0;
+}
+
+/* Top Header */
+.farmer-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    padding: 0 var(--spacing-lg);
+    background: var(--farmer-primary);
+    color: white;
+}
+
+.farmer-header-left {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.sidebar-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: var(--radius-md);
+    color: white;
+    cursor: pointer;
+    transition: background var(--transition-fast);
+}
+
+.sidebar-toggle:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.farmer-logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    text-decoration: none;
+    color: white;
+}
+
+.farmer-logo .logo-icon {
+    font-size: 1.75rem;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+}
+
+.logo-subtitle {
+    font-size: var(--font-size-xs);
+    opacity: 0.8;
+}
+
+/* Header Right */
+.farmer-header-right {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+.notification-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: var(--radius-full);
+    color: white;
+    cursor: pointer;
+}
+
+.notification-badge {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    min-width: 16px;
+    height: 16px;
+    font-size: 10px;
+    font-weight: bold;
+    background: var(--farmer-accent);
+    color: white;
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.farmer-profile {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.farmer-avatar {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--farmer-accent);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-lg);
+}
+
+.farmer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.farmer-name {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+}
+
+.farmer-role {
+    font-size: var(--font-size-xs);
+    opacity: 0.8;
+}
+
+/* Sidebar */
+.farmer-sidebar {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    z-index: 200;
+    width: 280px;
+    height: 100vh;
+    background: var(--farmer-sidebar-bg);
+    color: var(--farmer-sidebar-text);
+    display: flex;
+    flex-direction: column;
+    transition: left 0.3s ease;
+}
+
+.farmer-sidebar.open {
+    left: 0;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-lg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: white;
+    text-decoration: none;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+}
+
+.sidebar-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border: none;
+    color: var(--farmer-sidebar-text);
+    cursor: pointer;
+}
+
+/* Sidebar Navigation */
+.sidebar-nav {
+    flex: 1;
+    padding: var(--spacing-lg);
+    overflow-y: auto;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-lg);
+    margin-bottom: var(--spacing-xs);
+    color: var(--farmer-sidebar-text);
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+    transition: all var(--transition-fast);
+    background: transparent;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.sidebar-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.sidebar-link.active {
+    background: var(--farmer-accent);
+    color: white;
+}
+
+.sidebar-link.logout {
+    color: #FF6B6B;
+}
+
+.sidebar-link.logout:hover {
+    background: rgba(255, 107, 107, 0.1);
+}
+
+/* Sidebar Footer */
+.sidebar-footer {
+    padding: var(--spacing-lg);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Overlay */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 150;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive */
+@media (min-width: 1024px) {
+    .farmer-sidebar {
+        left: 0;
+        top: 64px;
+        height: calc(100vh - 64px);
+    }
+
+    .sidebar-header {
+        display: none;
+    }
+
+    .sidebar-close {
+        display: none;
+    }
+
+    .sidebar-overlay {
+        display: none;
+    }
+
+    .sidebar-toggle {
+        display: none;
+    }
+
+    .farmer-app .main-content {
+        margin-left: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .farmer-info {
+        display: none;
+    }
+}

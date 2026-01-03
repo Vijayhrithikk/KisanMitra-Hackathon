@@ -1,0 +1,237 @@
+/* =================================================================
+   FORCE MOBILE-ONLY 414px VIEW - OVERRIDE EVERYTHING
+   ================================================================= */
+
+/* Lock body and html */
+html,
+body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+/* Lock #root to exactly 414px - NO EXCEPTIONS */
+#root,
+#root *,
+.app,
+.min-app,
+.market-container,
+.marketplace-page,
+.crop-recommendation,
+.techniques-list,
+.technique-detail,
+.technique-detail-page {
+    max-width: 414px !important;
+}
+
+/* Force technique detail page specifically */
+.technique-detail-page {
+    width: 414px !important;
+    max-width: 414px !important;
+    margin: 0 auto !important;
+    overflow-x: hidden !important;
+}
+
+.technique-detail-page .detail-content,
+.technique-detail-page .container {
+    width: 100% !important;
+    max-width: 414px !important;
+    padding: 12px !important;
+    box-sizing: border-box !important;
+}
+
+/* Force all page containers to 414px */
+body>#root {
+    width: 414px !important;
+    min-width: 414px !important;
+    max-width: 414px !important;
+}
+
+/* Override any desktop styles */
+@media (min-width: 1024px) {
+    #root {
+        width: 414px !important;
+        min-width: 414px !important;
+        max-width: 414px !important;
+    }
+
+    .app,
+    .min-app {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+/* Reset any conflicting desktop container styles */
+.market-container,
+.crop-recommendation,
+.techniques-list,
+.technique-detail,
+.rentals-page,
+.farmer-dashboard,
+.buyer-dashboard,
+.min-app {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+}
+
+/* ===== STATIC 2x2 LISTINGS GRID - NO RESPONSIVE CHANGES ===== */
+.listings-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+}
+
+/* Lock all card grids to 2 columns */
+.product-grid,
+.crop-grid,
+.rental-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+}
+
+/* Prevent any desktop responsive overrides */
+@media (min-width: 768px) {
+
+    .listings-grid,
+    .product-grid,
+    .crop-grid,
+    .rental-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .listings-grid,
+    .product-grid,
+    .crop-grid,
+    .rental-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* ===== FARMER DASHBOARD - STATIC MOBILE LAYOUT ===== */
+.dashboard-stats {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+}
+
+.overview-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+}
+
+/* Lock dashboard at all breakpoints */
+@media (min-width: 768px) {
+    .dashboard-stats {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .overview-grid {
+        flex-direction: column !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .dashboard-stats {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .overview-grid {
+        flex-direction: column !important;
+    }
+
+    .farmer-dashboard,
+    .buyer-dashboard {
+        max-width: 414px !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* ===== TECHNIQUE DETAIL - STATIC MOBILE LAYOUT ===== */
+.stats-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px !important;
+}
+
+.technique-card,
+.technique-grid-card {
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Cost-benefit grid stays 3 columns */
+.cb-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px !important;
+}
+
+/* Lock technique pages at all breakpoints */
+@media (min-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .cb-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .technique-detail,
+    .techniques-list {
+        max-width: 414px !important;
+        margin: 0 auto !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .cb-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .technique-detail,
+    .techniques-list {
+        max-width: 414px !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* ===== FARMER DASHBOARD - FULL WIDTH SECTIONS ===== */
+.dashboard-content {
+    width: 100% !important;
+    padding: 12px !important;
+    box-sizing: border-box !important;
+}
+
+.overview-section,
+.orders-section,
+.shipments-section,
+.payouts-section,
+.listings-section {
+    width: 100% !important;
+}
+
+.overview-card,
+.order-card-farmer,
+.shipment-card,
+.payout-item {
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.orders-list,
+.shipments-list,
+.payouts-list {
+    width: 100% !important;
+}

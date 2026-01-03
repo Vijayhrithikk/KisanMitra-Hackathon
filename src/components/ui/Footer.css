@@ -1,0 +1,262 @@
+/* Mobile-First Footer Styles */
+
+.footer {
+    background: #1A1A1A;
+    color: white;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 16px;
+}
+
+/* Brand Section */
+.footer-brand {
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.footer-logo .logo-icon {
+    font-size: 1.5rem;
+}
+
+.footer-logo .logo-text {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-primary-light);
+}
+
+.footer-tagline {
+    color: #999;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #999;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.social-link:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+/* Links Section */
+.footer-links,
+.footer-contact {
+    text-align: center;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: #999;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--color-primary-light);
+}
+
+/* Contact Section */
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #999;
+    font-size: 13px;
+}
+
+.contact-item svg {
+    color: var(--color-primary-light);
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #666;
+    font-size: 12px;
+    margin: 0;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-bottom-links a {
+    color: #666;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablet */
+@media (min-width: 768px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 48px 24px;
+        text-align: left;
+    }
+
+    .footer-brand {
+        text-align: left;
+    }
+
+    .footer-logo {
+        justify-content: flex-start;
+    }
+
+    .footer-social {
+        justify-content: flex-start;
+    }
+
+    .footer-links,
+    .footer-contact {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/* Desktop - Professional Layout */
+@media (min-width: 1024px) {
+    .footer {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-container {
+        grid-template-columns: 2.5fr 1fr 1fr 1.5fr;
+        gap: 48px;
+        max-width: 1200px;
+        padding: 64px 48px 32px;
+    }
+
+    .footer-logo .logo-text {
+        font-size: 1.375rem;
+    }
+
+    .footer-tagline {
+        font-size: 14px;
+        max-width: 320px;
+        margin-bottom: 24px;
+    }
+
+    .social-link {
+        width: 44px;
+        height: 44px;
+    }
+
+    .social-link:hover {
+        transform: translateY(-2px);
+    }
+
+    .footer-links h4,
+    .footer-contact h4 {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+        transition: all 0.2s;
+    }
+
+    .footer-links a:hover {
+        padding-left: 4px;
+    }
+
+    .contact-item {
+        font-size: 14px;
+    }
+
+    .footer-bottom {
+        padding: 24px 48px;
+        margin-top: 16px;
+        max-width: 1200px;
+    }
+
+    .footer-bottom p {
+        font-size: 13px;
+    }
+
+    .footer-bottom-links a {
+        font-size: 13px;
+        transition: color 0.2s;
+    }
+
+    .footer-bottom-links a:hover {
+        color: var(--color-primary-light);
+    }
+}
