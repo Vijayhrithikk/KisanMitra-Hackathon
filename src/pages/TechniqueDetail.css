@@ -1,0 +1,404 @@
+/* Mobile Technique Detail Page */
+
+.technique-detail-page {
+    min-height: 100vh;
+    background: #F5F7FA;
+    padding-bottom: 20px;
+}
+
+/* Header */
+.detail-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: white;
+    border-bottom: 1px solid #E5E7EB;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.detail-header .back-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F3F4F6;
+    border: none;
+    border-radius: 10px;
+    color: #374151;
+    cursor: pointer;
+}
+
+.audio-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: #E8F5E9;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #2E7D32;
+    cursor: pointer;
+}
+
+/* Hero Image */
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+
+.hero-overlay h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+
+/* Content Container */
+.detail-content {
+    padding: 16px;
+}
+
+.detail-content.container {
+    max-width: 100%;
+}
+
+/* Summary Section */
+.summary-section {
+    margin-bottom: 16px;
+}
+
+.lead-text {
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.6;
+    margin: 0 0 16px;
+}
+
+.why-box {
+    background: #E8F5E9;
+    border-radius: 12px;
+    padding: 14px;
+}
+
+.why-box h3 {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    color: #2E7D32;
+}
+
+.why-box p {
+    font-size: 13px;
+    color: #374151;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 14px 8px;
+    background: white;
+    border-radius: 12px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.stat-card svg {
+    margin-bottom: 4px;
+}
+
+.stat-label {
+    font-size: 10px;
+    color: #6B7280;
+}
+
+.stat-value {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1F2937;
+}
+
+/* Content Section */
+.content-section {
+    background: white;
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 14px;
+}
+
+.content-section h2 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 14px;
+    color: #1F2937;
+}
+
+.content-section.warning-bg {
+    background: #FEF3C7;
+}
+
+/* Check List */
+.check-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.check-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #F3F4F6;
+    font-size: 13px;
+    color: #374151;
+    line-height: 1.4;
+}
+
+.check-list li:last-child {
+    border-bottom: none;
+}
+
+.icon-check {
+    color: #4CAF50;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Cross List */
+.cross-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cross-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(234, 179, 8, 0.3);
+    font-size: 13px;
+    color: #92400E;
+    line-height: 1.4;
+}
+
+.cross-list li:last-child {
+    border-bottom: none;
+}
+
+.icon-alert {
+    color: #F59E0B;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Steps Timeline */
+.steps-timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+.step-item {
+    display: flex;
+    gap: 12px;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.step-item:last-child {
+    padding-bottom: 0;
+}
+
+.step-item:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 32px;
+    bottom: 0;
+    width: 2px;
+    background: #E5E7EB;
+}
+
+.step-number {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4CAF50;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h4 {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 0 4px;
+    color: #1F2937;
+}
+
+.step-content p {
+    font-size: 12px;
+    color: #6B7280;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* AP Specifics */
+.ap-specifics {
+    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+}
+
+.info-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-item {
+    font-size: 13px;
+    color: #374151;
+    line-height: 1.4;
+}
+
+.info-item strong {
+    color: #2E7D32;
+}
+
+/* FAQ */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faq-item {
+    padding: 12px;
+    background: #F9FAFB;
+    border-radius: 10px;
+}
+
+.question {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1F2937;
+    margin-bottom: 8px;
+}
+
+.question svg {
+    color: #4CAF50;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.answer {
+    font-size: 12px;
+    color: #6B7280;
+    line-height: 1.5;
+    padding-left: 24px;
+}
+
+/* Cost Benefit */
+.cost-benefit {
+    background: white;
+}
+
+.cb-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.cb-item {
+    text-align: center;
+    padding: 12px 8px;
+    background: #F9FAFB;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cb-item span {
+    display: block;
+    font-size: 10px;
+    color: #6B7280;
+    margin-bottom: 4px;
+}
+
+.cb-item strong {
+    font-size: 12px;
+    color: #1F2937;
+}
+
+.cb-item.highlight {
+    background: #E8F5E9;
+}
+
+.cb-item.highlight strong {
+    color: #2E7D32;
+}
+
+/* Final Guidance */
+.final-guidance {
+    background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);
+    border-radius: 14px;
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.final-guidance p {
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    line-height: 1.5;
+    text-align: center;
+}

@@ -1,0 +1,120 @@
+/* Modern Techniques Carousel - Mobile */
+
+.techniques-carousel-container {
+    margin: var(--space-lg) 0;
+}
+
+.carousel-header h2 {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: var(--space-md);
+    padding: 0 var(--space-xs);
+}
+
+/* Carousel Viewport */
+.carousel-viewport {
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    background: var(--color-surface);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-out;
+    width: 100%;
+}
+
+/* Carousel Card */
+.carousel-card {
+    min-width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+.card-image-wrapper {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Card Overlay */
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    padding: var(--space-xl) var(--space-md) var(--space-md);
+    color: white;
+}
+
+.card-overlay h3 {
+    font-size: 1.125rem;
+    margin: 0 0 var(--space-xs);
+    font-weight: 700;
+}
+
+.card-overlay p {
+    font-size: 0.8125rem;
+    opacity: 0.9;
+    margin: 0 0 var(--space-sm);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.4;
+}
+
+/* Learn More Button */
+.learn-more-btn {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    transition: background 0.2s;
+}
+
+.learn-more-btn:active {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Carousel Dots */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: var(--radius-full);
+    background-color: var(--color-border);
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+    padding: 0;
+}
+
+.dot.active {
+    background-color: var(--color-primary);
+    width: 24px;
+    border-radius: 4px;
+}
