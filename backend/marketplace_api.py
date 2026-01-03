@@ -474,4 +474,4 @@ if __name__ == '__main__':
     print("   POST /api/monitoring/daily-log")
     print("   GET  /api/monitoring/<id>/logs")
     print("   POST /api/irrigation  ← NodeMCU")
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=5000, host='0.0.0.0')

@@ -7,7 +7,7 @@ Uses the NASA POWER Agroclimatology (AG) community data.
 API Documentation: https://power.larc.nasa.gov/docs/services/api/
 """
 
-import requests
+import httpx
 import logging
 from datetime import datetime, timedelta
 from typing import Dict, List, Optional
@@ -43,7 +43,7 @@ class NASAPowerService:
     def __init__(self):
         self.cache = {}
     
-    def get_historical_weather(
+    async def get_historical_weather_async(
         self, 
         lat: float, 
         lon: float, 
@@ -51,27 +51,21 @@ class NASAPowerService:
         target_months: List[int] = None
     ) -> Dict:
         """
-        Fetch historical weather data for the past N years.
-        
-        Args:
-            lat: Latitude
-            lon: Longitude
-            years: Number of years of historical data (default 5)
-            target_months: Specific months to analyze (1-12), or None for all
-        
-        Returns:
-            Dictionary with monthly averages and patterns
+        Fetch historical weather data for the past N years asynchronously.
         """
         cache_key = f"{lat:.2f}_{lon:.2f}_{years}"
         
-        # Check cache
+        # Check cache (sync file I/O is acceptable for now, or use aiofiles if strict)
         cache_file = os.path.join(CACHE_DIR, f"{cache_key}.json")
         if os.path.exists(cache_file):
-            cache_age = datetime.now().timestamp() - os.path.getmtime(cache_file)
-            if cache_age < 86400 * 7:  # Cache for 7 days
-                logger.info(f"Using cached weather data for {lat}, {lon}")
-                with open(cache_file, 'r') as f:
-                    return json.load(f)
+            try:
+                cache_age = datetime.now().timestamp() - os.path.getmtime(cache_file)
+                if cache_age < 86400 * 7:  # Cache for 7 days
+                    logger.info(f"Using cached weather data for {lat}, {lon}")
+                    with open(cache_file, 'r') as f:
+                        return json.load(f)
+            except Exception as e:
+                logger.warning(f"Cache read error: {e}")
         
         logger.info(f"Fetching {years}-year historical weather for ({lat}, {lon})")
         
@@ -90,22 +84,32 @@ class NASAPowerService:
                 "format": "JSON"
             }
             
-            response = requests.get(self.BASE_URL, params=params, timeout=5)
-            response.raise_for_status()
-            data = response.json()
+            async with httpx.AsyncClient(timeout=10.0) as client:
+                response = await client.get(self.BASE_URL, params=params)
+                response.raise_for_status()
+                data = response.json()
             
             # Process and aggregate data
             result = self._process_historical_data(data, target_months)
             
             # Cache the result
-            with open(cache_file, 'w') as f:
-                json.dump(result, f)
+            try:
+                with open(cache_file, 'w') as f:
+                    json.dump(result, f)
+            except Exception as e:
+                logger.warning(f"Cache write error: {e}")
             
             return result
             
         except Exception as e:
             logger.error(f"NASA POWER API error: {e}")
             return self._get_fallback_data(lat, lon)
+
+    # Sync version for backward compatibility
+    def get_historical_weather(self, lat, lon, years=5, target_months=None):
+        import asyncio
+        # This is a blocking call if run in a sync context, strictly for legacy support
+        return asyncio.run(self.get_historical_weather_async(lat, lon, years, target_months))
     
     def _process_historical_data(self, raw_data: Dict, target_months: List[int] = None) -> Dict:
         """
@@ -164,7 +168,7 @@ class NASAPowerService:
             "generated_at": datetime.now().isoformat()
         }
     
-    def get_growing_season_forecast(
+    async def get_growing_season_forecast_async(
         self, 
         lat: float, 
         lon: float, 
@@ -172,16 +176,7 @@ class NASAPowerService:
         duration_months: int = 3
     ) -> Dict:
         """
-        Get weather forecast for a crop growing season based on historical patterns.
-        
-        Args:
-            lat: Latitude
-            lon: Longitude
-            start_month: Month when growing season starts (1-12)
-            duration_months: Length of growing season
-        
-        Returns:
-            Weekly weather predictions based on 5-year historical averages
+        Get weather forecast for a crop growing season based on historical patterns (Async).
         """
         # Get target months
         target_months = []
@@ -189,7 +184,7 @@ class NASAPowerService:
             month = ((start_month - 1 + i) % 12) + 1
             target_months.append(month)
         
-        historical = self.get_historical_weather(lat, lon, years=5, target_months=target_months)
+        historical = await self.get_historical_weather_async(lat, lon, years=5, target_months=target_months)
         
         # Generate weekly breakdown
         weeks = []
@@ -227,6 +222,11 @@ class NASAPowerService:
             "weekly_forecast": weeks,
             "source": "NASA_POWER_5YR_HISTORICAL"
         }
+
+    # Sync wrapper
+    def get_growing_season_forecast(self, lat, lon, start_month, duration_months=3):
+        import asyncio
+        return asyncio.run(self.get_growing_season_forecast_async(lat, lon, start_month, duration_months))
     
     def _assess_weather_risks(self, week_data: Dict) -> List[str]:
         """Assess weather-related risks for farming."""

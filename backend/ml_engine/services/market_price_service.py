@@ -1,30 +1,26 @@
 """
 Market Price Service - Multi-Source Real-time Mandi Prices
 
-Uses multiple data sources with parallel web workers for efficient and accurate price data.
+Uses multiple data sources with async workers for efficient and accurate price data.
 Sources: AGMARKNET, data.gov.in, eNAM, Krishak Odisha, AP Agrisnet
 """
 
 import os
 import json
 import logging
-import requests
+import httpx
 import re
+import asyncio
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-from typing import Dict, List, Optional, Tuple
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from typing import Dict, List, Optional
 import hashlib
-import threading
 
 logger = logging.getLogger(__name__)
 
 # Cache Configuration
 CACHE_DIR = os.path.join(os.path.dirname(__file__), '../data/price_cache')
 CACHE_TTL_HOURS = 3  # Shorter cache for fresher prices
-
-# Thread-safe lock for cache operations
-cache_lock = threading.Lock()
 
 # ============ DATA SOURCE CONFIGURATIONS ============
 
@@ -40,9 +36,6 @@ ENAM_API = "https://enam.gov.in/web/dashboard/trade-data"
 
 # Source 4: AP Agrisnet (Andhra Pradesh specific)
 AP_AGRISNET_URL = "https://www.apagrisnet.gov.in"
-
-# Source 5: Telangana Agrimarket
-TS_AGRI_URL = "https://agrimarket.telangana.gov.in"
 
 
 # Commodity name mappings
@@ -76,24 +69,6 @@ COMMODITY_MAPPINGS = {
     "Carrot": ["Carrot"],
     "Papaya": ["Papaya"],
     "Guava": ["Guava"]
-}
-
-# State mappings
-STATE_MAPPINGS = {
-    "Andhra Pradesh": ["Andhra Pradesh", "AP"],
-    "Telangana": ["Telangana", "TS"],
-    "Karnataka": ["Karnataka", "KA"],
-    "Tamil Nadu": ["Tamil Nadu", "TN"],
-    "Maharashtra": ["Maharashtra", "MH"],
-    "Gujarat": ["Gujarat", "GJ"],
-    "Madhya Pradesh": ["Madhya Pradesh", "MP"],
-    "Uttar Pradesh": ["Uttar Pradesh", "UP"],
-    "Punjab": ["Punjab", "PB"],
-    "Haryana": ["Haryana", "HR"],
-    "Rajasthan": ["Rajasthan", "RJ"],
-    "West Bengal": ["West Bengal", "WB"],
-    "Odisha": ["Odisha", "OR"],
-    "Bihar": ["Bihar", "BR"]
 }
 
 # MSP 2024-25 Fallback Prices (₹/quintal)
@@ -130,19 +105,18 @@ MSP_PRICES = {
 
 
 class PriceWorker:
-    """Individual worker for fetching prices from a specific source."""
+    """Individual worker for fetching prices from a specific source (Async)."""
     
     def __init__(self, name: str, timeout: int = 10):
         self.name = name
         self.timeout = timeout
-        self.session = requests.Session()
-        self.session.headers.update({
+        self.headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36',
             'Accept': 'text/html,application/xhtml+xml,application/json,*/*',
             'Accept-Language': 'en-US,en;q=0.5',
-        })
+        }
     
-    def fetch(self, commodity: str, state: str, district: str = None) -> Optional[Dict]:
+    async def fetch(self, client: httpx.AsyncClient, commodity: str, state: str, district: str = None) -> Optional[Dict]:
         """Override in subclasses."""
         raise NotImplementedError
 
@@ -153,7 +127,7 @@ class DataGovWorker(PriceWorker):
     def __init__(self):
         super().__init__("data.gov.in", timeout=12)
     
-    def fetch(self, commodity: str, state: str, district: str = None) -> Optional[Dict]:
+    async def fetch(self, client: httpx.AsyncClient, commodity: str, state: str, district: str = None) -> Optional[Dict]:
         try:
             # Try multiple commodity name variations
             commodity_names = COMMODITY_MAPPINGS.get(commodity, [commodity])
@@ -170,7 +144,7 @@ class DataGovWorker(PriceWorker):
                 if district:
                     params["filters[district]"] = district
                 
-                response = self.session.get(DATA_GOV_API, params=params, timeout=self.timeout)
+                response = await client.get(DATA_GOV_API, params=params, headers=self.headers, timeout=self.timeout)
                 
                 if response.status_code == 200:
                     data = response.json()
@@ -238,7 +212,7 @@ class AgmarknetWorker(PriceWorker):
     def __init__(self):
         super().__init__("AGMARKNET", timeout=15)
     
-    def fetch(self, commodity: str, state: str, district: str = None) -> Optional[Dict]:
+    async def fetch(self, client: httpx.AsyncClient, commodity: str, state: str, district: str = None) -> Optional[Dict]:
         try:
             commodity_names = COMMODITY_MAPPINGS.get(commodity, [commodity])
             
@@ -247,7 +221,7 @@ class AgmarknetWorker(PriceWorker):
                 today = datetime.now().strftime('%d-%b-%Y')
                 search_url = f"{AGMARKNET_URL}?Tx_Commodity={comm_name}&Tx_State={state}&DateFrom={today}&DateTo={today}"
                 
-                response = self.session.get(search_url, timeout=self.timeout)
+                response = await client.get(search_url, headers=self.headers, timeout=self.timeout)
                 
                 if response.status_code == 200:
                     prices = self._extract_prices(response.text, state)
@@ -320,12 +294,12 @@ class ENAMWorker(PriceWorker):
     def __init__(self):
         super().__init__("eNAM", timeout=10)
     
-    def fetch(self, commodity: str, state: str, district: str = None) -> Optional[Dict]:
+    async def fetch(self, client: httpx.AsyncClient, commodity: str, state: str, district: str = None) -> Optional[Dict]:
         try:
             # eNAM API endpoint for trade data
             api_url = f"https://enam.gov.in/web/Ajax_ctrl/trade_data_,commodity_,,{commodity.lower()}"
             
-            response = self.session.get(api_url, timeout=self.timeout)
+            response = await client.get(api_url, headers=self.headers, timeout=self.timeout)
             
             if response.status_code == 200:
                 try:
@@ -370,25 +344,17 @@ class APAgrisnetWorker(PriceWorker):
     def __init__(self):
         super().__init__("AP Agrisnet", timeout=10)
     
-    def fetch(self, commodity: str, state: str, district: str = None) -> Optional[Dict]:
+    async def fetch(self, client: httpx.AsyncClient, commodity: str, state: str, district: str = None) -> Optional[Dict]:
         if state not in ["Andhra Pradesh", "AP"]:
             return None  # Only for AP
         
         try:
             search_url = f"{AP_AGRISNET_URL}/api/market-prices?commodity={commodity}"
-            response = self.session.get(search_url, timeout=self.timeout)
+            response = await client.get(search_url, headers=self.headers, timeout=self.timeout)
             
             if response.status_code == 200:
-                # Try to parse response (format may vary)
-                try:
-                    data = response.json()
-                    if data:
-                        logger.info(f"[AP Agrisnet] Found data for {commodity}")
-                        # Process based on actual response format
-                        pass
-                except json.JSONDecodeError:
-                    # Try HTML scraping as fallback
-                    pass
+                # Placeholder for parsing logic
+                pass
             
             return None
             
@@ -399,7 +365,7 @@ class APAgrisnetWorker(PriceWorker):
 
 class MarketPriceService:
     """
-    Multi-source market price aggregator using parallel workers.
+    Multi-source market price aggregator using async parallel workers.
     Fetches from multiple sources simultaneously for best accuracy.
     """
     
@@ -415,7 +381,7 @@ class MarketPriceService:
             APAgrisnetWorker(),   # State specific
         ]
         
-        logger.info(f"Market Price Service initialized with {len(self.workers)} workers")
+        logger.info(f"Market Price Service initialized with {len(self.workers)} async workers")
     
     def _ensure_cache_dir(self):
         if not os.path.exists(CACHE_DIR):
@@ -427,35 +393,33 @@ class MarketPriceService:
     
     def _get_cached_price(self, cache_key: str) -> Optional[Dict]:
         cache_file = os.path.join(CACHE_DIR, f"{cache_key}.json")
-        with cache_lock:
+        try:
             if os.path.exists(cache_file):
-                try:
-                    with open(cache_file, 'r') as f:
-                        cached = json.load(f)
-                    cached_time = datetime.fromisoformat(cached['timestamp'])
-                    if datetime.now() - cached_time < timedelta(hours=CACHE_TTL_HOURS):
-                        logger.info(f"Cache hit for {cache_key}")
-                        return cached['data']
-                except Exception as e:
-                    logger.warning(f"Cache read error: {e}")
+                with open(cache_file, 'r') as f:
+                    cached = json.load(f)
+                cached_time = datetime.fromisoformat(cached['timestamp'])
+                if datetime.now() - cached_time < timedelta(hours=CACHE_TTL_HOURS):
+                    logger.info(f"Cache hit for {cache_key}")
+                    return cached['data']
+        except Exception as e:
+            logger.warning(f"Cache read error: {e}")
         return None
     
     def _save_to_cache(self, cache_key: str, data: Dict):
         cache_file = os.path.join(CACHE_DIR, f"{cache_key}.json")
-        with cache_lock:
-            try:
-                with open(cache_file, 'w') as f:
-                    json.dump({
-                        'timestamp': datetime.now().isoformat(),
-                        'data': data
-                    }, f)
-            except Exception as e:
-                logger.warning(f"Cache save error: {e}")
+        try:
+            with open(cache_file, 'w') as f:
+                json.dump({
+                    'timestamp': datetime.now().isoformat(),
+                    'data': data
+                }, f)
+        except Exception as e:
+            logger.warning(f"Cache save error: {e}")
     
-    def get_commodity_price(self, crop_name: str, state: str = "Andhra Pradesh", 
+    async def get_commodity_price_async(self, crop_name: str, state: str = "Andhra Pradesh", 
                            district: str = None) -> Dict:
         """
-        Get commodity price using parallel workers.
+        Get commodity price using async parallel workers.
         Returns best result from multiple sources.
         """
         # Check cache first
@@ -467,21 +431,19 @@ class MarketPriceService:
         # Fetch from all sources in parallel
         results = []
         
-        with ThreadPoolExecutor(max_workers=self.max_workers) as executor:
-            futures = {
-                executor.submit(worker.fetch, crop_name, state, district): worker.name 
-                for worker in self.workers
-            }
+        async with httpx.AsyncClient(timeout=20.0) as client:
+            tasks = [worker.fetch(client, crop_name, state, district) for worker in self.workers]
             
-            for future in as_completed(futures, timeout=20):
-                worker_name = futures[future]
-                try:
-                    result = future.result()
-                    if result:
-                        results.append(result)
-                        logger.info(f"[{worker_name}] Success: ₹{result.get('price')}")
-                except Exception as e:
-                    logger.warning(f"[{worker_name}] Failed: {e}")
+            # Execute all tasks in parallel
+            worker_results = await asyncio.gather(*tasks, return_exceptions=True)
+            
+            for i, result in enumerate(worker_results):
+                worker_name = self.workers[i].name
+                if isinstance(result, Exception):
+                    logger.warning(f"[{worker_name}] Failed: {result}")
+                elif result:
+                    results.append(result)
+                    logger.info(f"[{worker_name}] Success: ₹{result.get('price')}")
         
         # Aggregate results
         if results:
@@ -493,6 +455,11 @@ class MarketPriceService:
         logger.info(f"Using MSP fallback for {crop_name}")
         return self._get_fallback_price(crop_name)
     
+    # Sync wrapper for backward compatibility
+    def get_commodity_price(self, crop_name: str, state: str = "Andhra Pradesh", district: str = None) -> Dict:
+        import asyncio
+        return asyncio.run(self.get_commodity_price_async(crop_name, state, district))
+
     def _aggregate_results(self, results: List[Dict], crop_name: str) -> Dict:
         """
         Aggregate results from multiple sources.
@@ -607,76 +574,21 @@ class MarketPriceService:
             "confidence": 30
         }
     
+    # Keeping sync method for compatibility
     def get_prices_for_recommendations(self, recommendations: List[Dict], 
                                        state: str = "Andhra Pradesh",
                                        district: str = None) -> List[Dict]:
-        """Enrich recommendations with live market prices."""
+        """Enrich recommendations with live market prices (Sync wrapper)."""
+        # This is inefficient, but kept for backward compatibility if needed
+        # In optimized app.py, we will call get_commodity_price_async in parallel loop
+        import asyncio
         for rec in recommendations:
             crop_name = rec.get('crop')
             if crop_name:
-                price_data = self.get_commodity_price(crop_name, state, district)
+                price_data = asyncio.run(self.get_commodity_price_async(crop_name, state, district))
                 rec['market_price'] = price_data
                 rec['market_price_live'] = price_data.get('live', False)
-        
         return recommendations
-    
-    def get_price_trend(self, crop_name: str, days: int = 30, 
-                       state: str = "Andhra Pradesh") -> Dict:
-        """Get price trend analysis."""
-        price_data = self.get_commodity_price(crop_name, state)
-        
-        trend = price_data.get('trend', 'stable')
-        msp = price_data.get('msp', False)
-        
-        if trend == 'volatile':
-            volatility = 'High'
-            recommendation = 'Consider contract farming or futures'
-        elif trend == 'up':
-            volatility = 'Medium'
-            recommendation = 'Good time for planting'
-        elif trend == 'down':
-            volatility = 'Medium'
-            recommendation = 'Consider storage or processing'
-        else:
-            volatility = 'Low'
-            recommendation = 'Stable market conditions'
-        
-        return {
-            "crop": crop_name,
-            "current_price": price_data.get('price'),
-            "trend_direction": trend,
-            "volatility": volatility,
-            "has_msp": msp,
-            "recommendation": recommendation,
-            "source": price_data.get('source'),
-            "confidence": price_data.get('confidence', 50)
-        }
-    
-    def calculate_market_risk(self, crop_name: str, state: str = "Andhra Pradesh") -> int:
-        """Calculate market risk score (0-100)."""
-        price_data = self.get_commodity_price(crop_name, state)
-        
-        trend = price_data.get('trend', 'stable')
-        trend_risk = {
-            'volatile': 70,
-            'down': 50,
-            'unknown': 40,
-            'stable': 20,
-            'up': 10
-        }.get(trend, 30)
-        
-        msp_reduction = 20 if price_data.get('msp', False) else 0
-        
-        min_price = price_data.get('min_price', 0)
-        max_price = price_data.get('max_price', 0)
-        if min_price > 0 and max_price > 0:
-            spread = (max_price - min_price) / min_price * 100
-            spread_risk = min(30, spread / 2)
-        else:
-            spread_risk = 15
-        
-        final_risk = max(0, min(100, trend_risk + spread_risk - msp_reduction))
-        return int(final_risk)
 
 
 # Singleton instance

@@ -1,6 +1,8 @@
+import httpx
 import requests
 import os
 import logging
+import asyncio
 from datetime import datetime, timedelta
 
 logger = logging.getLogger(__name__)
@@ -11,11 +13,42 @@ class WeatherService:
         self.base_url_current = "https://api.openweathermap.org/data/2.5/weather"
         self.base_url_forecast = "https://api.openweathermap.org/data/2.5/forecast"
 
-    def get_current_weather(self, lat, lon):
+    async def get_current_weather_async(self, lat, lon):
         """
-        Fetches current weather for ML input.
+        Fetches current weather asynchronously.
         Returns: {temp (C), humidity (%), moisture (mock), desc}
         """
+        if not self.api_key:
+            logger.warning("No OpenWeather API Key. Using mock weather.")
+            return {"temp": 30.0, "humidity": 60.0, "moisture": 40.0, "desc": "Sunny (Mock)"}
+
+        try:
+            params = {
+                "lat": lat,
+                "lon": lon,
+                "appid": self.api_key,
+                "units": "metric"
+            }
+            async with httpx.AsyncClient(timeout=3.0) as client:
+                response = await client.get(self.base_url_current, params=params)
+                response.raise_for_status()
+                data = response.json()
+
+                return {
+                    "temp": data["main"]["temp"],
+                    "humidity": data["main"]["humidity"],
+                    "moisture": 45.0, # Soil moisture not available in standard API, mocking it
+                    "desc": data["weather"][0]["description"]
+                }
+        except Exception as e:
+            logger.error(f"Weather fetch error (async): {e}")
+            return {"temp": 28.0, "humidity": 55.0, "moisture": 50.0, "desc": "Error Fallback"}
+
+    def get_current_weather(self, lat, lon):
+        """Sync wrapper for backward compatibility"""
+        # Note: calling async from sync is tricky without a loop, mostly for legacy code
+        # For this refactor, we prefer the async version.
+        # Keeping original sync implementation for fallback/other services not yet migrated
         if not self.api_key:
             logger.warning("No OpenWeather API Key. Using mock weather.")
             return {"temp": 30.0, "humidity": 60.0, "moisture": 40.0, "desc": "Sunny (Mock)"}
@@ -34,18 +67,65 @@ class WeatherService:
             return {
                 "temp": data["main"]["temp"],
                 "humidity": data["main"]["humidity"],
-                "moisture": 45.0, # Soil moisture not available in standard API, mocking it
+                "moisture": 45.0, 
                 "desc": data["weather"][0]["description"]
             }
-
         except Exception as e:
             logger.error(f"Weather fetch error: {e}")
             return {"temp": 28.0, "humidity": 55.0, "moisture": 50.0, "desc": "Error Fallback"}
 
+    async def get_forecast_async(self, lat, lon):
+        """
+        Fetches 5-day forecast and generates 3-month seasonal projection asynchronously.
+        """
+        if not self.api_key:
+            return self._get_mock_forecast()
+
+        try:
+            params = {
+                "lat": lat,
+                "lon": lon,
+                "appid": self.api_key,
+                "units": "metric"
+            }
+            async with httpx.AsyncClient(timeout=3.0) as client:
+                response = await client.get(self.base_url_forecast, params=params)
+                response.raise_for_status()
+                data = response.json()
+                
+                # Process 5-day forecast (taking one reading per day at noon)
+                daily_forecast = []
+                seen_dates = set()
+                
+                for item in data['list']:
+                    dt = datetime.fromtimestamp(item['dt'])
+                    date_str = dt.strftime('%Y-%m-%d')
+                    
+                    if date_str not in seen_dates and dt.hour >= 12:
+                        seen_dates.add(date_str)
+                        daily_forecast.append({
+                            "date": date_str,
+                            "temp": item['main']['temp'],
+                            "humidity": item['main']['humidity'],
+                            "desc": item['weather'][0]['description'],
+                            "icon": item['weather'][0]['icon']
+                        })
+                        if len(daily_forecast) >= 5:
+                            break
+                
+                seasonal_projection = self._generate_seasonal_projection()
+                
+                return {
+                    "daily": daily_forecast,
+                    "seasonal": seasonal_projection
+                }
+
+        except Exception as e:
+            logger.error(f"Forecast fetch error (async): {e}")
+            return self._get_mock_forecast()
+
     def get_forecast(self, lat, lon):
-        """
-        Fetches 5-day forecast and generates 3-month seasonal projection.
-        """
+        """Sync wrapper for backward compatibility"""
         if not self.api_key:
             return self._get_mock_forecast()
 
@@ -60,7 +140,6 @@ class WeatherService:
             response.raise_for_status()
             data = response.json()
             
-            # Process 5-day forecast (taking one reading per day at noon)
             daily_forecast = []
             seen_dates = set()
             

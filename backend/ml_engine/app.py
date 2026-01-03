@@ -5,6 +5,7 @@ from typing import Optional, List
 import logging
 import base64
 from datetime import datetime
+import asyncio
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from services.season_service import SeasonService
 from services.soil_service import SoilService
@@ -216,10 +217,13 @@ async def recommend_crops(request: LocationRequest):
     - Decision simulation (loss probabilities, risk breakdown)
     - Confidence scoring (data quality transparency)
     - Farmer-friendly explanations (Telugu/English)
+    - Async/Parallel execution for high performance (<3s latency)
     """
     logger.info(f"Recommendation request: {request.location_name}, Coords: {request.lat},{request.lon}, Manual: {request.manual_soil_type}")
     
     try:
+        import asyncio
+        start_time = datetime.now()
         location = request.location_name
         
         # 1. Season
@@ -293,30 +297,78 @@ async def recommend_crops(request: LocationRequest):
                 soil_info["ph"] = float(request.custom_npk["ph"])
             soil_source = "soil_report"
         
-        # 4. Weather: Current + Forecast
+        # 4. Weather: Current + Forecast (Async)
         lat = request.lat if request.lat else 17.3850
         lon = request.lon if request.lon else 78.4867
         
-        weather = weather_service.get_current_weather(lat, lon) 
-        forecast = weather_service.get_forecast(lat, lon)
+        # Define tasks for independent data fetching
+        async def fetch_weather_tasks():
+            return await asyncio.gather(
+                weather_service.get_current_weather_async(lat, lon),
+                weather_service.get_forecast_async(lat, lon)
+            )
+
+        async def fetch_weather_history_task():
+            try:
+                weather_hist_service = get_weather_history_service()
+                return await asyncio.to_thread(
+                    weather_hist_service.get_district_weather_summary,
+                    state="Andhra Pradesh", 
+                    district=district
+                )
+            except Exception as e:
+                logger.warning(f"Weather history fetch failed: {e}")
+                return {}
+
+        async def fetch_nasa_forecast_task():
+            try:
+                lat_val = request.lat or 16.3067
+                lon_val = request.lon or 80.4365
+                current_month = datetime.now().month
+                start_month = 6 if current_season == "Kharif" else (10 if current_season == "Rabi" else current_month)
+                
+                nasa_service = get_nasa_power_service()
+                return await nasa_service.get_growing_season_forecast_async(
+                    lat=lat_val,
+                    lon=lon_val,
+                    start_month=start_month,
+                    duration_months=3
+                )
+            except Exception as e:
+                logger.warning(f"NASA forecast fetch failed: {e}")
+                return {}
+
+        # Start independent long-running tasks EARLY
+        # We don't await them yet, allowing them to run while we do Weather + ML
+        nasa_future = asyncio.create_task(fetch_nasa_forecast_task())
+        history_future = asyncio.create_task(fetch_weather_history_task())
         
+        # Await Weather (Critical for ML)
+        try:
+            weather, forecast = await fetch_weather_tasks()
+        except Exception as e:
+            logger.error(f"Weather fetch failed: {e}")
+            weather, forecast = {}, {}
+
         current_temp = weather.get('temp', 28)
         current_humidity = weather.get('humidity', 60)
         
-        # Analyze forecast for summary
+        # Analyze forecast
         forecast_analysis = recommendation_service._analyze_forecast(forecast)
         weather_summary = recommendation_service.get_weather_summary(forecast_analysis)
 
-        # Smart Temp: Use forecast day temp if current temp is too low (night)
+        # Smart Temp
         effective_temp = current_temp
         if current_temp < 20 and forecast and 'daily' in forecast and len(forecast['daily']) > 0:
             effective_temp = forecast['daily'][0]['temp']
             logger.info(f"Night/Cold detected ({current_temp}C). Using forecast temp ({effective_temp}C) for ML.")
 
-        # 5. Generate ML-Based Recommendations (with fallback to rule-based)
+        # 5. Generate ML-Based Recommendations (Offload to thread to unblock loop)
         recommendations = []
         try:
-            recommendations = ml_recommendation_service.get_recommendations(
+            # Run blocking ML prediction in thread pool
+            recommendations = await asyncio.to_thread(
+                ml_recommendation_service.get_recommendations,
                 soil_type=soil_info["soil"],
                 season=current_season,
                 temp=effective_temp,
@@ -330,12 +382,11 @@ async def recommend_crops(request: LocationRequest):
             )
             
             if not recommendations:
-                logger.warning("ML model returned 0 crops. Falling back to rule-based.")
                 raise ValueError("No ML recommendations")
 
             model_type = "ml_trained"
         except Exception as e:
-            logger.warning(f"ML model failed (or empty), using rule-based: {e}")
+            logger.warning(f"ML model failed/empty, using rule-based (sync fallback): {e}")
             recommendations = recommendation_service.get_recommendations(
                 soil_type=soil_info["soil"],
                 season=current_season,
@@ -427,116 +478,61 @@ async def recommend_crops(request: LocationRequest):
                 except Exception as e:
                     logger.warning(f"Explanation generation failed for {rec.get('crop')}: {e}")
 
-        # ============== PARALLEL DATA ENHANCEMENT (Steps 9-11) ==============
-        # Run Market Prices, Weather History, and NASA Forecast in parallel
-        # FAST MODE: Skip external APIs for quicker response
+        # ============== PARALLEL DATA ENHANCEMENT ==============
+        # Fetch Market Prices (Dependent on ML results)
+        market_prices_result = []
+        skip_external_apis = getattr(request, 'fast_mode', False)
         
-        market_prices_result = None
-        weather_history = {}
-        nasa_forecast = {}
-        
-        # Check if fast mode is requested (skip external APIs)
-        skip_external_apis = getattr(request, 'fast_mode', False)  # Default to full mode
-        
-        if not skip_external_apis:
-            def fetch_market_prices():
-                """Fetch live market prices from AGMARKNET"""
-                try:
-                    market_service = get_market_price_service()
-                    return market_service.get_prices_for_recommendations(
-                        recommendations.copy(),
-                        state="Andhra Pradesh",
-                        district=district
-                    )
-                except Exception as e:
-                    logger.warning(f"Market price fetch failed: {e}")
-                    return None
-            
-            def fetch_weather_history():
-                """Fetch IMD weather history and crop water analysis"""
-                try:
-                    weather_hist_service = get_weather_history_service()
-                    history = weather_hist_service.get_district_weather_summary(
-                        state="Andhra Pradesh",
-                        district=district
-                    )
-                    return {
-                        'summary': history,
-                        'service': weather_hist_service
-                    }
-                except Exception as e:
-                    logger.warning(f"Weather history fetch failed: {e}")
-                    return None
-            
-            def fetch_nasa_forecast():
-                """Fetch NASA Power 3-month growing season forecast"""
-                try:
-                    lat_val = request.lat or 16.3067
-                    lon_val = request.lon or 80.4365
-                    
-                    current_month = datetime.now().month
-                    if current_season == "Kharif":
-                        start_month = 6
-                    elif current_season == "Rabi":
-                        start_month = 10
-                    else:
-                        start_month = current_month
-                    
-                    nasa_service = get_nasa_power_service()
-                    return nasa_service.get_growing_season_forecast(
-                        lat=lat_val,
-                        lon=lon_val,
-                        start_month=start_month,
-                        duration_months=3
-                    )
-                except Exception as e:
-                    logger.warning(f"NASA forecast fetch failed: {e}")
-                    return {}
-            
-            # Execute with very short timeout for fast response
-            logger.info("Starting parallel data enhancement (quick mode)...")
+        async def fetch_market_prices_task():
+            if skip_external_apis or not recommendations: return []
             try:
-                with ThreadPoolExecutor(max_workers=3) as executor:
-                    futures = {
-                        executor.submit(fetch_market_prices): 'market',
-                        executor.submit(fetch_weather_history): 'weather_history',
-                        executor.submit(fetch_nasa_forecast): 'nasa'
-                    }
-                    
-                    completed_count = 0
-                    try:
-                        for future in as_completed(futures, timeout=5):  # 5 second timeout
-                            task_name = futures[future]
-                            completed_count += 1
-                            try:
-                                result = future.result(timeout=2)
-                                if task_name == 'market' and result:
-                                    market_prices_result = result
-                                elif task_name == 'weather_history' and result:
-                                    weather_history = result.get('summary', {})
-                                elif task_name == 'nasa' and result:
-                                    nasa_forecast = result
-                            except:
-                                pass
-                    except:
-                        logger.info(f"Quick fetch: {completed_count}/3 completed")
-            except:
-                pass
-            
-            # Apply market prices to recommendations
-            if market_prices_result:
-                for i, rec in enumerate(recommendations):
-                    if i < len(market_prices_result):
-                        rec['market_price'] = market_prices_result[i].get('market_price', {})
-                        rec['market_price_live'] = market_prices_result[i].get('market_price_live', False)
-        else:
-            logger.info("Fast mode: Skipping external API calls")
+                market_service = get_market_price_service()
+                tasks = [market_service.get_commodity_price_async(r.get('crop'), "Andhra Pradesh", district) for r in recommendations[:5] if r.get('crop')]
+                return await asyncio.gather(*tasks, return_exceptions=True) if tasks else []
+            except Exception as e:
+                logger.warning(f"Market fetch failed: {e}")
+                return []
+
+        # Now gather ALL parallel tasks:
+        # 1. Market (just started)
+        # 2. NASA (started early)
+        # 3. History (started early)
         
-        logger.info("Data enhancement completed")
+        logger.info("Gathering parallel enhancement tasks...")
+        market_future = asyncio.create_task(fetch_market_prices_task())
+        
+        try:
+            results = await asyncio.wait_for(
+                asyncio.gather(
+                    market_future,
+                    nasa_future,
+                    history_future,
+                    return_exceptions=True
+                ),
+                timeout=6.0
+            )
+        except asyncio.TimeoutError:
+            logger.warning("Parallel data enhancement timed out (>6s). Returning partial/default data.")
+            results = [TimeoutError(), TimeoutError(), TimeoutError()]
+        
+        market_prices_list = results[0] if not isinstance(results[0], Exception) else []
+        nasa_forecast = results[1] if not isinstance(results[1], Exception) else {}
+        weather_history = results[2] if not isinstance(results[2], Exception) else {} # Note: history returning dict directly now
+
+        # Apply market prices
+        if market_prices_list:
+            for i, price_data in enumerate(market_prices_list):
+                if i < len(recommendations) and isinstance(price_data, dict):
+                    recommendations[i]['market_price'] = price_data
+                    recommendations[i]['market_price_live'] = price_data.get('live', False)
+        
+        execution_time = (datetime.now() - start_time).total_seconds()
+        logger.info(f"Data enhancement completed in {execution_time:.2f}s")
 
         return {
             "location": location,
             "model_type": model_type,
+            "execution_time": execution_time,
             "context": {
                 "season": current_season,
                 "season_desc": season_info["description"],
