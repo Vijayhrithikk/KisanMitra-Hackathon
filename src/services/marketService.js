@@ -7,7 +7,14 @@ import { listingsAPI, statsAPI } from './api';
  * Maintains backward compatibility with existing component interfaces
  */
 
-const API_BASE = import.meta.env.VITE_MARKET_API_URL || 'http://localhost:5000/api';
+let apiUrl = import.meta.env.VITE_MARKET_API_URL || 'http://localhost:5000/api';
+// Ensure URL doesn't have trailing slash
+apiUrl = apiUrl.replace(/\/$/, '');
+// Append /api if not present in the URL (unless it's the default local one which already has it)
+if (!apiUrl.endsWith('/api')) {
+    apiUrl += '/api';
+}
+const API_BASE = apiUrl;
 
 class MarketService {
     constructor() {
