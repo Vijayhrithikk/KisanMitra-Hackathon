@@ -27,7 +27,7 @@ class WeatherService:
                 "appid": self.api_key,
                 "units": "metric"
             }
-            response = requests.get(self.base_url_current, params=params)
+            response = requests.get(self.base_url_current, params=params, timeout=3)
             response.raise_for_status()
             data = response.json()
 
@@ -56,7 +56,7 @@ class WeatherService:
                 "appid": self.api_key,
                 "units": "metric"
             }
-            response = requests.get(self.base_url_forecast, params=params)
+            response = requests.get(self.base_url_forecast, params=params, timeout=3)
             response.raise_for_status()
             data = response.json()
             

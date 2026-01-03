@@ -1,6 +1,6 @@
 /**
- * Smart Irrigation - Arduino-Based Automatic Irrigation System
- * Redesigned to match Home page design system
+ * Smart Irrigation - NodeMCU WiFi-Based Automatic Irrigation System
+ * Supports both Serial/USB Arduino and WiFi/NodeMCU connections
  */
 
 import React, { useState, useEffect, useRef } from 'react';
@@ -9,10 +9,12 @@ import { useTranslation } from 'react-i18next';
 import {
     ArrowLeft, Droplets, Zap, Activity, AlertTriangle,
     Power, Settings, Wifi, WifiOff, Gauge,
-    Timer, TrendingUp, Bell, CheckCircle, ChevronRight
+    Timer, TrendingUp, Bell, CheckCircle, ChevronRight, RefreshCw
 } from 'lucide-react';
 import LanguageSelector from '../components/LanguageSelector';
 import './SmartIrrigation.css';
+
+const API_BASE = import.meta.env.VITE_MARKET_API_URL || 'http://localhost:5000/api';
 
 const SmartIrrigation = () => {
     const { i18n } = useTranslation();
@@ -22,6 +24,7 @@ const SmartIrrigation = () => {
     // Connection state
     const [isConnected, setIsConnected] = useState(false);
     const [connectionStatus, setConnectionStatus] = useState('disconnected');
+    const [connectionMode, setConnectionMode] = useState('wifi'); // 'wifi' or 'serial'
     const portRef = useRef(null);
     const readerRef = useRef(null);
 
@@ -31,8 +34,15 @@ const SmartIrrigation = () => {
         moistureRaw: 0,
         status: 'unknown',
         motorOn: false,
-        lastUpdate: null
+        lastUpdate: null,
+        activatedBy: '',
+        alertActive: false,
+        countdownRemaining: 0
     });
+
+    // All connected devices
+    const [devices, setDevices] = useState({});
+    const [selectedDevice, setSelectedDevice] = useState('nodemcu-wifi');
 
     // Settings
     const [threshold, setThreshold] = useState(40);
@@ -70,11 +80,122 @@ const SmartIrrigation = () => {
         settings: lang === 'te' ? 'సెట్టింగ్స్' : 'Settings',
         howToConnect: lang === 'te' ? 'కనెక్ట్ ఎలా?' : 'How to Connect',
         rawValue: lang === 'te' ? 'రా విలువ' : 'Raw Value',
-        mode: lang === 'te' ? 'మోడ్' : 'Mode'
+        mode: lang === 'te' ? 'మోడ్' : 'Mode',
+        wifiMode: lang === 'te' ? 'వైఫై (NodeMCU)' : 'WiFi (NodeMCU)',
+        serialMode: lang === 'te' ? 'USB (Arduino)' : 'USB (Arduino)',
+        liveData: lang === 'te' ? 'లైవ్ డేటా' : 'Live Data',
+        deviceId: lang === 'te' ? 'పరికర ID' : 'Device ID',
+        countdown: lang === 'te' ? 'ఆటో-స్టార్ట్' : 'Auto-start in',
+        activatedBy: lang === 'te' ? 'ద్వారా' : 'By'
     };
 
-    // Web Serial API connection
+    // NodeMCU direct connection - Fetch directly from device
+    const NODEMCU_IP = '172.20.128.39';
+
+    const connectWiFi = async () => {
+        setConnectionStatus('connecting');
+        setConnectionMode('wifi');
+        try {
+            // Fetch directly from NodeMCU
+            const response = await fetch(`http://${NODEMCU_IP}/api`);
+            const data = await response.json();
+            if (data.moisture !== undefined) {
+                updateFromNodeMCU(data);
+                setIsConnected(true);
+                setConnectionStatus('connected');
+                // Start polling directly from NodeMCU
+                startPolling();
+            } else {
+                throw new Error('Invalid data from NodeMCU');
+            }
+        } catch (error) {
+            console.error('NodeMCU connection error:', error);
+            // Try backend as fallback
+            try {
+                const backupResponse = await fetch(`${API_BASE}/irrigation`);
+                const backupData = await backupResponse.json();
+                if (backupData.success) {
+                    setIsConnected(true);
+                    setConnectionStatus('connected');
+                    startBackendPolling();
+                }
+            } catch (e) {
+                setConnectionStatus('error');
+                setIsConnected(false);
+            }
+        }
+    };
+
+    // Update sensor data from NodeMCU response
+    const updateFromNodeMCU = (data) => {
+        setSensorData({
+            moisture: data.moisture || 0,
+            moistureRaw: data.moistureRaw || Math.floor((100 - (data.moisture || 0)) * 10.23),
+            status: data.status || (data.moisture < threshold ? 'dry' : 'wet'),
+            motorOn: data.motorStatus || false,
+            lastUpdate: new Date(),
+            activatedBy: data.activatedBy || '',
+            alertActive: data.alertActive || false,
+            countdownRemaining: data.countdownRemaining || 0
+        });
+        setMoistureHistory(prev => [...prev, { time: new Date(), value: data.moisture }].slice(-30));
+
+        // Add alert if active
+        if (data.alertActive) {
+            addAlert('warning', lang === 'te' ? 'తక్కువ తేమ హెచ్చరిక!' : 'Low moisture alert!');
+        }
+    };
+
+    // Poll NodeMCU directly for live data
+    const pollingRef = useRef(null);
+    const startPolling = () => {
+        if (pollingRef.current) clearInterval(pollingRef.current);
+        pollingRef.current = setInterval(async () => {
+            try {
+                const response = await fetch(`http://${NODEMCU_IP}/api`);
+                const data = await response.json();
+                if (data.moisture !== undefined) {
+                    updateFromNodeMCU(data);
+                }
+            } catch (error) {
+                console.error('NodeMCU polling error:', error);
+            }
+        }, 2000);
+    };
+
+    // Fallback: Poll backend API
+    const startBackendPolling = () => {
+        if (pollingRef.current) clearInterval(pollingRef.current);
+        pollingRef.current = setInterval(async () => {
+            try {
+                const response = await fetch(`${API_BASE}/irrigation`);
+                const data = await response.json();
+                if (data.success && data.devices) {
+                    setDevices(data.devices);
+                    const deviceData = data.devices[selectedDevice];
+                    if (deviceData) {
+                        setSensorData({
+                            moisture: deviceData.moisture || 0,
+                            moistureRaw: Math.floor((100 - (deviceData.moisture || 0)) * 10.23),
+                            status: deviceData.status || 'unknown',
+                            motorOn: deviceData.motor || false,
+                            lastUpdate: deviceData.updatedAt ? new Date(deviceData.updatedAt) : new Date(),
+                            activatedBy: deviceData.activatedBy || '',
+                            alertActive: deviceData.alertActive || false,
+                            countdownRemaining: deviceData.countdownRemaining || 0
+                        });
+                        setMoistureHistory(prev => [...prev, { time: new Date(), value: deviceData.moisture }].slice(-30));
+                    }
+                }
+            } catch (error) {
+                console.error('Backend polling error:', error);
+            }
+        }, 2000);
+    };
+
+    // Web Serial API connection (Arduino USB)
     const connectToArduino = async () => {
+        setConnectionMode('serial');
         if (!('serial' in navigator)) {
             alert('Web Serial API not supported. Use Chrome/Edge.');
             return;
@@ -146,6 +267,7 @@ const SmartIrrigation = () => {
 
     const disconnect = async () => {
         try {
+            if (pollingRef.current) clearInterval(pollingRef.current);
             if (readerRef.current) await readerRef.current.cancel();
             if (portRef.current) await portRef.current.close();
         } catch (e) { }
@@ -163,9 +285,51 @@ const SmartIrrigation = () => {
         } catch (e) { }
     };
 
+    // Direct NodeMCU pump control via HTTP
+    const [pumpLoading, setPumpLoading] = useState(false);
+
+    const turnPumpOn = async () => {
+        setPumpLoading(true);
+        try {
+            await fetch(`http://${NODEMCU_IP}/motor/on`);
+            // Immediately update local state
+            setSensorData(prev => ({ ...prev, motorOn: true, activatedBy: 'FARMER' }));
+            addAlert('info', lang === 'te' ? '✅ పంప్ ఆన్!' : '✅ Pump turned ON!');
+        } catch (error) {
+            console.error('Failed to turn on pump:', error);
+            addAlert('critical', lang === 'te' ? '❌ పంప్ కనెక్ట్ కాలేదు' : '❌ Failed to connect');
+        }
+        setPumpLoading(false);
+    };
+
+    const turnPumpOff = async () => {
+        setPumpLoading(true);
+        try {
+            await fetch(`http://${NODEMCU_IP}/motor/off`);
+            // Immediately update local state
+            setSensorData(prev => ({ ...prev, motorOn: false, activatedBy: '' }));
+            addAlert('info', lang === 'te' ? '✅ పంప్ ఆఫ్!' : '✅ Pump turned OFF!');
+        } catch (error) {
+            console.error('Failed to turn off pump:', error);
+            addAlert('critical', lang === 'te' ? '❌ పంప్ కనెక్ట్ కాలేదు' : '❌ Failed to connect');
+        }
+        setPumpLoading(false);
+    };
+
+    // Toggle pump (for manual mode or serial connection)
     const togglePump = () => {
-        if (autoMode) return;
-        sendCommand(sensorData.motorOn ? 'PUMP_OFF' : 'PUMP_ON');
+        if (connectionMode === 'wifi') {
+            // Use direct HTTP control for WiFi/NodeMCU
+            if (sensorData.motorOn) {
+                turnPumpOff();
+            } else {
+                turnPumpOn();
+            }
+        } else {
+            // Use serial command for Arduino
+            if (autoMode) return;
+            sendCommand(sensorData.motorOn ? 'PUMP_OFF' : 'PUMP_ON');
+        }
     };
 
     const addAlert = (type, message) => {
@@ -189,8 +353,13 @@ const SmartIrrigation = () => {
         return () => clearInterval(interval);
     }, [demoMode, threshold]);
 
+    // Auto-connect to WiFi on mount
     useEffect(() => {
-        return () => { disconnect(); };
+        connectWiFi();
+        return () => {
+            if (pollingRef.current) clearInterval(pollingRef.current);
+            disconnect();
+        };
     }, []);
 
     const getMoistureColor = (value) => {
@@ -229,17 +398,76 @@ const SmartIrrigation = () => {
                 </div>
                 <div className="connection-actions">
                     {isConnected || demoMode ? (
-                        <button onClick={demoMode ? () => setDemoMode(false) : disconnect}>
-                            {L.disconnect}
-                        </button>
+                        <>
+                            <button className="refresh-btn" onClick={connectWiFi} title="Refresh">
+                                <RefreshCw size={16} />
+                            </button>
+                            <button onClick={demoMode ? () => setDemoMode(false) : disconnect}>
+                                {L.disconnect}
+                            </button>
+                        </>
                     ) : (
                         <>
-                            <button className="primary-btn" onClick={connectToArduino}>{L.connect}</button>
+                            <button className="primary-btn" onClick={connectWiFi}>{L.wifiMode}</button>
+                            <button className="secondary-btn" onClick={connectToArduino}>{L.serialMode}</button>
                             <button className="demo-btn" onClick={() => setDemoMode(true)}>{L.demoMode}</button>
                         </>
                     )}
                 </div>
             </div>
+
+            {/* Alert Banner for Low Moisture - With Urgent Pump Control */}
+            {sensorData.alertActive && (
+                <div className="alert-banner">
+                    <div className="alert-info">
+                        <AlertTriangle size={20} />
+                        <span>{lang === 'te' ? '🚨 తక్కువ తేమ!' : '🚨 LOW MOISTURE!'}</span>
+                        <span className="countdown-badge">⏱️ {sensorData.countdownRemaining}s</span>
+                    </div>
+                    <button
+                        className="urgent-pump-btn"
+                        onClick={turnPumpOn}
+                        disabled={pumpLoading}
+                    >
+                        {pumpLoading ? '⏳' : '💧'} {lang === 'te' ? 'ఇప్పుడే ఆన్!' : 'TURN ON NOW!'}
+                    </button>
+                </div>
+            )}
+
+            {/* Manual Pump Control Section - Always Visible */}
+            {(isConnected || demoMode) && (
+                <div className="pump-control-section">
+                    <div className="pump-status-card">
+                        <div className="pump-header">
+                            <Power size={20} />
+                            <span>{lang === 'te' ? 'పంప్ నియంత్రణ' : 'Pump Control'}</span>
+                            {sensorData.activatedBy && (
+                                <span className="activated-badge">
+                                    {sensorData.activatedBy === 'AUTO' ? '🤖 Auto' :
+                                        sensorData.activatedBy === 'FARMER' ? '👨‍🌾 Manual' :
+                                            sensorData.activatedBy === 'MANUAL' ? '🔧 Local' : sensorData.activatedBy}
+                                </span>
+                            )}
+                        </div>
+                        <div className="pump-buttons">
+                            <button
+                                className={`pump-btn on ${sensorData.motorOn ? 'active' : ''}`}
+                                onClick={turnPumpOn}
+                                disabled={pumpLoading || sensorData.motorOn}
+                            >
+                                {pumpLoading ? '⏳' : '💧'} {lang === 'te' ? 'ఆన్' : 'ON'}
+                            </button>
+                            <button
+                                className={`pump-btn off ${!sensorData.motorOn ? 'active' : ''}`}
+                                onClick={turnPumpOff}
+                                disabled={pumpLoading || !sensorData.motorOn}
+                            >
+                                {pumpLoading ? '⏳' : '🛑'} {lang === 'te' ? 'ఆఫ్' : 'OFF'}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
 
             {/* Main Content */}
             <div className="irrigation-content">

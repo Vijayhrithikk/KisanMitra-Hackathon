@@ -4,8 +4,9 @@ import { useTranslation } from 'react-i18next';
 import {
     ArrowLeft, Loader2, AlertTriangle, Calendar, CheckCircle,
     ChevronDown, ChevronUp, Droplets, Thermometer, Wind, Cloud,
-    Search, HelpCircle, Bell, RefreshCw, Leaf, Sun, CloudRain
+    Search, HelpCircle, Bell, RefreshCw, Leaf, Sun, CloudRain, ClipboardCheck
 } from 'lucide-react';
+import DailyChecklist from '../components/DailyChecklist/DailyChecklist';
 import './CropMonitor.css';
 
 const API_BASE = import.meta.env.VITE_ML_API_URL || 'http://localhost:8001';
@@ -24,8 +25,10 @@ const CropMonitor = () => {
     const [expandedSections, setExpandedSections] = useState({
         alerts: true,
         weekly: true,
+        checklist: true,
         faqs: false
     });
+    const [logSubmitted, setLogSubmitted] = useState(false);
     const [faqSearch, setFaqSearch] = useState('');
     const [searchResults, setSearchResults] = useState([]);
 
@@ -51,7 +54,8 @@ const CropMonitor = () => {
         day: lang === 'te' ? 'రోజు' : 'Day',
         action: lang === 'te' ? 'చర్య' : 'Action',
         risk: lang === 'te' ? 'ప్రమాదం' : 'Risk',
-        tasks: lang === 'te' ? 'పనులు' : 'Tasks'
+        tasks: lang === 'te' ? 'పనులు' : 'Tasks',
+        dailyChecklist: lang === 'te' ? '📋 రోజువారీ చెక్‌లిస్ట్' : '📋 Daily Checklist'
     };
 
     useEffect(() => {
@@ -223,6 +227,27 @@ const CropMonitor = () => {
                     {lang === 'te' ? weeklyPlan.week_summary_te : weeklyPlan.week_summary_en}
                 </div>
             )}
+
+            {/* Daily Checklist Section */}
+            <div className="section">
+                <div className="section-header" onClick={() => toggleSection('checklist')}>
+                    <h2>{L.dailyChecklist}</h2>
+                    {expandedSections.checklist ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                </div>
+                {expandedSections.checklist && (
+                    <div className="section-content">
+                        <DailyChecklist
+                            subscriptionId={subscriptionId}
+                            farmerId={subscription?.farmerId}
+                            todayTasks={today_tasks || selectedDayData?.tasks || []}
+                            onSubmitSuccess={(log) => {
+                                setLogSubmitted(true);
+                                console.log('Daily log submitted:', log);
+                            }}
+                        />
+                    </div>
+                )}
+            </div>
 
             {/* 7-Day Weekly Plan */}
             {weeklyPlan && (

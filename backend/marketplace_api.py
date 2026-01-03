@@ -321,12 +321,157 @@ def verify_razorpay_payment():
         print(f"❌ Payment verification error: {e}")
         return jsonify({'error': str(e), 'verified': False}), 500
 
+
+# ==================== CROP DAILY LOGS ENDPOINTS ====================
+
+@app.route('/api/monitoring/daily-log', methods=['POST'])
+def create_daily_log():
+    """Create a daily crop monitoring log with image and task checklist"""
+    try:
+        data = request.json
+        print(f"📝 Creating daily log for subscription: {data.get('subscriptionId')}")
+        
+        log = db.create_daily_log({
+            'subscriptionId': data.get('subscriptionId'),
+            'farmerId': data.get('farmerId'),
+            'date': data.get('date'),
+            'imageData': data.get('cropImage'),  # Base64 encoded
+            'healthStatus': data.get('healthStatus', 'pending'),
+            'healthConfidence': data.get('healthConfidence', 0),
+            'tasks': data.get('tasks', []),
+            'notes': data.get('notes', ''),
+            'weather': data.get('weather', {})
+        })
+        
+        print(f"✅ Daily log created: {log.get('logId')}")
+        return jsonify({
+            'success': True,
+            'log': log
+        }), 201
+        
+    except Exception as e:
+        print(f"❌ Daily log error: {e}")
+        return jsonify({'error': str(e)}), 500
+
+
+@app.route('/api/monitoring/<subscription_id>/logs', methods=['GET'])
+def get_subscription_logs(subscription_id):
+    """Get all daily logs for a subscription"""
+    try:
+        limit = request.args.get('limit', 30, type=int)
+        logs = db.get_daily_logs(subscription_id, limit)
+        stats = db.get_subscription_log_stats(subscription_id)
+        return jsonify({
+            'logs': logs,
+            'stats': stats
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+@app.route('/api/monitoring/<subscription_id>/log/<date>', methods=['GET'])
+def get_log_by_date(subscription_id, date):
+    """Get daily log for a specific date"""
+    try:
+        log = db.get_daily_log_by_date(subscription_id, date)
+        if log:
+            return jsonify(log)
+        return jsonify({'error': 'Log not found'}), 404
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+@app.route('/api/monitoring/log/<log_id>', methods=['PUT'])
+def update_log(log_id):
+    """Update a daily log (add tasks, notes, etc.)"""
+    try:
+        data = request.json
+        success = db.update_daily_log(log_id, data)
+        if success:
+            return jsonify({'message': 'Log updated', 'logId': log_id})
+        return jsonify({'error': 'Log not found'}), 404
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+@app.route('/api/monitoring/log/<log_id>/verify', methods=['POST'])
+def verify_log(log_id):
+    """Verify a daily log (mark as verified)"""
+    try:
+        data = request.json
+        verified = data.get('verified', True)
+        success = db.verify_daily_log(log_id, verified)
+        if success:
+            return jsonify({'message': 'Log verified', 'logId': log_id, 'verified': verified})
+        return jsonify({'error': 'Log not found'}), 404
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+# ==================== SMART IRRIGATION (NodeMCU) ====================
+
+# Store latest irrigation data in memory (for demo)
+irrigation_data = {}
+
+@app.route('/api/irrigation', methods=['POST'])
+def receive_irrigation_data():
+    """Receive data from NodeMCU smart irrigation system"""
+    try:
+        data = request.json
+        farmer_id = data.get('farmerId', 'nodemcu-default')
+        
+        # Store latest data
+        irrigation_data[farmer_id] = {
+            'moisture': data.get('moisture', 0),
+            'motor': data.get('motor', False),
+            'status': data.get('status', 'unknown'),
+            'alertActive': data.get('alertActive', False),
+            'countdownRemaining': data.get('countdownRemaining', 0),
+            'activatedBy': data.get('activatedBy', ''),
+            'updatedAt': datetime.now().isoformat()
+        }
+        
+        print(f"💧 Irrigation: {data.get('moisture')}% | Motor: {'ON' if data.get('motor') else 'OFF'} | Status: {data.get('status')}")
+        
+        return jsonify({
+            'success': True,
+            'received': True,
+            'farmerId': farmer_id
+        })
+    except Exception as e:
+        print(f"❌ Irrigation data error: {e}")
+        return jsonify({'error': str(e)}), 500
+
+
+@app.route('/api/irrigation', methods=['GET'])
+def get_irrigation_data():
+    """Get latest irrigation data for all devices"""
+    return jsonify({
+        'success': True,
+        'devices': irrigation_data
+    })
+
+
+@app.route('/api/irrigation/<farmer_id>', methods=['GET'])
+def get_farmer_irrigation(farmer_id):
+    """Get irrigation data for specific farmer/device"""
+    if farmer_id in irrigation_data:
+        return jsonify({
+            'success': True,
+            'data': irrigation_data[farmer_id]
+        })
+    return jsonify({'error': 'Device not found'}), 404
+
+
 # ==================== RUN ====================
 
 if __name__ == '__main__':
     print("🚀 KisanMitra Marketplace API starting on http://localhost:5000")
     print("📋 Endpoints:")
     print("   GET  /api/listings")
-    print("   GET  /api/listings/phone/<phone>  ← NEW ENDPOINT")
+    print("   GET  /api/listings/phone/<phone>")
     print("   POST /api/orders/guest")
+    print("   POST /api/monitoring/daily-log")
+    print("   GET  /api/monitoring/<id>/logs")
+    print("   POST /api/irrigation  ← NodeMCU")
     app.run(debug=True, port=5000)

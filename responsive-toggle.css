@@ -1,0 +1,56 @@
+/* =================================================================
+   RESPONSIVE MODE TOGGLE
+   
+   INSTRUCTIONS: 
+   - For MOBILE-ONLY view: Comment out "RESPONSIVE MODE" section, 
+                           Uncomment "MOBILE-ONLY MODE" section
+   - For RESPONSIVE view: Comment out "MOBILE-ONLY MODE" section,
+                         Uncomment "RESPONSIVE MODE" section
+   ================================================================= */
+
+/* =================================================================
+   RESPONSIVE MODE (Default - Desktop + Mobile Dynamic)
+   ================================================================= */
+
+/* KEEP THIS SECTION UNCOMMENTED FOR RESPONSIVE MODE */
+#root {
+    width: 100% !important;
+    max-width: none !important;
+    background: #F5F7FA;
+    min-height: 100vh;
+}
+
+@media (min-width: 1024px) {
+
+    html,
+    body {
+        background: #E5E7EB;
+    }
+
+    #root {
+        max-width: 1600px !important;
+        margin: 0 auto !important;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+/* =================================================================
+   MOBILE-ONLY MODE (Force 414px mobile view)
+   ================================================================= */
+
+/* UNCOMMENT THIS SECTION FOR MOBILE-ONLY MODE
+
+#root {
+  max-width: 414px !important;
+  margin: 0 auto !important;
+  background: #F5F7FA;
+  min-height: 100vh;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+}
+
+html, body {
+  background: #1F2937;
+}
+
+*/

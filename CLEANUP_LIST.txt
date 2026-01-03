@@ -1,0 +1,41 @@
+# Files and directories to remove for lightweight project
+
+## Unused LLM/Ollama related files
+backend/ml_engine/services/llm_service.py
+backend/ml_engine/services/chatbot_service.py
+backend/ml_engine/services/soil_research_agent.py
+
+## ChromaDB directories (vector database not being used)
+chroma_db/
+backend/chroma_db/
+backend/lib/chromadb/
+backend/lib/chromadb-1.3.5.dist-info/
+backend/lib/chromadb_rust_bindings/
+
+## Temporary/debug files
+debug_default.py
+debug_result_final.json
+inspect_langchain.py
+check_coverage.py
+temp_expand.py
+test_api.py
+test_reco.py
+test_streaming.py
+verify_imports.py
+verify_imports_local.py
+verify_learning.py
+install_log.txt
+install_log_legacy.txt
+output.txt
+output_bc.txt
+sample_data.txt
+data_core.csv
+
+## Old/duplicate presentation files (keep only KisanMitra_Complete.html)
+docs/KisanMitra_TechnicalDeepDive.html
+docs/html_to_pptx.py
+docs/generate_ppt.py
+
+## Any .pyc files and __pycache__ directories
+**/__pycache__/
+**/*.pyc

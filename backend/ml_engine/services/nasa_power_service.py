@@ -90,7 +90,7 @@ class NASAPowerService:
                 "format": "JSON"
             }
             
-            response = requests.get(self.BASE_URL, params=params, timeout=60)
+            response = requests.get(self.BASE_URL, params=params, timeout=5)
             response.raise_for_status()
             data = response.json()
             

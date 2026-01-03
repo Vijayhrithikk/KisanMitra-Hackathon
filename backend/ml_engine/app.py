@@ -429,119 +429,110 @@ async def recommend_crops(request: LocationRequest):
 
         # ============== PARALLEL DATA ENHANCEMENT (Steps 9-11) ==============
         # Run Market Prices, Weather History, and NASA Forecast in parallel
-        # This reduces response time by 50-70%
+        # FAST MODE: Skip external APIs for quicker response
         
         market_prices_result = None
         weather_history = {}
         nasa_forecast = {}
         
-        def fetch_market_prices():
-            """Fetch live market prices from AGMARKNET"""
-            try:
-                market_service = get_market_price_service()
-                return market_service.get_prices_for_recommendations(
-                    recommendations.copy(),  # Copy to avoid threading issues
-                    state="Andhra Pradesh",
-                    district=district
-                )
-            except Exception as e:
-                logger.warning(f"Market price fetch failed: {e}")
-                return None
+        # Check if fast mode is requested (skip external APIs)
+        skip_external_apis = getattr(request, 'fast_mode', False)  # Default to full mode
         
-        def fetch_weather_history():
-            """Fetch IMD weather history and crop water analysis"""
-            try:
-                weather_hist_service = get_weather_history_service()
-                history = weather_hist_service.get_district_weather_summary(
-                    state="Andhra Pradesh",
-                    district=district
-                )
-                return {
-                    'summary': history,
-                    'service': weather_hist_service
-                }
-            except Exception as e:
-                logger.warning(f"Weather history fetch failed: {e}")
-                return None
-        
-        def fetch_nasa_forecast():
-            """Fetch NASA Power 3-month growing season forecast"""
-            try:
-                lat_val = request.lat or 16.3067
-                lon_val = request.lon or 80.4365
-                
-                current_month = datetime.now().month
-                if current_season == "Kharif":
-                    start_month = 6
-                elif current_season == "Rabi":
-                    start_month = 10
-                else:
-                    start_month = current_month
-                
-                nasa_service = get_nasa_power_service()
-                return nasa_service.get_growing_season_forecast(
-                    lat=lat_val,
-                    lon=lon_val,
-                    start_month=start_month,
-                    duration_months=3
-                )
-            except Exception as e:
-                logger.warning(f"NASA forecast fetch failed: {e}")
-                return {}
-        
-        # Execute all data fetches in parallel
-        logger.info("Starting parallel data enhancement...")
-        with ThreadPoolExecutor(max_workers=3) as executor:
-            futures = {
-                executor.submit(fetch_market_prices): 'market',
-                executor.submit(fetch_weather_history): 'weather_history',
-                executor.submit(fetch_nasa_forecast): 'nasa'
-            }
-            
-            for future in as_completed(futures, timeout=30):
-                task_name = futures[future]
+        if not skip_external_apis:
+            def fetch_market_prices():
+                """Fetch live market prices from AGMARKNET"""
                 try:
-                    result = future.result()
-                    if task_name == 'market' and result:
-                        market_prices_result = result
-                        logger.info("Parallel: Market prices completed")
-                    elif task_name == 'weather_history' and result:
-                        weather_history = result.get('summary', {})
-                        # Process water adequacy for each recommendation
-                        wh_service = result.get('service')
-                        if wh_service:
-                            for rec in recommendations:
-                                try:
-                                    rec['water_adequacy'] = wh_service.assess_crop_water_adequacy(
-                                        crop_name=rec['crop'],
-                                        state="Andhra Pradesh",
-                                        district=district,
-                                        season=current_season
-                                    )
-                                    rec['historical_weather_risk'] = wh_service.calculate_weather_risk(
-                                        crop_name=rec['crop'],
-                                        state="Andhra Pradesh",
-                                        district=district,
-                                        season=current_season,
-                                        current_forecast=forecast_analysis
-                                    )
-                                except:
-                                    pass
-                        logger.info("Parallel: Weather history completed")
-                    elif task_name == 'nasa' and result:
-                        nasa_forecast = result
-                        logger.info("Parallel: NASA forecast completed")
+                    market_service = get_market_price_service()
+                    return market_service.get_prices_for_recommendations(
+                        recommendations.copy(),
+                        state="Andhra Pradesh",
+                        district=district
+                    )
                 except Exception as e:
-                    logger.warning(f"Parallel {task_name} failed: {e}")
+                    logger.warning(f"Market price fetch failed: {e}")
+                    return None
+            
+            def fetch_weather_history():
+                """Fetch IMD weather history and crop water analysis"""
+                try:
+                    weather_hist_service = get_weather_history_service()
+                    history = weather_hist_service.get_district_weather_summary(
+                        state="Andhra Pradesh",
+                        district=district
+                    )
+                    return {
+                        'summary': history,
+                        'service': weather_hist_service
+                    }
+                except Exception as e:
+                    logger.warning(f"Weather history fetch failed: {e}")
+                    return None
+            
+            def fetch_nasa_forecast():
+                """Fetch NASA Power 3-month growing season forecast"""
+                try:
+                    lat_val = request.lat or 16.3067
+                    lon_val = request.lon or 80.4365
+                    
+                    current_month = datetime.now().month
+                    if current_season == "Kharif":
+                        start_month = 6
+                    elif current_season == "Rabi":
+                        start_month = 10
+                    else:
+                        start_month = current_month
+                    
+                    nasa_service = get_nasa_power_service()
+                    return nasa_service.get_growing_season_forecast(
+                        lat=lat_val,
+                        lon=lon_val,
+                        start_month=start_month,
+                        duration_months=3
+                    )
+                except Exception as e:
+                    logger.warning(f"NASA forecast fetch failed: {e}")
+                    return {}
+            
+            # Execute with very short timeout for fast response
+            logger.info("Starting parallel data enhancement (quick mode)...")
+            try:
+                with ThreadPoolExecutor(max_workers=3) as executor:
+                    futures = {
+                        executor.submit(fetch_market_prices): 'market',
+                        executor.submit(fetch_weather_history): 'weather_history',
+                        executor.submit(fetch_nasa_forecast): 'nasa'
+                    }
+                    
+                    completed_count = 0
+                    try:
+                        for future in as_completed(futures, timeout=5):  # 5 second timeout
+                            task_name = futures[future]
+                            completed_count += 1
+                            try:
+                                result = future.result(timeout=2)
+                                if task_name == 'market' and result:
+                                    market_prices_result = result
+                                elif task_name == 'weather_history' and result:
+                                    weather_history = result.get('summary', {})
+                                elif task_name == 'nasa' and result:
+                                    nasa_forecast = result
+                            except:
+                                pass
+                    except:
+                        logger.info(f"Quick fetch: {completed_count}/3 completed")
+            except:
+                pass
+            
+            # Apply market prices to recommendations
+            if market_prices_result:
+                for i, rec in enumerate(recommendations):
+                    if i < len(market_prices_result):
+                        rec['market_price'] = market_prices_result[i].get('market_price', {})
+                        rec['market_price_live'] = market_prices_result[i].get('market_price_live', False)
+        else:
+            logger.info("Fast mode: Skipping external API calls")
         
-        # Apply market prices to recommendations
-        if market_prices_result:
-            for i, rec in enumerate(recommendations):
-                if i < len(market_prices_result):
-                    rec['market_price'] = market_prices_result[i].get('market_price', {})
-                    rec['market_price_live'] = market_prices_result[i].get('market_price_live', False)
-        
-        logger.info("Parallel data enhancement completed")
+        logger.info("Data enhancement completed")
 
         return {
             "location": location,

@@ -25,6 +25,7 @@ users_collection = db.users
 transactions_collection = db.transactions
 farmers_collection = db.farmers  # For WhatsApp bot registration
 crop_subscriptions_collection = db.crop_subscriptions  # For crop monitoring subscriptions
+crop_daily_logs_collection = db.crop_daily_logs  # For daily checklist verification
 
 # Helper to convert ObjectId to string
 def serialize_doc(doc):
@@ -398,3 +399,104 @@ def delete_subscription(subscription_id):
     result = crop_subscriptions_collection.delete_one({'subscriptionId': subscription_id})
     return result.deleted_count > 0
 
+
+# ==================== CROP DAILY LOGS (Checklist Verification) ====================
+
+def create_daily_log(log_data):
+    """Create a daily crop monitoring log with checklist and image"""
+    log = {
+        'logId': f"LOG-{str(ObjectId())[-8:].upper()}",
+        'subscriptionId': log_data.get('subscriptionId'),
+        'farmerId': log_data.get('farmerId'),
+        'date': log_data.get('date', datetime.utcnow().strftime('%Y-%m-%d')),
+        
+        # Crop Image
+        'cropImage': {
+            'data': log_data.get('imageData'),  # Base64 or URL
+            'uploadedAt': datetime.utcnow(),
+            'healthStatus': log_data.get('healthStatus', 'pending'),  # pending, healthy, stressed, diseased
+            'confidence': log_data.get('healthConfidence', 0)
+        },
+        
+        # Tasks Checklist
+        'tasks': log_data.get('tasks', []),  # [{id, name, completed, completedAt, notes}]
+        
+        # Farmer Notes
+        'notes': log_data.get('notes', ''),
+        
+        # Weather snapshot (auto-captured)
+        'weather': log_data.get('weather', {}),
+        
+        # Verification
+        'verified': False,
+        'verifiedAt': None,
+        
+        'createdAt': datetime.utcnow(),
+        'updatedAt': datetime.utcnow()
+    }
+    
+    result = crop_daily_logs_collection.insert_one(log)
+    log['_id'] = str(result.inserted_id)
+    return log
+
+
+def get_daily_log_by_date(subscription_id, date):
+    """Get daily log for a specific date"""
+    doc = crop_daily_logs_collection.find_one({
+        'subscriptionId': subscription_id,
+        'date': date
+    })
+    return serialize_doc(doc)
+
+
+def get_daily_logs(subscription_id, limit=30):
+    """Get daily logs history for a subscription"""
+    docs = crop_daily_logs_collection.find({
+        'subscriptionId': subscription_id
+    }).sort('date', -1).limit(limit)
+    return serialize_docs(list(docs))
+
+
+def update_daily_log(log_id, update_data):
+    """Update a daily log (add tasks, notes, etc.)"""
+    update_data['updatedAt'] = datetime.utcnow()
+    result = crop_daily_logs_collection.update_one(
+        {'logId': log_id},
+        {'$set': update_data}
+    )
+    return result.modified_count > 0
+
+
+def verify_daily_log(log_id, verified=True):
+    """Mark a daily log as verified"""
+    result = crop_daily_logs_collection.update_one(
+        {'logId': log_id},
+        {'$set': {
+            'verified': verified,
+            'verifiedAt': datetime.utcnow() if verified else None,
+            'updatedAt': datetime.utcnow()
+        }}
+    )
+    return result.modified_count > 0
+
+
+def get_subscription_log_stats(subscription_id):
+    """Get logging statistics for a subscription"""
+    total_logs = crop_daily_logs_collection.count_documents({'subscriptionId': subscription_id})
+    verified_logs = crop_daily_logs_collection.count_documents({
+        'subscriptionId': subscription_id,
+        'verified': True
+    })
+    
+    # Get last log date
+    last_log = crop_daily_logs_collection.find_one(
+        {'subscriptionId': subscription_id},
+        sort=[('date', -1)]
+    )
+    
+    return {
+        'totalLogs': total_logs,
+        'verifiedLogs': verified_logs,
+        'completionRate': round((verified_logs / total_logs * 100) if total_logs > 0 else 0, 1),
+        'lastLogDate': last_log.get('date') if last_log else None
+    }
