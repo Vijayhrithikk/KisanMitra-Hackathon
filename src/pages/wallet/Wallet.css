@@ -1,0 +1,396 @@
+.wallet-page {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
+    color: white;
+}
+
+.wallet-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wallet-header h1 {
+    font-size: 28px;
+    margin: 0;
+    background: linear-gradient(90deg, #4ade80, #22c55e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wallet-user {
+    color: #888;
+    margin: 5px 0 0;
+}
+
+/* Balance Card */
+.balance-card {
+    background: linear-gradient(135deg, #1a472a 0%, #0d2818 100%);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid rgba(74, 222, 128, 0.2);
+}
+
+.balance-label {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.balance-amount {
+    font-size: 42px;
+    font-weight: 700;
+    color: #4ade80;
+    margin: 10px 0;
+}
+
+.wallet-id {
+    font-size: 12px;
+    color: #666;
+    font-family: monospace;
+}
+
+.wallet-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.btn-load,
+.btn-withdraw {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-load {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+}
+
+.btn-load:hover {
+    transform: scale(1.05);
+}
+
+.btn-withdraw {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.modal-content {
+    background: #1a1a1a;
+    border-radius: 20px;
+    padding: 25px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #333;
+}
+
+.modal-content h3 {
+    text-align: center;
+    margin: 0 0 20px;
+    color: #4ade80;
+}
+
+.quick-amounts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.quick-amount-btn {
+    flex: 1;
+    min-width: 70px;
+    padding: 10px;
+    border: 1px solid #333;
+    background: #222;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.quick-amount-btn:hover {
+    background: #333;
+    border-color: #4ade80;
+}
+
+.amount-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #333;
+    background: #222;
+    color: white;
+    border-radius: 12px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.amount-input:focus {
+    outline: none;
+    border-color: #4ade80;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-cancel,
+.btn-confirm {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-cancel {
+    background: #333;
+    color: white;
+}
+
+.btn-confirm {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+}
+
+/* Tabs */
+.wallet-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.wallet-tabs button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    background: #222;
+    color: #888;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.wallet-tabs button.active {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+}
+
+/* Transactions List */
+.transactions-list {
+    background: #111;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.transactions-list h3 {
+    margin: 0 0 15px;
+    font-size: 16px;
+    color: #888;
+}
+
+.no-transactions {
+    text-align: center;
+    color: #666;
+    padding: 30px;
+}
+
+.transaction-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #222;
+}
+
+.transaction-item:last-child {
+    border-bottom: none;
+}
+
+.txn-icon {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.txn-details {
+    flex: 1;
+}
+
+.txn-description {
+    font-size: 14px;
+    color: white;
+}
+
+.txn-date {
+    font-size: 12px;
+    color: #666;
+    margin-top: 3px;
+}
+
+.txn-amount {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.txn-amount.credit {
+    color: #4ade80;
+}
+
+.txn-amount.debit {
+    color: #f87171;
+}
+
+/* Blockchain Section */
+.blockchain-section {
+    background: #111;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.blockchain-section h3 {
+    margin: 0 0 20px;
+    font-size: 18px;
+    color: #4ade80;
+}
+
+.blockchain-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4ade80;
+}
+
+.stat-label {
+    font-size: 11px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.chain-validity {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.validity-badge {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.validity-badge.valid {
+    background: rgba(74, 222, 128, 0.2);
+    color: #4ade80;
+}
+
+.validity-badge.invalid {
+    background: rgba(248, 113, 113, 0.2);
+    color: #f87171;
+}
+
+.validity-details {
+    font-size: 11px;
+    color: #666;
+    margin-top: 10px;
+    font-family: monospace;
+}
+
+.escrow-stats {
+    margin-top: 15px;
+}
+
+.escrow-stats h4 {
+    font-size: 14px;
+    color: #888;
+    margin: 0 0 10px;
+}
+
+.escrow-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.escrow-item {
+    background: #1a1a1a;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.escrow-count {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.escrow-label {
+    font-size: 10px;
+    color: #666;
+}
+
+.pending-txns {
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(251, 191, 36, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #fbbf24;
+}
+
+.wallet-loading {
+    text-align: center;
+    padding: 50px;
+    color: #888;
+}
