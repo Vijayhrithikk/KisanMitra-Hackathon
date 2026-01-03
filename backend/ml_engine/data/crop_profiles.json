@@ -1,0 +1,927 @@
+{
+    "Paddy": {
+        "season": [
+            "Kharif",
+            "Rabi"
+        ],
+        "water_needs": "High",
+        "risk": "Medium",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 2183,
+            "unit": "\u00e2\u201a\u00b9/quintal",
+            "msp": true,
+            "trend": "stable"
+        },
+        "soil_suitability": [
+            "Clayey",
+            "Loamy",
+            "Alluvial",
+            "Black Cotton",
+            "Clay"
+        ],
+        "min_temp": 20,
+        "max_temp": 35,
+        "ph_min": 5.5,
+        "ph_max": 8.0,
+        "n_needs": "High",
+        "p_needs": "Medium",
+        "k_needs": "Medium",
+        "description": "Staple food crop. Requires standing water. Best for clayey soils.",
+        "fertilizer_recommendation": "Apply Urea in splits. DAP for root growth."
+    },
+    "Wheat": {
+        "season": [
+            "Rabi"
+        ],
+        "water_needs": "Medium",
+        "risk": "Low",
+        "yield_potential": "Medium",
+        "market_price": {
+            "price": 2275,
+            "unit": "\u00e2\u201a\u00b9/quintal",
+            "msp": true,
+            "trend": "stable"
+        },
+        "soil_suitability": [
+            "Loamy",
+            "Clayey",
+            "Alluvial",
+            "Black Cotton",
+            "Clay"
+        ],
+        "min_temp": 10,
+        "max_temp": 25,
+        "ph_min": 6.0,
+        "ph_max": 7.5,
+        "n_needs": "Medium",
+        "p_needs": "High",
+        "k_needs": "Medium",
+        "description": "Major rabi crop. Needs cool weather and moderate water.",
+        "fertilizer_recommendation": "DAP at sowing. Nitrogen top dressing."
+    },
+    "Cotton": {
+        "season": [
+            "Kharif"
+        ],
+        "water_needs": "Medium",
+        "risk": "High",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 6620,
+            "unit": "\u00e2\u201a\u00b9/quintal",
+            "msp": true,
+            "trend": "up"
+        },
+        "soil_suitability": [
+            "Black",
+            "Black Cotton",
+            "Alluvial",
+            "Clayey",
+            "Clay"
+        ],
+        "min_temp": 21,
+        "max_temp": 35,
+        "ph_min": 6.0,
+        "ph_max": 8.0,
+        "n_needs": "High",
+        "p_needs": "Medium",
+        "k_needs": "High",
+        "description": "Cash crop. 'White Gold'. Susceptible to pests. Best for black cotton soil.",
+        "fertilizer_recommendation": "Potash is crucial for fiber quality. Split N application."
+    },
+    "Maize": {
+        "season": [
+            "Kharif",
+            "Rabi"
+        ],
+        "water_needs": "Medium",
+        "risk": "Low",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 2090,
+            "unit": "\u00e2\u201a\u00b9/quintal",
+            "msp": true,
+            "trend": "stable"
+        },
+        "soil_suitability": [
+            "Loamy",
+            "Red Soil",
+            "Red Sandy Loam",
+            "Black",
+            "Black Cotton",
+            "Alluvial"
+        ],
+        "min_temp": 18,
+        "max_temp": 30,
+        "ph_min": 5.5,
+        "ph_max": 7.5,
+        "n_needs": "High",
+        "p_needs": "Medium",
+        "k_needs": "Medium",
+        "description": "Versatile crop. Good for food and fodder. Drought tolerant.",
+        "fertilizer_recommendation": "Zinc sulphate if leaves turn white. NPK 120:60:40."
+    },
+    "Ground Nuts": {
+        "season": [
+            "Kharif",
+            "Rabi"
+        ],
+        "water_needs": "Low",
+        "risk": "Low",
+        "yield_potential": "Medium",
+        "market_price": {
+            "price": 5850,
+            "unit": "\u00e2\u201a\u00b9/quintal",
+            "msp": true,
+            "trend": "up"
+        },
+        "soil_suitability": [
+            "Sandy",
+            "Sandy Loam",
+            "Loamy",
+            "Red Soil",
+            "Red Sandy Loam",
+            "Laterite"
+        ],
+        "min_temp": 20,
+        "max_temp": 30,
+        "ph_min": 6.0,
+        "ph_max": 7.5,
+        "n_needs": "Low",
+        "p_needs": "Medium",
+        "k_needs": "Medium",
+        "description": "Oilseed. Nitrogen fixing. Good for sandy/red soils.",
+        "fertilizer_recommendation": "Gypsum application is key for pod filling. Low N needed."
+    },
+    "Sugarcane": {
+        "season": [
+            "Kharif",
+            "Rabi",
+            "Zaid"
+        ],
+        "water_needs": "High",
+        "risk": "Low",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 315,
+            "unit": "\u00e2\u201a\u00b9/quintal",
+            "msp": true,
+            "trend": "stable"
+        },
+        "soil_suitability": [
+            "Loamy",
+            "Clayey",
+            "Black",
+            "Black Cotton",
+            "Alluvial",
+            "Clay"
+        ],
+        "min_temp": 20,
+        "max_temp": 38,
+        "ph_min": 6.5,
+        "ph_max": 8.0,
+        "n_needs": "High",
+        "p_needs": "Medium",
+        "k_needs": "High",
+        "description": "Long duration cash crop. High water requirement.",
+        "fertilizer_recommendation": "Heavy feeder. Needs FYM and high NPK dose."
+    },
+    "Millets": {
+        "season": [
+            "Kharif"
+        ],
+        "water_needs": "Low",
+        "risk": "Low",
+        "yield_potential": "Low",
+        "market_price": {
+            "price": 2500,
+            "unit": "\u00e2\u201a\u00b9/quintal",
+            "msp": true,
+            "trend": "up"
+        },
+        "soil_suitability": [
+            "Red Soil",
+            "Red Sandy Loam",
+            "Sandy",
+            "Black",
+            "Black Cotton",
+            "Laterite"
+        ],
+        "min_temp": 25,
+        "max_temp": 35,
+        "ph_min": 5.0,
+        "ph_max": 8.0,
+        "n_needs": "Low",
+        "p_needs": "Low",
+        "k_needs": "Low",
+        "description": "Climate resilient. 'Nutri-cereals'. Very low water needs.",
+        "fertilizer_recommendation": "Minimal fertilizer needed. Organic manure is sufficient."
+    },
+    "Tobacco": {
+        "season": [
+            "Rabi"
+        ],
+        "water_needs": "Medium",
+        "risk": "High",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 15000,
+            "unit": "\u00e2\u201a\u00b9/quintal",
+            "msp": false,
+            "trend": "stable"
+        },
+        "soil_suitability": [
+            "Red Soil",
+            "Red Sandy Loam",
+            "Loamy",
+            "Laterite"
+        ],
+        "min_temp": 20,
+        "max_temp": 30,
+        "ph_min": 5.5,
+        "ph_max": 7.0,
+        "n_needs": "Medium",
+        "p_needs": "Low",
+        "k_needs": "High",
+        "description": "Commercial crop. High value but labor intensive.",
+        "fertilizer_recommendation": "High Potash for leaf quality. Avoid Chloride fertilizers."
+    },
+    "Chilli": {
+        "season": [
+            "Kharif",
+            "Rabi"
+        ],
+        "water_needs": "Medium",
+        "risk": "High",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 12000,
+            "unit": "\u00e2\u201a\u00b9/quintal",
+            "msp": false,
+            "trend": "volatile"
+        },
+        "soil_suitability": [
+            "Black",
+            "Black Cotton",
+            "Loamy",
+            "Alluvial",
+            "Clayey"
+        ],
+        "min_temp": 20,
+        "max_temp": 30,
+        "ph_min": 6.0,
+        "ph_max": 7.5,
+        "n_needs": "High",
+        "p_needs": "Medium",
+        "k_needs": "High",
+        "description": "Spice crop. High market value. Sensitive to water logging.",
+        "fertilizer_recommendation": "Balanced NPK. Micronutrients like Zinc/Boron helpful."
+    },
+    "Pulses": {
+        "season": [
+            "Kharif",
+            "Rabi"
+        ],
+        "water_needs": "Low",
+        "risk": "Low",
+        "yield_potential": "Medium",
+        "market_price": {
+            "price": 6600,
+            "unit": "\u00e2\u201a\u00b9/quintal",
+            "msp": true,
+            "trend": "stable"
+        },
+        "soil_suitability": [
+            "Loamy",
+            "Sandy",
+            "Sandy Loam",
+            "Red Soil",
+            "Alluvial"
+        ],
+        "min_temp": 20,
+        "max_temp": 30,
+        "ph_min": 6.0,
+        "ph_max": 7.5,
+        "n_needs": "Very Low",
+        "p_needs": "Medium",
+        "k_needs": "Medium",
+        "description": "Protein rich. Improves soil fertility through nitrogen fixation.",
+        "fertilizer_recommendation": "Rhizobium culture seed treatment. DAP at sowing."
+    },
+    "Oil Seeds": {
+        "season": [
+            "Rabi",
+            "Kharif"
+        ],
+        "water_needs": "Low",
+        "risk": "Medium",
+        "yield_potential": "Medium",
+        "market_price": {
+            "price": 5450,
+            "unit": "\u00e2\u201a\u00b9/quintal",
+            "msp": true,
+            "trend": "up"
+        },
+        "soil_suitability": [
+            "Loamy",
+            "Sandy",
+            "Sandy Loam",
+            "Black",
+            "Black Cotton",
+            "Alluvial"
+        ],
+        "min_temp": 15,
+        "max_temp": 30,
+        "ph_min": 5.5,
+        "ph_max": 7.5,
+        "n_needs": "Medium",
+        "p_needs": "Medium",
+        "k_needs": "Medium",
+        "description": "Includes Mustard, Sunflower. Essential for cooking oil.",
+        "fertilizer_recommendation": "Sulphur is critical for oil content. Single Super Phosphate."
+    },
+    "Barley": {
+        "season": [
+            "Rabi"
+        ],
+        "water_needs": "Low",
+        "risk": "Low",
+        "yield_potential": "Medium",
+        "market_price": {
+            "price": 1735,
+            "unit": "\u00e2\u201a\u00b9/quintal",
+            "msp": true,
+            "trend": "stable"
+        },
+        "soil_suitability": [
+            "Sandy",
+            "Sandy Loam",
+            "Loamy",
+            "Alluvial"
+        ],
+        "min_temp": 12,
+        "max_temp": 25,
+        "ph_min": 7.0,
+        "ph_max": 8.5,
+        "n_needs": "Low",
+        "p_needs": "Medium",
+        "k_needs": "Medium",
+        "description": "Cereal grain. Drought tolerant. Short growing season.",
+        "fertilizer_recommendation": "Tolerates saline/alkaline soils. Standard NPK."
+    },
+    "Soybean": {
+        "season": [
+            "Kharif"
+        ],
+        "water_needs": "Medium",
+        "risk": "Low",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 4600,
+            "unit": "\u00e2\u201a\u00b9/quintal",
+            "msp": true,
+            "trend": "stable"
+        },
+        "soil_suitability": [
+            "Black",
+            "Black Cotton",
+            "Loamy",
+            "Clayey",
+            "Alluvial"
+        ],
+        "min_temp": 20,
+        "max_temp": 30,
+        "ph_min": 6.0,
+        "ph_max": 7.5,
+        "n_needs": "Low",
+        "p_needs": "High",
+        "k_needs": "Medium",
+        "description": "High protein oilseed. Nitrogen fixing legume.",
+        "fertilizer_recommendation": "Rhizobium inoculation. DAP at sowing."
+    },
+    "Turmeric": {
+        "season": [
+            "Kharif"
+        ],
+        "water_needs": "Medium",
+        "risk": "Low",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 8500,
+            "unit": "\u00e2\u201a\u00b9/quintal",
+            "msp": false,
+            "trend": "up"
+        },
+        "soil_suitability": [
+            "Loamy",
+            "Alluvial",
+            "Red Soil",
+            "Red Sandy Loam"
+        ],
+        "min_temp": 20,
+        "max_temp": 35,
+        "ph_min": 5.5,
+        "ph_max": 7.5,
+        "n_needs": "Medium",
+        "p_needs": "Medium",
+        "k_needs": "High",
+        "description": "Spice crop. 8-9 month duration. Good market value.",
+        "fertilizer_recommendation": "FYM essential. NPK 60:50:120."
+    },
+    "Bengal Gram": {
+        "season": [
+            "Rabi"
+        ],
+        "water_needs": "Low",
+        "risk": "Low",
+        "yield_potential": "Medium",
+        "market_price": {
+            "price": 5440,
+            "unit": "\u00e2\u201a\u00b9/quintal",
+            "msp": true,
+            "trend": "stable"
+        },
+        "soil_suitability": [
+            "Black",
+            "Black Cotton",
+            "Loamy",
+            "Clayey"
+        ],
+        "min_temp": 15,
+        "max_temp": 25,
+        "ph_min": 6.0,
+        "ph_max": 8.0,
+        "n_needs": "Very Low",
+        "p_needs": "Medium",
+        "k_needs": "Low",
+        "description": "Major pulse crop. Excellent for black cotton soil.",
+        "fertilizer_recommendation": "Starter N only. Rhizobium seed treatment."
+    },
+    "Tomato": {
+        "season": [
+            "Kharif",
+            "Rabi",
+            "Zaid"
+        ],
+        "water_needs": "Medium",
+        "risk": "Medium",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 2500,
+            "unit": "\u20b9/quintal",
+            "msp": false,
+            "trend": "volatile"
+        },
+        "soil_suitability": [
+            "Loamy",
+            "Sandy Loam",
+            "Clayey",
+            "Alluvial"
+        ],
+        "min_temp": 18,
+        "max_temp": 27,
+        "ph_min": 6.0,
+        "ph_max": 7.0,
+        "n_needs": "High",
+        "p_needs": "Medium",
+        "k_needs": "High",
+        "description": "Highly versatile vegetable. Needs staking and pest management.",
+        "fertilizer_recommendation": "NPK 100:50:50. Calcium for blossom end rot prevention."
+    },
+    "Onion": {
+        "season": [
+            "Rabi",
+            "Kharif"
+        ],
+        "water_needs": "Medium",
+        "risk": "Low",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 2000,
+            "unit": "\u20b9/quintal",
+            "msp": false,
+            "trend": "volatile"
+        },
+        "soil_suitability": [
+            "Loamy",
+            "Sandy Loam",
+            "Alluvial"
+        ],
+        "min_temp": 13,
+        "max_temp": 24,
+        "ph_min": 6.0,
+        "ph_max": 7.5,
+        "n_needs": "High",
+        "p_needs": "Medium",
+        "k_needs": "High",
+        "description": "Major vegetable crop. Sensitive to water logging.",
+        "fertilizer_recommendation": "Split N application. Sulphur fortified fertilizers."
+    },
+    "Potato": {
+        "season": [
+            "Rabi"
+        ],
+        "water_needs": "High",
+        "risk": "Medium",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 1500,
+            "unit": "\u20b9/quintal",
+            "msp": false,
+            "trend": "stable"
+        },
+        "soil_suitability": [
+            "Sandy Loam",
+            "Loamy",
+            "Alluvial"
+        ],
+        "min_temp": 15,
+        "max_temp": 25,
+        "ph_min": 5.5,
+        "ph_max": 6.5,
+        "n_needs": "High",
+        "p_needs": "High",
+        "k_needs": "High",
+        "description": "Tuber crop. Grows best in cool weather.",
+        "fertilizer_recommendation": "NPK 120:80:100. Potash critical for tuber quality."
+    },
+    "Cabbage": {
+        "season": [
+            "Rabi"
+        ],
+        "water_needs": "Medium",
+        "risk": "Low",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 1200,
+            "unit": "\u20b9/quintal",
+            "msp": false,
+            "trend": "stable"
+        },
+        "soil_suitability": [
+            "Loamy",
+            "Sandy Loam",
+            "Alluvial"
+        ],
+        "min_temp": 15,
+        "max_temp": 20,
+        "ph_min": 6.0,
+        "ph_max": 7.5,
+        "n_needs": "High",
+        "p_needs": "Medium",
+        "k_needs": "Medium",
+        "description": "Cole crop. Requires cool weather for head formation.",
+        "fertilizer_recommendation": "NPK 150:75:75. Boron supplementation needed."
+    },
+    "Cauliflower": {
+        "season": [
+            "Rabi"
+        ],
+        "water_needs": "Medium",
+        "risk": "Medium",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 1800,
+            "unit": "\u20b9/quintal",
+            "msp": false,
+            "trend": "stable"
+        },
+        "soil_suitability": [
+            "Loamy",
+            "Sandy Loam",
+            "Clayey"
+        ],
+        "min_temp": 12,
+        "max_temp": 22,
+        "ph_min": 6.0,
+        "ph_max": 7.0,
+        "n_needs": "High",
+        "p_needs": "High",
+        "k_needs": "Medium",
+        "description": "Cole crop. Very sensitive to temperature fluctuations.",
+        "fertilizer_recommendation": "NPK 120:60:60. Boron and molybdenum micronutrients."
+    },
+    "Brinjal": {
+        "season": [
+            "Kharif",
+            "Rabi"
+        ],
+        "water_needs": "Medium",
+        "risk": "Medium",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 2200,
+            "unit": "\u20b9/quintal",
+            "msp": false,
+            "trend": "stable"
+        },
+        "soil_suitability": [
+            "Loamy",
+            "Sandy Loam",
+            "Clayey",
+            "Alluvial"
+        ],
+        "min_temp": 22,
+        "max_temp": 30,
+        "ph_min": 5.5,
+        "ph_max": 6.5,
+        "n_needs": "Medium",
+        "p_needs": "Medium",
+        "k_needs": "High",
+        "description": "Eggplant. Susceptible to fruit and shoot borer.",
+        "fertilizer_recommendation": "NPK 100:50:50. Regular pest monitoring needed."
+    },
+    "Okra": {
+        "season": [
+            "Kharif",
+            "Zaid"
+        ],
+        "water_needs": "Low",
+        "risk": "Low",
+        "yield_potential": "Medium",
+        "market_price": {
+            "price": 3000,
+            "unit": "\u20b9/quintal",
+            "msp": false,
+            "trend": "stable"
+        },
+        "soil_suitability": [
+            "Loamy",
+            "Sandy Loam",
+            "Alluvial"
+        ],
+        "min_temp": 25,
+        "max_temp": 37,
+        "ph_min": 6.0,
+        "ph_max": 7.5,
+        "n_needs": "Medium",
+        "p_needs": "Medium",
+        "k_needs": "Medium",
+        "description": "Lady finger. Warm season crop. Drought tolerant.",
+        "fertilizer_recommendation": "NPK 80:40:40. Organic manure beneficial."
+    },
+    "Carrot": {
+        "season": [
+            "Rabi"
+        ],
+        "water_needs": "Medium",
+        "risk": "Low",
+        "yield_potential": "Medium",
+        "market_price": {
+            "price": 2500,
+            "unit": "\u20b9/quintal",
+            "msp": false,
+            "trend": "stable"
+        },
+        "soil_suitability": [
+            "Sandy Loam",
+            "Loamy",
+            "Alluvial"
+        ],
+        "min_temp": 16,
+        "max_temp": 20,
+        "ph_min": 5.5,
+        "ph_max": 6.5,
+        "n_needs": "Medium",
+        "p_needs": "High",
+        "k_needs": "High",
+        "description": "Root vegetable. Requires deep, loose soil.",
+        "fertilizer_recommendation": "Avoid fresh manure. NPK 50:50:75."
+    },
+    "Mango": {
+        "season": [
+            "Kharif"
+        ],
+        "water_needs": "Medium",
+        "risk": "Low",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 4000,
+            "unit": "\u20b9/quintal",
+            "msp": false,
+            "trend": "seasonal"
+        },
+        "soil_suitability": [
+            "Loamy",
+            "Sandy Loam",
+            "Alluvial",
+            "Red Soil"
+        ],
+        "min_temp": 24,
+        "max_temp": 35,
+        "ph_min": 5.5,
+        "ph_max": 7.5,
+        "n_needs": "Medium",
+        "p_needs": "Medium",
+        "k_needs": "High",
+        "description": "King of fruits. Perennial tree crop.",
+        "fertilizer_recommendation": "NPK 100:50:100 per tree. Micronutrients in dormant season."
+    },
+    "Banana": {
+        "season": [
+            "Kharif",
+            "Rabi",
+            "Zaid"
+        ],
+        "water_needs": "High",
+        "risk": "Medium",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 2500,
+            "unit": "\u20b9/quintal",
+            "msp": false,
+            "trend": "stable"
+        },
+        "soil_suitability": [
+            "Loamy",
+            "Alluvial",
+            "Clayey",
+            "Red Soil"
+        ],
+        "min_temp": 15,
+        "max_temp": 35,
+        "ph_min": 6.0,
+        "ph_max": 7.5,
+        "n_needs": "High",
+        "p_needs": "High",
+        "k_needs": "High",
+        "description": "Year-round crop. High water and nutrient requirements.",
+        "fertilizer_recommendation": "NPK 200:60:200 per clump. Regular organic mulching."
+    },
+    "Papaya": {
+        "season": [
+            "Kharif",
+            "Rabi"
+        ],
+        "water_needs": "Medium",
+        "risk": "Low",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 2000,
+            "unit": "\u20b9/quintal",
+            "msp": false,
+            "trend": "stable"
+        },
+        "soil_suitability": [
+            "Loamy",
+            "Sandy Loam",
+            "Alluvial"
+        ],
+        "min_temp": 20,
+        "max_temp": 35,
+        "ph_min": 6.5,
+        "ph_max": 7.0,
+        "n_needs": "High",
+        "p_needs": "Medium",
+        "k_needs": "High",
+        "description": "Fast-growing fruit. Sensitive to waterlogging.",
+        "fertilizer_recommendation": "NPK 200:200:400 per plant. Split applications."
+    },
+    "Guava": {
+        "season": [
+            "Kharif",
+            "Rabi"
+        ],
+        "water_needs": "Medium",
+        "risk": "Low",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 3000,
+            "unit": "\u20b9/quintal",
+            "msp": false,
+            "trend": "stable"
+        },
+        "soil_suitability": [
+            "Loamy",
+            "Sandy Loam",
+            "Alluvial",
+            "Red Soil"
+        ],
+        "min_temp": 20,
+        "max_temp": 35,
+        "ph_min": 5.0,
+        "ph_max": 8.0,
+        "n_needs": "Medium",
+        "p_needs": "Medium",
+        "k_needs": "Medium",
+        "description": "Hardy fruit tree. Tolerates various soils.",
+        "fertilizer_recommendation": "NPK 600:250:500 per tree per year."
+    },
+    "Pomegranate": {
+        "season": [
+            "Kharif",
+            "Rabi"
+        ],
+        "water_needs": "Low",
+        "risk": "Medium",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 6000,
+            "unit": "\u20b9/quintal",
+            "msp": false,
+            "trend": "up"
+        },
+        "soil_suitability": [
+            "Loamy",
+            "Sandy Loam",
+            "Black"
+        ],
+        "min_temp": 15,
+        "max_temp": 38,
+        "ph_min": 6.5,
+        "ph_max": 7.5,
+        "n_needs": "Medium",
+        "p_needs": "Medium",
+        "k_needs": "High",
+        "description": "High-value fruit. Drought tolerant once established.",
+        "fertilizer_recommendation": "NPK 500:250:250 per tree. Drip irrigation ideal."
+    },
+    "Grapes": {
+        "season": [
+            "Kharif",
+            "Rabi"
+        ],
+        "water_needs": "Medium",
+        "risk": "High",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 5000,
+            "unit": "\u20b9/quintal",
+            "msp": false,
+            "trend": "up"
+        },
+        "soil_suitability": [
+            "Loamy",
+            "Sandy Loam",
+            "Black"
+        ],
+        "min_temp": 15,
+        "max_temp": 40,
+        "ph_min": 6.5,
+        "ph_max": 8.0,
+        "n_needs": "High",
+        "p_needs": "High",
+        "k_needs": "High",
+        "description": "Premium fruit. Requires trellising and pruning.",
+        "fertilizer_recommendation": "NPK 400:400:500 per hectare. Micronutrients essential."
+    },
+    "Watermelon": {
+        "season": [
+            "Zaid",
+            "Kharif"
+        ],
+        "water_needs": "Medium",
+        "risk": "Low",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 1500,
+            "unit": "\u20b9/quintal",
+            "msp": false,
+            "trend": "seasonal"
+        },
+        "soil_suitability": [
+            "Sandy Loam",
+            "Loamy",
+            "Alluvial"
+        ],
+        "min_temp": 24,
+        "max_temp": 30,
+        "ph_min": 6.0,
+        "ph_max": 7.0,
+        "n_needs": "Medium",
+        "p_needs": "High",
+        "k_needs": "High",
+        "description": "Summer fruit. Requires warm weather.",
+        "fertilizer_recommendation": "NPK 50:25:50. Potash for sweetness."
+    },
+    "Orange": {
+        "season": [
+            "Kharif",
+            "Rabi"
+        ],
+        "water_needs": "Medium",
+        "risk": "Medium",
+        "yield_potential": "High",
+        "market_price": {
+            "price": 3500,
+            "unit": "\u20b9/quintal",
+            "msp": false,
+            "trend": "stable"
+        },
+        "soil_suitability": [
+            "Loamy",
+            "Sandy Loam",
+            "Alluvial"
+        ],
+        "min_temp": 13,
+        "max_temp": 37,
+        "ph_min": 5.5,
+        "ph_max": 7.5,
+        "n_needs": "High",
+        "p_needs": "Medium",
+        "k_needs": "High",
+        "description": "Citrus fruit. Requires good drainage.",
+        "fertilizer_recommendation": "NPK 500:250:250 per tree. Micronutrients needed."
+    }
+}

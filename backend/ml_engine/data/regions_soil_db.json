@@ -1,0 +1,3704 @@
+{
+  "Andhra Pradesh": {
+    "Srikakulam": {
+      "default_soil": "Red Sandy Loam",
+      "mandals": {
+        "Srikakulam": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Palasa": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Tekkali": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Ichchapuram": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Narasannapeta": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Amadalavalasa": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Etcherla": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Gara": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Polaki": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Santhabommali": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Kotabommali": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Jalumuru": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Saravakota": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Pathapatnam": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Meliaputti": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        }
+      }
+    },
+    "Vizianagaram": {
+      "default_soil": "Red Sandy Loam",
+      "mandals": {
+        "Vizianagaram": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Bobbili": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Parvathipuram": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Salur": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Cheepurupalli": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Gajapathinagaram": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Srungavarapukota": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Nellimarla": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Pusapatirega": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Bhogapuram": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Denkada": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Jami": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Vepada": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Lakkavarapukota": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Kothavalasa": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        }
+      }
+    },
+    "Visakhapatnam": {
+      "default_soil": "Red Sandy Loam",
+      "mandals": {
+        "Visakhapatnam": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Gajuwaka": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Bheemunipatnam": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Anandapuram": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Padmanabham": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Pendurthi": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Sabbavaram": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Parawada": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Anakapalle": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Kasimkota": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Munagapaka": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Atchutapuram": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Rambilli": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Yelamanchili": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        },
+        "Nakkapalli": {
+          "soil": "Red Sandy Loam",
+          "ph": 6.5,
+          "n": 180,
+          "p": 45,
+          "k": 200,
+          "zone": "High rainfall, acidic to neutral soils."
+        }
+      }
+    },
+    "East Godavari": {
+      "default_soil": "Alluvial",
+      "mandals": {
+        "Kakinada": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Rajahmundry": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Amalapuram": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Razole": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Kothapeta": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Mandapeta": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Ramachandrapuram": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Pithapuram": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Peddapuram": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Samalkota": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Tuni": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Prathipadu": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Jaggampeta": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Gokavaram": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Korukonda": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        }
+      }
+    },
+    "West Godavari": {
+      "default_soil": "Alluvial",
+      "mandals": {
+        "Eluru": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Bhimavaram": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Tanuku": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Tadepalligudem": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Narasapuram": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Palakollu": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Jangareddygudem": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Kovvur": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Nidadavole": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Polavaram": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Chintalapudi": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Denduluru": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Pedapadu": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Unguturu": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        },
+        "Bhimadole": {
+          "soil": "Alluvial",
+          "ph": 7.2,
+          "n": 240,
+          "p": 65,
+          "k": 280,
+          "zone": "Deltaic alluvium, highly fertile."
+        }
+      }
+    },
+    "Krishna": {
+      "default_soil": "Black Cotton",
+      "mandals": {
+        "Machilipatnam": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Vijayawada": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Gudivada": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Nuzvid": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Jaggaiahpet": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Nandigama": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Kanchikacherla": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Ibrahimpatnam": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "G.Konduru": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Mylavaram": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Vissannapeta": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Reddigudem": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Tiruvuru": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Gampalagudem": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Vatsavai": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        }
+      }
+    },
+    "Guntur": {
+      "default_soil": "Black Cotton",
+      "mandals": {
+        "Guntur": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Amaravathi": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Tadikonda": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Bapatla": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Tenali": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Mangalagiri": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Ponnur": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Repalle": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Chirala": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Vemuru": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Kollur": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Kollipara": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Duggirala": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Tsundur": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Chebrolu": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        }
+      }
+    },
+    "Prakasam": {
+      "default_soil": "Black Cotton",
+      "mandals": {
+        "Ongole": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Kandukur": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Markapur": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Giddalur": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Kanigiri": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Podili": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Darsi": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Addanki": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Chirala": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Vetapalem": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Inkollu": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Parchur": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Karamchedu": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Martur": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        },
+        "Yaddanapudi": {
+          "soil": "Black Cotton",
+          "ph": 8.2,
+          "n": 200,
+          "p": 55,
+          "k": 320,
+          "zone": "Deep black soils, calcium rich, moisture retentive."
+        }
+      }
+    },
+    "Nellore": {
+      "default_soil": "Red Loam",
+      "mandals": {
+        "Nellore": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Gudur": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Kavali": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Atmakur": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Venkatagiri": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Sullurpeta": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Naidupeta": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Buchireddypalem": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Indukurpet": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Kovur": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Vidavalur": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Kodavalur": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Dagadarthi": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Allur": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Bogole": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        }
+      }
+    },
+    "Chittoor": {
+      "default_soil": "Red Loam",
+      "mandals": {
+        "Chittoor": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Tirupati": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Madanapalle": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Punganur": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Palamaner": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Kuppam": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Nagari": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Puttur": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Srikalahasti": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Satyavedu": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Chandragiri": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Pakala": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Puthalapattu": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Irala": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Thavanampalle": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        }
+      }
+    },
+    "Kadapa": {
+      "default_soil": "Red Loam",
+      "mandals": {
+        "Kadapa": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Proddatur": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Jammalamadugu": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Pulivendula": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Rayachoti": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Badvel": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Mydukur": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Kamalapuram": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Yerraguntla": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Rajampet": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Kodur": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Sidhout": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Vontimitta": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Chennur": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        },
+        "Khajipet": {
+          "soil": "Red Loam",
+          "ph": 7.0,
+          "n": 160,
+          "p": 35,
+          "k": 220,
+          "zone": "Red loamy soils, neutral pH."
+        }
+      }
+    },
+    "Anantapur": {
+      "default_soil": "Red Sandy",
+      "mandals": {
+        "Anantapur": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Kalyandurg": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Raptadu": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Singanamala": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Tadipatri": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Gooty": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Uravakonda": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Rayadurg": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Hindupur": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Madakasira": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Penukonda": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Dharmavaram": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Kadiri": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Nallamada": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Tanakal": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        }
+      }
+    },
+    "Kurnool": {
+      "default_soil": "Red Sandy",
+      "mandals": {
+        "Kurnool": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Adoni": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Nandyal": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Panyam": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Dhone": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Pattikonda": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Alur": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Mantralayam": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Yemmiganur": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Kodumur": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Nandikotkur": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Atmakur": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Srisailam": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Velgodu": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        },
+        "Pamulapadu": {
+          "soil": "Red Sandy",
+          "ph": 8.0,
+          "n": 140,
+          "p": 30,
+          "k": 180,
+          "zone": "Drought prone, red sandy and black soils."
+        }
+      }
+    },
+    "Testlocationforlearning": {
+      "default_soil": "Black Cotton",
+      "mandals": {}
+    },
+    "Hyderabad": {
+      "default_soil": "Red Soil",
+      "ph": 6.5,
+      "n": 186,
+      "p": 15,
+      "k": 180,
+      "zone": "Telangana Region - Agritech Data",
+      "mandals": {}
+    },
+    "Vepagunta": {
+      "default_soil": "Black Cotton",
+      "mandals": {}
+    },
+    "Kerala": {
+      "default_soil": "Sandy",
+      "mandals": {}
+    }
+  },
+  "Telangana": {
+    "Adilabad": {
+      "default_soil": "Deep Black",
+      "mandals": {
+        "Adilabad": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Utnoor": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Boath": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Ichoda": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Narnoor": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Indervelly": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Gudihathnoor": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Jainad": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Bela": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Tamsi": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Talamadugu": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Bazarhatnoor": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Neradigonda": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Gadiguda": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Sirikonda": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        }
+      }
+    },
+    "Nizamabad": {
+      "default_soil": "Deep Black",
+      "mandals": {
+        "Nizamabad": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Armoor": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Bodhan": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Banswada": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Kamareddy": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Dichpally": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Jakranpally": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Sirkonda": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Nandipet": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Navipet": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Ranjal": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Yedapally": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Kotagiri": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Varni": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        }
+      }
+    },
+    "Karimnagar": {
+      "default_soil": "Deep Black",
+      "mandals": {
+        "Karimnagar": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Manakondur": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Thimmapur": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Ganneruvaram": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Gangadhara": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Ramadugu": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Choppadandi": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Chigurumamidi": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Saidapur": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Shankarapatnam": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Huzurabad": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Jammikunta": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Veenavanka": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Ellandakunta": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        },
+        "Kothapalli": {
+          "soil": "Deep Black",
+          "ph": 7.8,
+          "n": 210,
+          "p": 50,
+          "k": 300,
+          "zone": "Deep black and red chalka soils."
+        }
+      }
+    },
+    "Warangal": {
+      "default_soil": "Red Sandy Loam",
+      "mandals": {
+        "Warangal": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Hanamkonda": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Kazipet": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Dharmasagar": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Velair": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Inavole": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Hasanparthy": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Elkathurthi": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Bheemadevarapalli": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Kamalapur": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Parkal": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Nadikuda": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Shayampet": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Wardhannapet": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Parvathagiri": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        }
+      },
+      "ai_data": {
+        "soil": "Black Cotton",
+        "ph": 7.0,
+        "n": 150,
+        "p": 50,
+        "k": 150,
+        "zone": "soils are formed in-situ under conditions of high rainfall with alternation dry and wet periods. On ",
+        "source": "ai_researched",
+        "researched_at": "2025-12-06T19:43:50.684943Z",
+        "sources_count": 5,
+        "confidence": 0.75
+      }
+    },
+    "Khammam": {
+      "default_soil": "Red Chalkas",
+      "mandals": {
+        "Khammam": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Sathupally": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Madhira": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Wyra": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Palair": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Thirumalayapalem": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Kusumanchi": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Nelakondapalli": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Mudigonda": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Chinthakani": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Bonakal": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Yerrupalem": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Penuballi": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Vemsoor": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Kallur": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        }
+      }
+    },
+    "Medak": {
+      "default_soil": "Red Chalkas",
+      "mandals": {
+        "Medak": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Sangareddy": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Siddipet": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Dubbak": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Gajwel": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Narsapur": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Toopran": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Chegunta": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Ramayampet": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Shankarampet": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Yeldurthy": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Kowdipalle": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Andole": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Jogipet": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        },
+        "Pulkal": {
+          "soil": "Red Chalkas",
+          "ph": 6.8,
+          "n": 170,
+          "p": 40,
+          "k": 240,
+          "zone": "Sandy loams (Chalkas), well drained."
+        }
+      }
+    },
+    "Mahabubnagar": {
+      "default_soil": "Red Sandy Loam",
+      "mandals": {
+        "Mahabubnagar": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Jadcherla": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Bhoothpur": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Hanwada": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Koilkonda": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Nawabpet": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Balanagar": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Rajapur": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Gandeed": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Devarakadra": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Addakal": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Chinnachintakunta": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Musapet": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Midjil": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Thimmajipet": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        }
+      }
+    },
+    "Nalgonda": {
+      "default_soil": "Black Cotton",
+      "mandals": {
+        "Nalgonda": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Miryalaguda": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Devarakonda": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Nakrekal": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Suryapet": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Kodad": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Huzurnagar": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Nagarjunasagar": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Munugode": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Chandur": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Marriguda": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Nampally": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Chityal": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Kattangur": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Naketpally": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        }
+      }
+    },
+    "Rangareddy": {
+      "default_soil": "Red Sandy Loam",
+      "mandals": {
+        "Shamshabad": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Rajendranagar": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Serilingampally": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Kukatpally": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Malkajgiri": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Uppal": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Hayathnagar": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Saroornagar": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Ibrahimpatnam": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Manchal": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Yacharam": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Kandukur": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Maheshwaram": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Amangal": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        },
+        "Kadthal": {
+          "soil": "Red Sandy Loam",
+          "ph": 7.4,
+          "n": 150,
+          "p": 35,
+          "k": 210,
+          "zone": "Red sandy soils, low fertility."
+        }
+      }
+    }
+  },
+  "Jammu And Kashmir": {
+    "Jammu": {
+      "default_soil": "Alluvial",
+      "mandals": {},
+      "ai_data": {
+        "soil": "Alluvial",
+        "ph": 7.0,
+        "n": 99,
+        "p": 50,
+        "k": 150,
+        "zone": "d Soil Types Vegetation is influenced by climate, rainfall soil and altitude. Since these factors va",
+        "source": "ai_researched",
+        "researched_at": "2025-12-06T19:41:41.285789Z",
+        "sources_count": 4,
+        "confidence": 0.75
+      }
+    }
+  },
+  "India": {
+    "Shimla": {
+      "default_soil": "Black Cotton",
+      "mandals": {},
+      "ai_data": {
+        "soil": "Black Cotton",
+        "ph": 7.0,
+        "n": 150,
+        "p": 50,
+        "k": 150,
+        "zone": "lops on crystalline igneous rocks in areas of low rainfall in the eastern and southern parts of the ",
+        "source": "ai_researched",
+        "researched_at": "2025-12-06T19:53:50.276113Z",
+        "sources_count": 5,
+        "confidence": 0.75
+      }
+    },
+    "Vuyyuru": {
+      "default_soil": "Black Cotton",
+      "mandals": {},
+      "ai_data": {
+        "soil": "Black Cotton",
+        "ph": 7.0,
+        "n": 150,
+        "p": 50,
+        "k": 150,
+        "zone": "is Budameru flowing in this District. CLIMATE AND RAINFALL Tropical Climate conditions with extreme ",
+        "source": "ai_researched",
+        "researched_at": "2025-12-07T06:49:30.736700Z",
+        "sources_count": 5,
+        "confidence": 0.75
+      }
+    },
+    "Vizag": {
+      "default_soil": "Alkaline",
+      "mandals": {},
+      "ai_data": {
+        "soil": "Alkaline",
+        "ph": 7.0,
+        "n": 150,
+        "p": 50,
+        "k": 150,
+        "zone": "Agricultural region of vizag",
+        "source": "ai_researched",
+        "researched_at": "2025-12-10T19:12:52.129258Z",
+        "sources_count": 5,
+        "confidence": 0.75
+      }
+    },
+    "Delhi": {
+      "default_soil": "Black Cotton",
+      "mandals": {},
+      "ai_data": {
+        "soil": "Black Cotton",
+        "ph": 7.0,
+        "n": 150,
+        "p": 50,
+        "k": 150,
+        "zone": "st Monsoon North-East Monsoon Map of India Annual Rainfall Map of India Annual Temperature Map of In",
+        "source": "ai_researched",
+        "researched_at": "2025-12-10T19:16:23.950025Z",
+        "sources_count": 4,
+        "confidence": 0.75
+      }
+    },
+    "Godavari": {
+      "default_soil": "Black Cotton",
+      "mandals": {},
+      "ai_data": {
+        "soil": "Black Cotton",
+        "ph": 7.0,
+        "n": 150,
+        "p": 50,
+        "k": 150,
+        "zone": "lops on crystalline igneous rocks in areas of low rainfall in the eastern and southern parts of the ",
+        "source": "ai_researched",
+        "researched_at": "2025-12-10T19:28:30.028405Z",
+        "sources_count": 4,
+        "confidence": 0.75
+      }
+    }
+  },
+  "Karnataka": {
+    "Mysore": {
+      "default_soil": "Black Cotton",
+      "mandals": {},
+      "ai_data": {
+        "soil": "Black Cotton",
+        "ph": 7.0,
+        "n": 150,
+        "p": 50,
+        "k": 150,
+        "zone": "The Karavali are lowlands, with moderate to high rainfall levels. This strip is around 320 km (200 m",
+        "source": "ai_researched",
+        "researched_at": "2025-12-07T06:46:34.488160Z",
+        "sources_count": 4,
+        "confidence": 0.75
+      }
+    }
+  },
+  "districts": {
+    "gwalior": {
+      "zone": "Madhya Pradesh Region",
+      "soil": "Black Cotton",
+      "ph": 8.01,
+      "n": 258.0,
+      "p": 16.0,
+      "k": 341.0,
+      "lat": 19.5268,
+      "lon": 79.7349,
+      "source": "Agritech.csv"
+    },
+    "indore": {
+      "zone": "Madhya Pradesh Region",
+      "soil": "Black Cotton",
+      "ph": 7.97,
+      "n": 241.0,
+      "p": 15.0,
+      "k": 323.0,
+      "lat": 19.1567,
+      "lon": 78.8654,
+      "source": "Agritech.csv"
+    },
+    "bhopal": {
+      "zone": "Madhya Pradesh Region",
+      "soil": "Black Cotton",
+      "ph": 7.32,
+      "n": 256.0,
+      "p": 15.0,
+      "k": 273.0,
+      "lat": 20.2396,
+      "lon": 76.5648,
+      "source": "Agritech.csv"
+    },
+    "jabalpur": {
+      "zone": "Madhya Pradesh Region",
+      "soil": "Black Cotton",
+      "ph": 7.96,
+      "n": 218.0,
+      "p": 16.0,
+      "k": 322.0,
+      "lat": 23.6073,
+      "lon": 76.8848,
+      "source": "Agritech.csv"
+    },
+    "ujjain": {
+      "zone": "Madhya Pradesh Region",
+      "soil": "Black Cotton",
+      "ph": 7.53,
+      "n": 254.0,
+      "p": 16.0,
+      "k": 310.0,
+      "lat": 19.4643,
+      "lon": 81.6468,
+      "source": "Agritech.csv"
+    },
+    "surat": {
+      "zone": "Gujarat Region",
+      "soil": "Black Cotton",
+      "ph": 7.99,
+      "n": 231.0,
+      "p": 15.0,
+      "k": 323.0,
+      "lat": 21.052,
+      "lon": 78.3741,
+      "source": "Agritech.csv"
+    },
+    "rajkot": {
+      "zone": "Gujarat Region",
+      "soil": "Black Cotton",
+      "ph": 7.47,
+      "n": 247.0,
+      "p": 13.0,
+      "k": 307.0,
+      "lat": 22.3037,
+      "lon": 80.3766,
+      "source": "Agritech.csv"
+    },
+    "vadodara": {
+      "zone": "Gujarat Region",
+      "soil": "Black Cotton",
+      "ph": 7.38,
+      "n": 240.0,
+      "p": 15.0,
+      "k": 306.0,
+      "lat": 17.4919,
+      "lon": 76.7244,
+      "source": "Agritech.csv"
+    },
+    "ahmedabad": {
+      "zone": "Gujarat Region",
+      "soil": "Black Cotton",
+      "ph": 7.74,
+      "n": 234.0,
+      "p": 16.0,
+      "k": 363.0,
+      "lat": 19.7918,
+      "lon": 78.7573,
+      "source": "Agritech.csv"
+    },
+    "muzaffarpur": {
+      "zone": "Bihar Region",
+      "soil": "Alluvial",
+      "ph": 6.71,
+      "n": 227.0,
+      "p": 15.0,
+      "k": 173.0,
+      "lat": 21.7732,
+      "lon": 78.5081,
+      "source": "Agritech.csv"
+    },
+    "bhagalpur": {
+      "zone": "Bihar Region",
+      "soil": "Laterite",
+      "ph": 6.57,
+      "n": 227.0,
+      "p": 14.0,
+      "k": 184.0,
+      "lat": 17.5514,
+      "lon": 75.7177,
+      "source": "Agritech.csv"
+    },
+    "gaya": {
+      "zone": "Bihar Region",
+      "soil": "Alluvial",
+      "ph": 6.7,
+      "n": 261.0,
+      "p": 16.0,
+      "k": 201.0,
+      "lat": 20.4585,
+      "lon": 79.8364,
+      "source": "Agritech.csv"
+    },
+    "patna": {
+      "zone": "Bihar Region",
+      "soil": "Red Soil",
+      "ph": 6.17,
+      "n": 251.0,
+      "p": 16.0,
+      "k": 180.0,
+      "lat": 19.772,
+      "lon": 77.1019,
+      "source": "Agritech.csv"
+    },
+    "varanasi": {
+      "zone": "Uttar Pradesh Region",
+      "soil": "Alluvial",
+      "ph": 7.25,
+      "n": 259.0,
+      "p": 17.0,
+      "k": 187.0,
+      "lat": 20.5872,
+      "lon": 79.2942,
+      "source": "Agritech.csv"
+    },
+    "lucknow": {
+      "zone": "Uttar Pradesh Region",
+      "soil": "Alluvial",
+      "ph": 7.08,
+      "n": 246.0,
+      "p": 17.0,
+      "k": 168.0,
+      "lat": 19.1194,
+      "lon": 79.6145,
+      "source": "Agritech.csv"
+    },
+    "kanpur": {
+      "zone": "Uttar Pradesh Region",
+      "soil": "Alluvial",
+      "ph": 7.03,
+      "n": 257.0,
+      "p": 17.0,
+      "k": 190.0,
+      "lat": 20.333,
+      "lon": 77.2691,
+      "source": "Agritech.csv"
+    },
+    "allahabad": {
+      "zone": "Uttar Pradesh Region",
+      "soil": "Alluvial",
+      "ph": 7.03,
+      "n": 264.0,
+      "p": 18.0,
+      "k": 171.0,
+      "lat": 21.4621,
+      "lon": 79.3011,
+      "source": "Agritech.csv"
+    },
+    "agra": {
+      "zone": "Uttar Pradesh Region",
+      "soil": "Alluvial",
+      "ph": 6.98,
+      "n": 299.0,
+      "p": 19.0,
+      "k": 181.0,
+      "lat": 21.0305,
+      "lon": 78.5019,
+      "source": "Agritech.csv"
+    },
+    "gulbarga": {
+      "zone": "Karnataka Region",
+      "soil": "Red Soil",
+      "ph": 6.7,
+      "n": 196.0,
+      "p": 13.0,
+      "k": 161.0,
+      "lat": 20.9008,
+      "lon": 77.6896,
+      "source": "Agritech.csv"
+    },
+    "bangalore": {
+      "zone": "Karnataka Region",
+      "soil": "Red Soil",
+      "ph": 6.72,
+      "n": 221.0,
+      "p": 12.0,
+      "k": 201.0,
+      "lat": 19.5823,
+      "lon": 77.8385,
+      "source": "Agritech.csv"
+    },
+    "belgaum": {
+      "zone": "Karnataka Region",
+      "soil": "Sandy",
+      "ph": 7.29,
+      "n": 190.0,
+      "p": 11.0,
+      "k": 142.0,
+      "lat": 26.8597,
+      "lon": 73.5004,
+      "source": "Agritech.csv"
+    },
+    "mysore": {
+      "zone": "Karnataka Region",
+      "soil": "Red Soil",
+      "ph": 7.08,
+      "n": 169.0,
+      "p": 12.0,
+      "k": 205.0,
+      "lat": 22.041,
+      "lon": 77.2536,
+      "source": "Agritech.csv"
+    },
+    "tumkur": {
+      "zone": "Karnataka Region",
+      "soil": "Red Soil",
+      "ph": 6.46,
+      "n": 201.0,
+      "p": 14.0,
+      "k": 167.0,
+      "lat": 20.1136,
+      "lon": 79.0437,
+      "source": "Agritech.csv"
+    },
+    "bellary": {
+      "zone": "Karnataka Region",
+      "soil": "Red Soil",
+      "ph": 6.89,
+      "n": 189.0,
+      "p": 14.0,
+      "k": 168.0,
+      "lat": 18.9004,
+      "lon": 77.6822,
+      "source": "Agritech.csv"
+    },
+    "visakhapatnam": {
+      "zone": "Andhra Pradesh Region",
+      "soil": "Red Soil",
+      "ph": 6.52,
+      "n": 243.0,
+      "p": 15.0,
+      "k": 172.0,
+      "lat": 21.7948,
+      "lon": 78.2682,
+      "source": "Agritech.csv"
+    },
+    "anantapur": {
+      "zone": "Andhra Pradesh Region",
+      "soil": "Red Soil",
+      "ph": 6.05,
+      "n": 235.0,
+      "p": 14.0,
+      "k": 175.0,
+      "lat": 18.1456,
+      "lon": 75.2529,
+      "source": "Agritech.csv"
+    },
+    "east godavari": {
+      "zone": "Andhra Pradesh Region",
+      "soil": "Red Soil",
+      "ph": 6.69,
+      "n": 235.0,
+      "p": 15.0,
+      "k": 159.0,
+      "lat": 21.0456,
+      "lon": 74.5192,
+      "source": "Agritech.csv"
+    },
+    "guntur": {
+      "zone": "Andhra Pradesh Region",
+      "soil": "Red Soil",
+      "ph": 6.7,
+      "n": 233.0,
+      "p": 13.0,
+      "k": 202.0,
+      "lat": 19.8787,
+      "lon": 75.5704,
+      "source": "Agritech.csv"
+    },
+    "kurnool": {
+      "zone": "Andhra Pradesh Region",
+      "soil": "Red Soil",
+      "ph": 6.5,
+      "n": 177.0,
+      "p": 11.0,
+      "k": 161.0,
+      "lat": 20.1244,
+      "lon": 78.5544,
+      "source": "Agritech.csv"
+    },
+    "chittoor": {
+      "zone": "Andhra Pradesh Region",
+      "soil": "Red Soil",
+      "ph": 6.86,
+      "n": 229.0,
+      "p": 17.0,
+      "k": 204.0,
+      "lat": 20.0016,
+      "lon": 80.3343,
+      "source": "Agritech.csv"
+    },
+    "krishna": {
+      "zone": "Andhra Pradesh Region",
+      "soil": "Red Soil",
+      "ph": 6.38,
+      "n": 195.0,
+      "p": 11.0,
+      "k": 147.0,
+      "lat": 21.426,
+      "lon": 75.4836,
+      "source": "Agritech.csv"
+    },
+    "kolkata": {
+      "zone": "West Bengal Region",
+      "soil": "Loamy",
+      "ph": 5.93,
+      "n": 340.0,
+      "p": 22.0,
+      "k": 219.0,
+      "lat": 18.0934,
+      "lon": 76.8723,
+      "source": "Agritech.csv"
+    },
+    "darjeeling": {
+      "zone": "West Bengal Region",
+      "soil": "Loamy",
+      "ph": 6.2,
+      "n": 344.0,
+      "p": 21.0,
+      "k": 278.0,
+      "lat": 21.9476,
+      "lon": 78.0153,
+      "source": "Agritech.csv"
+    },
+    "howrah": {
+      "zone": "West Bengal Region",
+      "soil": "Loamy",
+      "ph": 6.02,
+      "n": 317.0,
+      "p": 21.0,
+      "k": 236.0,
+      "lat": 21.8276,
+      "lon": 74.8022,
+      "source": "Agritech.csv"
+    },
+    "burdwan": {
+      "zone": "West Bengal Region",
+      "soil": "Loamy",
+      "ph": 5.93,
+      "n": 339.0,
+      "p": 20.0,
+      "k": 229.0,
+      "lat": 19.9078,
+      "lon": 78.4153,
+      "source": "Agritech.csv"
+    },
+    "faridabad": {
+      "zone": "Haryana Region",
+      "soil": "Alluvial",
+      "ph": 7.06,
+      "n": 249.0,
+      "p": 18.0,
+      "k": 195.0,
+      "lat": 20.6306,
+      "lon": 79.2049,
+      "source": "Agritech.csv"
+    },
+    "hisar": {
+      "zone": "Haryana Region",
+      "soil": "Alluvial",
+      "ph": 6.92,
+      "n": 291.0,
+      "p": 20.0,
+      "k": 168.0,
+      "lat": 24.2739,
+      "lon": 76.6728,
+      "source": "Agritech.csv"
+    },
+    "rohtak": {
+      "zone": "Haryana Region",
+      "soil": "Alluvial",
+      "ph": 7.39,
+      "n": 257.0,
+      "p": 18.0,
+      "k": 170.0,
+      "lat": 21.2006,
+      "lon": 77.3466,
+      "source": "Agritech.csv"
+    },
+    "gurgaon": {
+      "zone": "Haryana Region",
+      "soil": "Alluvial",
+      "ph": 7.04,
+      "n": 252.0,
+      "p": 16.0,
+      "k": 217.0,
+      "lat": 19.8898,
+      "lon": 80.9111,
+      "source": "Agritech.csv"
+    },
+    "puri": {
+      "zone": "Odisha Region",
+      "soil": "Laterite",
+      "ph": 6.27,
+      "n": 175.0,
+      "p": 12.0,
+      "k": 182.0,
+      "lat": 16.881,
+      "lon": 81.3175,
+      "source": "Agritech.csv"
+    },
+    "sambalpur": {
+      "zone": "Odisha Region",
+      "soil": "Laterite",
+      "ph": 7.32,
+      "n": 200.0,
+      "p": 13.0,
+      "k": 192.0,
+      "lat": 18.5611,
+      "lon": 77.0779,
+      "source": "Agritech.csv"
+    },
+    "cuttack": {
+      "zone": "Odisha Region",
+      "soil": "Laterite",
+      "ph": 5.86,
+      "n": 146.0,
+      "p": 12.0,
+      "k": 147.0,
+      "lat": 18.8759,
+      "lon": 80.5405,
+      "source": "Agritech.csv"
+    },
+    "bhubaneswar": {
+      "zone": "Odisha Region",
+      "soil": "Laterite",
+      "ph": 5.71,
+      "n": 198.0,
+      "p": 12.0,
+      "k": 154.0,
+      "lat": 17.1133,
+      "lon": 80.2158,
+      "source": "Agritech.csv"
+    },
+    "aurangabad": {
+      "zone": "Maharashtra Region",
+      "soil": "Black Cotton",
+      "ph": 7.63,
+      "n": 246.0,
+      "p": 16.0,
+      "k": 325.0,
+      "lat": 18.1508,
+      "lon": 78.4869,
+      "source": "Agritech.csv"
+    },
+    "mumbai": {
+      "zone": "Maharashtra Region",
+      "soil": "Black Cotton",
+      "ph": 7.9,
+      "n": 239.0,
+      "p": 13.0,
+      "k": 357.0,
+      "lat": 23.9389,
+      "lon": 77.0362,
+      "source": "Agritech.csv"
+    },
+    "kolhapur": {
+      "zone": "Maharashtra Region",
+      "soil": "Black Cotton",
+      "ph": 6.73,
+      "n": 198.0,
+      "p": 14.0,
+      "k": 278.0,
+      "lat": 18.2926,
+      "lon": 79.1134,
+      "source": "Agritech.csv"
+    },
+    "pune": {
+      "zone": "Maharashtra Region",
+      "soil": "Black Cotton",
+      "ph": 7.37,
+      "n": 220.0,
+      "p": 12.0,
+      "k": 305.0,
+      "lat": 22.4522,
+      "lon": 79.312,
+      "source": "Agritech.csv"
+    },
+    "nagpur": {
+      "zone": "Maharashtra Region",
+      "soil": "Black Cotton",
+      "ph": 8.26,
+      "n": 188.0,
+      "p": 11.0,
+      "k": 286.0,
+      "lat": 20.1706,
+      "lon": 82.5313,
+      "source": "Agritech.csv"
+    },
+    "nashik": {
+      "zone": "Maharashtra Region",
+      "soil": "Black Cotton",
+      "ph": 8.25,
+      "n": 233.0,
+      "p": 14.0,
+      "k": 329.0,
+      "lat": 22.1147,
+      "lon": 79.4114,
+      "source": "Agritech.csv"
+    },
+    "bikaner": {
+      "zone": "Rajasthan Region",
+      "soil": "Sandy",
+      "ph": 7.53,
+      "n": 154.0,
+      "p": 11.0,
+      "k": 218.0,
+      "lat": 23.0885,
+      "lon": 78.1584,
+      "source": "Agritech.csv"
+    },
+    "udaipur": {
+      "zone": "Rajasthan Region",
+      "soil": "Sandy",
+      "ph": 7.55,
+      "n": 172.0,
+      "p": 13.0,
+      "k": 226.0,
+      "lat": 21.8446,
+      "lon": 80.5132,
+      "source": "Agritech.csv"
+    },
+    "ajmer": {
+      "zone": "Rajasthan Region",
+      "soil": "Sandy",
+      "ph": 7.99,
+      "n": 155.0,
+      "p": 9.0,
+      "k": 165.0,
+      "lat": 19.6483,
+      "lon": 76.3712,
+      "source": "Agritech.csv"
+    },
+    "jaipur": {
+      "zone": "Rajasthan Region",
+      "soil": "Sandy",
+      "ph": 7.58,
+      "n": 152.0,
+      "p": 14.0,
+      "k": 196.0,
+      "lat": 20.4942,
+      "lon": 79.4393,
+      "source": "Agritech.csv"
+    },
+    "jodhpur": {
+      "zone": "Rajasthan Region",
+      "soil": "Sandy",
+      "ph": 7.9,
+      "n": 163.0,
+      "p": 11.0,
+      "k": 205.0,
+      "lat": 19.0786,
+      "lon": 77.4385,
+      "source": "Agritech.csv"
+    },
+    "rangareddy": {
+      "zone": "Telangana Region",
+      "soil": "Sandy",
+      "ph": 7.09,
+      "n": 196.0,
+      "p": 13.0,
+      "k": 175.0,
+      "lat": 25.9414,
+      "lon": 84.7236,
+      "source": "Agritech.csv"
+    },
+    "hyderabad": {
+      "zone": "Telangana Region",
+      "soil": "Red Soil",
+      "ph": 7.48,
+      "n": 202.0,
+      "p": 15.0,
+      "k": 204.0,
+      "lat": 22.8119,
+      "lon": 77.3422,
+      "source": "Agritech.csv"
+    },
+    "warangal": {
+      "zone": "Telangana Region",
+      "soil": "Red Soil",
+      "ph": 6.88,
+      "n": 255.0,
+      "p": 17.0,
+      "k": 184.0,
+      "lat": 23.3922,
+      "lon": 76.7557,
+      "source": "Agritech.csv"
+    },
+    "medak": {
+      "zone": "Telangana Region",
+      "soil": "Black Cotton",
+      "ph": 7.18,
+      "n": 244.0,
+      "p": 14.0,
+      "k": 224.0,
+      "lat": 26.2852,
+      "lon": 74.0243,
+      "source": "Agritech.csv"
+    },
+    "nalgonda": {
+      "zone": "Telangana Region",
+      "soil": "Alluvial",
+      "ph": 6.97,
+      "n": 222.0,
+      "p": 14.0,
+      "k": 200.0,
+      "lat": 24.8681,
+      "lon": 77.0995,
+      "source": "Agritech.csv"
+    },
+    "khammam": {
+      "zone": "Telangana Region",
+      "soil": "Alluvial",
+      "ph": 6.83,
+      "n": 265.0,
+      "p": 15.0,
+      "k": 220.0,
+      "lat": 18.6838,
+      "lon": 79.5023,
+      "source": "Agritech.csv"
+    },
+    "tiruchirappalli": {
+      "zone": "Tamil Nadu Region",
+      "soil": "Red Soil",
+      "ph": 6.8,
+      "n": 212.0,
+      "p": 12.0,
+      "k": 163.0,
+      "lat": 21.6508,
+      "lon": 76.6292,
+      "source": "Agritech.csv"
+    },
+    "chennai": {
+      "zone": "Tamil Nadu Region",
+      "soil": "Red Soil",
+      "ph": 6.59,
+      "n": 205.0,
+      "p": 11.0,
+      "k": 164.0,
+      "lat": 19.7221,
+      "lon": 76.0855,
+      "source": "Agritech.csv"
+    },
+    "coimbatore": {
+      "zone": "Tamil Nadu Region",
+      "soil": "Red Soil",
+      "ph": 7.21,
+      "n": 173.0,
+      "p": 12.0,
+      "k": 153.0,
+      "lat": 21.1596,
+      "lon": 77.0998,
+      "source": "Agritech.csv"
+    },
+    "madurai": {
+      "zone": "Tamil Nadu Region",
+      "soil": "Red Soil",
+      "ph": 6.54,
+      "n": 217.0,
+      "p": 13.0,
+      "k": 188.0,
+      "lat": 22.9053,
+      "lon": 80.6756,
+      "source": "Agritech.csv"
+    },
+    "vellore": {
+      "zone": "Tamil Nadu Region",
+      "soil": "Red Soil",
+      "ph": 7.13,
+      "n": 181.0,
+      "p": 13.0,
+      "k": 194.0,
+      "lat": 23.083,
+      "lon": 73.4532,
+      "source": "Agritech.csv"
+    },
+    "salem": {
+      "zone": "Tamil Nadu Region",
+      "soil": "Red Soil",
+      "ph": 6.68,
+      "n": 235.0,
+      "p": 15.0,
+      "k": 171.0,
+      "lat": 17.9302,
+      "lon": 78.3943,
+      "source": "Agritech.csv"
+    },
+    "ludhiana": {
+      "zone": "Punjab Region",
+      "soil": "Alluvial",
+      "ph": 7.14,
+      "n": 282.0,
+      "p": 18.0,
+      "k": 184.0,
+      "lat": 22.5795,
+      "lon": 78.1668,
+      "source": "Agritech.csv"
+    },
+    "amritsar": {
+      "zone": "Punjab Region",
+      "soil": "Alluvial",
+      "ph": 7.24,
+      "n": 292.0,
+      "p": 20.0,
+      "k": 220.0,
+      "lat": 22.9821,
+      "lon": 75.802,
+      "source": "Agritech.csv"
+    },
+    "jalandhar": {
+      "zone": "Punjab Region",
+      "soil": "Alluvial",
+      "ph": 6.9,
+      "n": 246.0,
+      "p": 17.0,
+      "k": 200.0,
+      "lat": 22.5079,
+      "lon": 80.0247,
+      "source": "Agritech.csv"
+    },
+    "patiala": {
+      "zone": "Punjab Region",
+      "soil": "Alluvial",
+      "ph": 6.9,
+      "n": 277.0,
+      "p": 20.0,
+      "k": 183.0,
+      "lat": 22.3721,
+      "lon": 77.2595,
+      "source": "Agritech.csv"
+    },
+    "kozhikode": {
+      "zone": "Kerala Region",
+      "soil": "Laterite",
+      "ph": 5.53,
+      "n": 167.0,
+      "p": 13.0,
+      "k": 143.0,
+      "lat": 22.4483,
+      "lon": 84.2992,
+      "source": "Agritech.csv"
+    },
+    "kochi": {
+      "zone": "Kerala Region",
+      "soil": "Laterite",
+      "ph": 6.1,
+      "n": 184.0,
+      "p": 13.0,
+      "k": 177.0,
+      "lat": 18.5227,
+      "lon": 78.2483,
+      "source": "Agritech.csv"
+    },
+    "thiruvananthapuram": {
+      "zone": "Kerala Region",
+      "soil": "Laterite",
+      "ph": 5.13,
+      "n": 268.0,
+      "p": 16.0,
+      "k": 180.0,
+      "lat": 30.1977,
+      "lon": 79.3528,
+      "source": "Agritech.csv"
+    }
+  }
+}

@@ -1,0 +1,604 @@
+{
+    "version": "1.0",
+    "description": "Comprehensive crop-specific FAQs for farmer troubleshooting",
+    "total_faqs": 500,
+    "crops": {
+        "Paddy": {
+            "crop_te": "వరి",
+            "faqs": [
+                {
+                    "id": "paddy_pest_001",
+                    "category": "pest",
+                    "question_en": "My paddy leaves have white spots and plants are drying",
+                    "question_te": "వరి ఆకులపై తెల్ల మచ్చలు, మొక్కలు ఎండిపోతున్నాయి",
+                    "answer_en": "This is likely Brown Plant Hopper (BPH) attack. Look for hoppers at the base of plants. They suck sap causing 'hopper burn'.",
+                    "answer_te": "ఇది బ్రౌన్ ప్లాంట్ హాపర్ (BPH) దాడి. మొక్కల అడుగున హాపర్లు చూడండి. అవి రసం పీల్చి 'హాపర్ బర్న్' కలిగిస్తాయి.",
+                    "action_en": "Spray Imidacloprid 200ml/acre. Drain field for 3+4 days, then re-flood. Avoid excess nitrogen.",
+                    "action_te": "ఇమిడాక్లోప్రిడ్ 200ml/ఎకరం పిచికారి చేయండి. 3-4 రోజులు నీరు తీయండి, తర్వాత మళ్ళీ నీరు పెట్టండి. అధిక నత్రజని వాడకండి.",
+                    "urgency": "high",
+                    "stage": [
+                        "tillering",
+                        "panicle_initiation"
+                    ]
+                },
+                {
+                    "id": "paddy_pest_002",
+                    "category": "pest",
+                    "question_en": "Dead hearts in my paddy field - tillers dying from center",
+                    "question_te": "వరి పొలంలో డెడ్ హార్ట్స్ - పిలకలు మధ్యలో చనిపోతున్నాయి",
+                    "answer_en": "This is Stem Borer attack. The larvae bore into the stem causing central leaf to die and pull out easily.",
+                    "answer_te": "ఇది కాండం తొలిచే పురుగు దాడి. లార్వా కాండంలోకి తొలిచి మధ్య ఆకు చనిపోతుంది, సులభంగా లాగవచ్చు.",
+                    "action_en": "Apply Carbofuran 3G granules 8-10 kg/acre in standing water. Install pheromone traps. Remove and destroy affected tillers.",
+                    "action_te": "కార్బోఫ్యూరాన్ 3G కణికలు 8-10 కేజీ/ఎకరం నీటిలో వేయండి. ఫెరోమోన్ ట్రాప్‌లు పెట్టండి. ప్రభావిత పిలకలు తొలగించి నాశనం చేయండి.",
+                    "urgency": "high",
+                    "stage": [
+                        "tillering",
+                        "vegetative"
+                    ]
+                },
+                {
+                    "id": "paddy_pest_003",
+                    "category": "pest",
+                    "question_en": "White earheads in paddy - no grains inside",
+                    "question_te": "వరిలో తెల్ల కంకులు - లోపల గింజలు లేవు",
+                    "answer_en": "This is 'White Head' caused by Stem Borer at flowering stage. The borer cuts the stem preventing grain filling.",
+                    "answer_te": "ఇది పూల దశలో కాండం తొలిచే పురుగు వల్ల 'వైట్ హెడ్'. పురుగు కాండాన్ని కత్తిరించి గింజలు నిండకుండా చేస్తుంది.",
+                    "action_en": "For current season, nothing can be done for affected plants. For prevention: Early sowing, balanced fertilizer, remove stubbles.",
+                    "action_te": "ఈ సీజన్‌లో ప్రభావిత మొక్కలకు ఏమీ చేయలేము. నివారణకు: ముందుగా విత్తండి, సమతుల్య ఎరువులు, మోళ్ళు తొలగించండి.",
+                    "urgency": "medium",
+                    "stage": [
+                        "flowering",
+                        "grain_filling"
+                    ]
+                },
+                {
+                    "id": "paddy_pest_004",
+                    "category": "pest",
+                    "question_en": "Paddy leaves are folded like tubes",
+                    "question_te": "వరి ఆకులు గొట్టాల్లా మడవబడ్డాయి",
+                    "answer_en": "This is Leaf Folder attack. The caterpillar folds the leaf and feeds inside, causing white streaks.",
+                    "answer_te": "ఇది లీఫ్ ఫోల్డర్ దాడి. గొంగళి పురుగు ఆకును మడిచి లోపల తింటుంది, తెల్ల చారలు వస్తాయి.",
+                    "action_en": "Spray Chlorantraniliprole 30ml/acre. Release Trichogramma parasites 1 lakh eggs/acre. Avoid dense planting.",
+                    "action_te": "క్లోరాంట్రానిలిప్రోల్ 30ml/ఎకరం పిచికారి చేయండి. ట్రైకోగ్రామా 1 లక్ష గుడ్లు/ఎకరం వదలండి. దట్టంగా నాటకండి.",
+                    "urgency": "medium",
+                    "stage": [
+                        "vegetative",
+                        "tillering"
+                    ]
+                },
+                {
+                    "id": "paddy_dis_001",
+                    "category": "disease",
+                    "question_en": "Diamond shaped spots on paddy leaves",
+                    "question_te": "వరి ఆకులపై వజ్రం ఆకారపు మచ్చలు",
+                    "answer_en": "This is Blast disease (Magnaporthe oryzae). The lesions are diamond/eye-shaped with gray center and brown border.",
+                    "answer_te": "ఇది బ్లాస్ట్ వ్యాధి (మాగ్నపోర్థే ఒరైజే). గాయాలు వజ్రం/కన్ను ఆకారంలో బూడిద మధ్యలో, గోధుమ అంచుతో ఉంటాయి.",
+                    "action_en": "Spray Tricyclazole 75WP 300g/acre immediately. Use resistant varieties. Avoid excess nitrogen. Ensure proper spacing.",
+                    "action_te": "వెంటనే ట్రైసైక్లాజోల్ 75WP 300g/ఎకరం పిచికారి చేయండి. నిరోధక రకాలు వాడండి. అధిక నత్రజని వాడకండి. సరైన దూరం ఉంచండి.",
+                    "urgency": "high",
+                    "stage": [
+                        "tillering",
+                        "panicle_initiation",
+                        "flowering"
+                    ]
+                },
+                {
+                    "id": "paddy_dis_002",
+                    "category": "disease",
+                    "question_en": "Neck of the panicle is rotting - grains not filling",
+                    "question_te": "కంకి మెడ కుళ్ళిపోతోంది - గింజలు నిండటం లేదు",
+                    "answer_en": "This is Neck Blast, the most damaging form of blast disease. It attacks the neck of panicle causing complete yield loss.",
+                    "answer_te": "ఇది నెక్ బ్లాస్ట్, బ్లాస్ట్ వ్యాధి యొక్క అత్యంత హానికరమైన రూపం. ఇది కంకి మెడపై దాడి చేసి పూర్తి దిగుబడి నష్టం కలిగిస్తుంది.",
+                    "action_en": "Spray Tricyclazole at boot leaf stage as prevention. For cure: Isoprothiolane 500ml/acre. Avoid late nitrogen application.",
+                    "action_te": "బూట్ లీఫ్ దశలో నివారణగా ట్రైసైక్లాజోల్ పిచికారి చేయండి. నయం కోసం: ఐసోప్రోథియోలేన్ 500ml/ఎకరం. ఆలస్యంగా నత్రజని వేయకండి.",
+                    "urgency": "high",
+                    "stage": [
+                        "panicle_initiation",
+                        "flowering"
+                    ]
+                },
+                {
+                    "id": "paddy_dis_003",
+                    "category": "disease",
+                    "question_en": "Paddy leaves turning yellow from tip",
+                    "question_te": "వరి ఆకులు కొనల నుండి పసుపు రంగుకు మారుతున్నాయి",
+                    "answer_en": "This could be Bacterial Leaf Blight (BLB). Look for yellow to white lesions with wavy margins starting from leaf tip.",
+                    "answer_te": "ఇది బ్యాక్టీరియల్ లీఫ్ బ్లైట్ (BLB) కావచ్చు. ఆకు కొన నుండి మొదలై అలల అంచులతో పసుపు నుండి తెల్ల గాయాలు చూడండి.",
+                    "action_en": "Drain field and avoid nitrogen. Spray Streptocycline 15g + Copper oxychloride 500g per acre. Use resistant varieties.",
+                    "action_te": "పొలం నీరు తీసి నత్రజని వాడకండి. స్ట్రెప్టోసైక్లిన్ 15g + కాపర్ ఆక్సీక్లోరైడ్ 500g/ఎకరం పిచికారి చేయండి. నిరోధక రకాలు వాడండి.",
+                    "urgency": "high",
+                    "stage": [
+                        "tillering",
+                        "panicle_initiation"
+                    ]
+                },
+                {
+                    "id": "paddy_dis_004",
+                    "category": "disease",
+                    "question_en": "Brown circular spots on paddy leaves",
+                    "question_te": "వరి ఆకులపై గోధుమ గుండ్రని మచ్చలు",
+                    "answer_en": "This is Brown Spot disease caused by Bipolaris oryzae. It indicates nutrient deficiency, especially potassium.",
+                    "answer_te": "ఇది బైపోలారిస్ ఒరైజే వల్ల బ్రౌన్ స్పాట్ వ్యాధి. ఇది పోషకాల లోపాన్ని, ముఖ్యంగా పొటాషియం లోపాన్ని సూచిస్తుంది.",
+                    "action_en": "Spray Mancozeb 500g/acre. Apply MOP 25kg/acre. Ensure balanced fertilization.",
+                    "action_te": "మాంకోజెబ్ 500g/ఎకరం పిచికారి చేయండి. MOP 25kg/ఎకరం వేయండి. సమతుల్య ఎరువులు వాడండి.",
+                    "urgency": "medium",
+                    "stage": [
+                        "tillering",
+                        "vegetative"
+                    ]
+                },
+                {
+                    "id": "paddy_fert_001",
+                    "category": "fertilizer",
+                    "question_en": "When should I apply urea to paddy?",
+                    "question_te": "వరికి యూరియా ఎప్పుడు వేయాలి?",
+                    "answer_en": "Apply urea in 3 splits: 1/3 at transplanting, 1/3 at 3 weeks after transplanting (active tillering), 1/3 at panicle initiation.",
+                    "answer_te": "యూరియా 3 భాగాలుగా వేయండి: 1/3 నాటేటప్పుడు, 1/3 నాటిన 3 వారాల తర్వాత (చురుకైన పిలకలు వేసే సమయంలో), 1/3 కంకి మొదలయ్యేటప్పుడు.",
+                    "action_en": "Total Urea: 100-110 kg/acre. Apply in standing water, preferably in evening. Drain field 1 day before and flood immediately after.",
+                    "action_te": "మొత్తం యూరియా: 100-110 కేజీ/ఎకరం. నీటిలో, సాయంత్రం వేయండి. వేయడానికి 1 రోజు ముందు నీరు తీసి, వేసిన వెంటనే నీరు పెట్టండి.",
+                    "urgency": "low",
+                    "stage": [
+                        "transplanting",
+                        "tillering",
+                        "panicle_initiation"
+                    ]
+                },
+                {
+                    "id": "paddy_fert_002",
+                    "category": "fertilizer",
+                    "question_en": "Paddy leaves are pale green/yellowish",
+                    "question_te": "వరి ఆకులు లేత ఆకుపచ్చ/పసుపు రంగులో ఉన్నాయి",
+                    "answer_en": "This indicates Nitrogen deficiency. The older leaves turn yellow first while younger leaves remain green.",
+                    "answer_te": "ఇది నత్రజని లోపాన్ని సూచిస్తుంది. పాత ఆకులు ముందుగా పసుపు రంగుకు మారతాయి, అయితే చిన్న ఆకులు ఆకుపచ్చగా ఉంటాయి.",
+                    "action_en": "Apply Urea 25kg/acre immediately. Leaf Color Chart (LCC) reading should be 4+ for healthy crop.",
+                    "action_te": "వెంటనే యూరియా 25kg/ఎకరం వేయండి. ఆరోగ్యకరమైన పంటకు లీఫ్ కలర్ చార్ట్ (LCC) రీడింగ్ 4+ ఉండాలి.",
+                    "urgency": "medium",
+                    "stage": [
+                        "tillering",
+                        "vegetative"
+                    ]
+                },
+                {
+                    "id": "paddy_fert_003",
+                    "category": "fertilizer",
+                    "question_en": "Lower paddy leaves turning reddish-purple",
+                    "question_te": "వరి కింది ఆకులు ఎర్ర-ఊదా రంగుకు మారుతున్నాయి",
+                    "answer_en": "This is Phosphorus deficiency. Leaves become dark green with purple tinge. Growth is stunted.",
+                    "answer_te": "ఇది భాస్వరం లోపం. ఆకులు ఊదా రంగు చారలతో ముదురు ఆకుపచ్చగా మారతాయి. ఎదుగుదల తగ్గుతుంది.",
+                    "action_en": "Apply DAP 25kg/acre or SSP 50kg/acre. Root dipping in 2% DAP solution before transplanting helps.",
+                    "action_te": "DAP 25kg/ఎకరం లేదా SSP 50kg/ఎకరం వేయండి. నాటడానికి ముందు 2% DAP ద్రావణంలో వేరు ముంచడం సహాయపడుతుంది.",
+                    "urgency": "medium",
+                    "stage": [
+                        "nursery",
+                        "transplanting",
+                        "tillering"
+                    ]
+                },
+                {
+                    "id": "paddy_fert_004",
+                    "category": "fertilizer",
+                    "question_en": "Paddy leaf margins turning brown and drying",
+                    "question_te": "వరి ఆకు అంచులు గోధుమ రంగుకు మారి ఎండిపోతున్నాయి",
+                    "answer_en": "This is Potassium deficiency. Leaf tips and margins turn brown and dry, starting from older leaves.",
+                    "answer_te": "ఇది పొటాషియం లోపం. ఆకు కొనలు మరియు అంచులు గోధుమ రంగుకు మారి ఎండిపోతాయి, పాత ఆకుల నుండి మొదలవుతుంది.",
+                    "action_en": "Apply MOP 25-30kg/acre. Potassium is critical for disease resistance and grain quality.",
+                    "action_te": "MOP 25-30kg/ఎకరం వేయండి. వ్యాధి నిరోధకత మరియు గింజ నాణ్యతకు పొటాషియం కీలకం.",
+                    "urgency": "medium",
+                    "stage": [
+                        "tillering",
+                        "panicle_initiation"
+                    ]
+                },
+                {
+                    "id": "paddy_growth_001",
+                    "category": "growth",
+                    "question_en": "Paddy seedlings not growing after transplanting",
+                    "question_te": "నాటిన తర్వాత వరి మొక్కలు పెరగడం లేదు",
+                    "answer_en": "Transplanting shock is common. It takes 7-10 days for recovery. Ensure proper water level and avoid deep planting.",
+                    "answer_te": "నాటడం షాక్ సాధారణం. కోలుకోవడానికి 7-10 రోజులు పడుతుంది. సరైన నీటి మట్టం ఉంచండి, లోతుగా నాటకండి.",
+                    "action_en": "Maintain 2-3cm water. Apply DAP basal. Avoid planting in afternoon heat. Gap fill at 7-10 days if needed.",
+                    "action_te": "2-3 సెం.మీ నీరు ఉంచండి. మూల DAP వేయండి. మధ్యాహ్నం వేడిలో నాటకండి. అవసరమైతే 7-10 రోజుల్లో గ్యాప్ ఫిల్లింగ్ చేయండి.",
+                    "urgency": "low",
+                    "stage": [
+                        "transplanting"
+                    ]
+                },
+                {
+                    "id": "paddy_growth_002",
+                    "category": "growth",
+                    "question_en": "Very few tillers in paddy crop",
+                    "question_te": "వరి పంటలో చాలా తక్కువ పిలకలు",
+                    "answer_en": "Poor tillering is due to: late transplanting, deep planting, nitrogen deficiency, or waterlogging.",
+                    "answer_te": "పేలవమైన పిలకలకు కారణాలు: ఆలస్యంగా నాటడం, లోతుగా నాటడం, నత్రజని లోపం, లేదా నీరు నిలిచిపోవడం.",
+                    "action_en": "Apply Urea 25kg/acre. Maintain shallow water (2-5cm). Ideal: 20-25 tillers per hill.",
+                    "action_te": "యూరియా 25kg/ఎకరం వేయండి. నిస్సారమైన నీరు (2-5 సెం.మీ) ఉంచండి. ఆదర్శం: కుప్పకు 20-25 పిలకలు.",
+                    "urgency": "medium",
+                    "stage": [
+                        "tillering"
+                    ]
+                },
+                {
+                    "id": "paddy_growth_003",
+                    "category": "growth",
+                    "question_en": "Paddy not flowering at expected time",
+                    "question_te": "నిరీక్షిత సమయంలో వరికి పూలు రావడం లేదు",
+                    "answer_en": "Delayed flowering can be due to: variety characteristics, nitrogen excess, or photoperiod sensitivity.",
+                    "answer_te": "ఆలస్య పుష్పానికి కారణాలు: రకం లక్షణాలు, నత్రజని అధికం, లేదా కాంతి కాలం సున్నితత్వం.",
+                    "action_en": "Stop nitrogen application after panicle initiation. Ensure proper drainage. Most varieties flower at 60-70 days.",
+                    "action_te": "కంకి ప్రారంభం తర్వాత నత్రజని ఆపండి. సరైన డ్రైనేజ్ ఉండేలా చూడండి. చాలా రకాలు 60-70 రోజులలో పూస్తాయి.",
+                    "urgency": "low",
+                    "stage": [
+                        "panicle_initiation",
+                        "flowering"
+                    ]
+                },
+                {
+                    "id": "paddy_weather_001",
+                    "category": "weather",
+                    "question_en": "What to do after heavy rain in paddy field?",
+                    "question_te": "వరి పొలంలో భారీ వర్షం తర్వాత ఏం చేయాలి?",
+                    "answer_en": "Drain excess water within 24-48 hours to prevent root damage. Avoid fertilizer for 3-4 days.",
+                    "answer_te": "వేరు నష్టం నివారించడానికి 24-48 గంటల్లో అధిక నీరు తీయండి. 3-4 రోజులు ఎరువులు వేయకండి.",
+                    "action_en": "Clear drainage channels. Scout for BPH/diseases after 3 days. If plants yellowing, apply Urea after water drains.",
+                    "action_te": "డ్రైనేజ్ కాలువలు శుభ్రం చేయండి. 3 రోజుల తర్వాత BPH/వ్యాధులు చూడండి. మొక్కలు పసుపు అయితే, నీరు తీసిన తర్వాత యూరియా వేయండి.",
+                    "urgency": "high",
+                    "stage": [
+                        "all"
+                    ]
+                },
+                {
+                    "id": "paddy_weather_002",
+                    "category": "weather",
+                    "question_en": "Paddy at flowering during heat wave",
+                    "question_te": "వేడి తరంగం సమయంలో వరి పూల దశలో ఉంది",
+                    "answer_en": "Heat at flowering causes spikelet sterility (grains won't fill). Temperature above 35°C for more than 4 hours causes damage.",
+                    "answer_te": "పూల సమయంలో వేడి స్పైక్‌లెట్ స్టెరిలిటీ కలిగిస్తుంది (గింజలు నిండవు). 35°C పైన 4 గంటలకు పైగా ఉంటే నష్టం జరుగుతుంది.",
+                    "action_en": "Irrigate in evening to cool the field. Spray 2% KCl (Potash) solution. Maintain continuous water flow.",
+                    "action_te": "పొలం చల్లబరచడానికి సాయంత్రం నీరు పెట్టండి. 2% KCl (పొటాష్) ద్రావణం పిచికారి చేయండి. నిరంతర నీటి ప్రవాహం ఉంచండి.",
+                    "urgency": "high",
+                    "stage": [
+                        "flowering"
+                    ]
+                },
+                {
+                    "id": "paddy_harvest_001",
+                    "category": "harvest",
+                    "question_en": "How to know when paddy is ready for harvest?",
+                    "question_te": "వరి కోతకు సిద్ధమైందని ఎలా తెలుసుకోవాలి?",
+                    "answer_en": "Harvest when 80-85% grains turn golden yellow. Grain moisture should be 20-22%. Delay causes shattering losses.",
+                    "answer_te": "80-85% గింజలు బంగారు పసుపు రంగుకు మారినప్పుడు కోయండి. గింజ తేమ 20-22% ఉండాలి. ఆలస్యం రాలిపోయే నష్టాలకు కారణమవుతుంది.",
+                    "action_en": "Drain field 10-15 days before harvest. Harvest in morning to reduce shattering. Dry to 14% moisture for storage.",
+                    "action_te": "కోతకు 10-15 రోజుల ముందు నీరు తీయండి. రాలిపోవడం తగ్గించడానికి ఉదయం కోయండి. నిల్వకు 14% తేమకు ఎండబెట్టండి.",
+                    "urgency": "medium",
+                    "stage": [
+                        "grain_filling"
+                    ]
+                }
+            ]
+        },
+        "Cotton": {
+            "crop_te": "పత్తి",
+            "faqs": [
+                {
+                    "id": "cotton_pest_001",
+                    "category": "pest",
+                    "question_en": "Pink flowers (rosette) in cotton and damaged bolls",
+                    "question_te": "పత్తిలో గులాబీ పూలు (రోసెట్) మరియు దెబ్బతిన్న ఈతులు",
+                    "answer_en": "This is Pink Bollworm attack. Moths lay eggs on squares/bolls. Larvae bore inside causing rosette flowers and damaged bolls.",
+                    "answer_te": "ఇది పింక్ బోల్‌వార్మ్ దాడి. చిమ్మటలు స్క్వేర్లు/ఈతులపై గుడ్లు పెడతాయి. లార్వా లోపలికి చొచ్చుకొని రోసెట్ పూలు, దెబ్బతిన్న ఈతులు కలిగిస్తుంది.",
+                    "action_en": "Install pheromone traps (5/acre) for monitoring. Spray Emamectin benzoate 100ml/acre. Destroy crop residue after harvest.",
+                    "action_te": "పర్యవేక్షణకు ఫెరోమోన్ ట్రాప్‌లు (5/ఎకరం) పెట్టండి. ఎమామెక్టిన్ బెంజోయేట్ 100ml/ఎకరం పిచికారి చేయండి. కోత తర్వాత పంట అవశేషాలు నాశనం చేయండి.",
+                    "urgency": "high",
+                    "stage": [
+                        "squaring",
+                        "flowering_boll"
+                    ]
+                },
+                {
+                    "id": "cotton_pest_002",
+                    "category": "pest",
+                    "question_en": "White sticky substance on cotton leaves",
+                    "question_te": "పత్తి ఆకులపై తెల్లటి అంటుకునే పదార్థం",
+                    "answer_en": "This is Whitefly honeydew. Whiteflies suck sap and excrete sticky honeydew which leads to sooty mold.",
+                    "answer_te": "ఇది వైట్‌ఫ్లై హనీడ్యూ. వైట్‌ఫ్లైలు రసం పీల్చి అంటుకునే హనీడ్యూ విసర్జిస్తాయి, ఇది సూటీ మోల్డ్‌కు దారితీస్తుంది.",
+                    "action_en": "Spray Diafenthiuron 300g/acre or Spiromesifen 200ml/acre. Install yellow sticky traps (20/acre). Avoid monoculture.",
+                    "action_te": "డయాఫెంథ్యూరాన్ 300g/ఎకరం లేదా స్పైరోమెసిఫెన్ 200ml/ఎకరం పిచికారి చేయండి. పసుపు అంటు ట్రాప్‌లు (20/ఎకరం) పెట్టండి. మోనోకల్చర్ వాడకండి.",
+                    "urgency": "high",
+                    "stage": [
+                        "vegetative",
+                        "squaring",
+                        "flowering_boll"
+                    ]
+                },
+                {
+                    "id": "cotton_pest_003",
+                    "category": "pest",
+                    "question_en": "Cotton leaves curling and edges turning yellow",
+                    "question_te": "పత్తి ఆకులు ముడుచుకుంటున్నాయి, అంచులు పసుపు రంగుకు మారుతున్నాయి",
+                    "answer_en": "This is Jassid (Leafhopper) damage. They suck sap from underside of leaves causing 'hopper burn' symptoms.",
+                    "answer_te": "ఇది జాసిడ్ (లీఫ్‌హాపర్) నష్టం. అవి ఆకుల అడుగు భాగం నుండి రసం పీల్చి 'హాపర్ బర్న్' లక్షణాలు కలిగిస్తాయి.",
+                    "action_en": "Spray Dimethoate 500ml/acre or Imidacloprid 100ml/acre. Grow hairy varieties (tolerant). Avoid excess nitrogen.",
+                    "action_te": "డైమిథోయేట్ 500ml/ఎకరం లేదా ఇమిడాక్లోప్రిడ్ 100ml/ఎకరం పిచికారి చేయండి. రోమాలున్న రకాలు (సహించేవి) పెంచండి. అధిక నత్రజని వాడకండి.",
+                    "urgency": "medium",
+                    "stage": [
+                        "seedling",
+                        "vegetative"
+                    ]
+                },
+                {
+                    "id": "cotton_dis_001",
+                    "category": "disease",
+                    "question_en": "Angular spots on cotton leaves with water-soaked appearance",
+                    "question_te": "పత్తి ఆకులపై నీట నానిన రూపంతో కోణీయ మచ్చలు",
+                    "answer_en": "This is Bacterial Blight (Black Arm). Water-soaked angular lesions that later turn brown/black.",
+                    "answer_te": "ఇది బ్యాక్టీరియల్ బ్లైట్ (బ్లాక్ ఆర్మ్). నీట నానిన కోణీయ గాయాలు తర్వాత గోధుమ/నలుపుకు మారతాయి.",
+                    "action_en": "Spray Streptocycline 15g + Copper oxychloride 500g/acre. Remove infected plants. Use certified seeds.",
+                    "action_te": "స్ట్రెప్టోసైక్లిన్ 15g + కాపర్ ఆక్సీక్లోరైడ్ 500g/ఎకరం పిచికారి చేయండి. సంక్రమిత మొక్కలు తొలగించండి. ఖాతైనా విత్తనాలు వాడండి.",
+                    "urgency": "high",
+                    "stage": [
+                        "all"
+                    ]
+                },
+                {
+                    "id": "cotton_fert_001",
+                    "category": "fertilizer",
+                    "question_en": "When to apply fertilizers in cotton?",
+                    "question_te": "పత్తికి ఎరువులు ఎప్పుడు వేయాలి?",
+                    "answer_en": "Cotton needs: Basal (DAP+MOP at sowing), 1st top (Urea at 30 days), 2nd top (Urea at 50-55 days), 3rd (MOP at 75-80 days).",
+                    "answer_te": "పత్తికి అవసరం: మూల (విత్తేటప్పుడు DAP+MOP), 1వ టాప్ (30 రోజులకు యూరియా), 2వ టాప్ (50-55 రోజులకు యూరియా), 3వ (75-80 రోజులకు MOP).",
+                    "action_en": "Total: DAP 50kg + Urea 70kg + MOP 50kg/acre. Apply in ring around plant, not touching stem.",
+                    "action_te": "మొత్తం: DAP 50kg + యూరియా 70kg + MOP 50kg/ఎకరం. మొక్క చుట్టూ రింగ్‌లో వేయండి, కాండాన్ని తాకకండి.",
+                    "urgency": "low",
+                    "stage": [
+                        "all"
+                    ]
+                },
+                {
+                    "id": "cotton_growth_001",
+                    "category": "growth",
+                    "question_en": "Cotton plant tall but no squares forming",
+                    "question_te": "పత్తి మొక్క పొడవుగా ఉంది కానీ స్క్వేర్లు ఏర్పడటం లేదు",
+                    "answer_en": "Excessive vegetative growth due to high nitrogen or dense planting. Plant is focusing on growth instead of fruiting.",
+                    "answer_te": "అధిక నత్రజని లేదా దట్టంగా నాటడం వల్ల అధిక శాఖల పెరుగుదల. మొక్క కాయలు బదులు పెరుగుదలపై దృష్టి పెడుతోంది.",
+                    "action_en": "Stop nitrogen. Apply MOP 15kg/acre. Topping at 90 days. Ensure 90x60cm spacing.",
+                    "action_te": "నత్రజని ఆపండి. MOP 15kg/ఎకరం వేయండి. 90 రోజులకు టాపింగ్. 90x60 సెం.మీ దూరం ఉంచండి.",
+                    "urgency": "medium",
+                    "stage": [
+                        "vegetative",
+                        "squaring"
+                    ]
+                },
+                {
+                    "id": "cotton_harvest_001",
+                    "category": "harvest",
+                    "question_en": "When to do first cotton picking?",
+                    "question_te": "పత్తి మొదటి కోత ఎప్పుడు చేయాలి?",
+                    "answer_en": "First picking when 50-60% bolls have opened. Pick only fully open dry bolls. Morning picking gives clean lint.",
+                    "answer_te": "50-60% ఈతులు వికసించినప్పుడు మొదటి కోత. పూర్తిగా వికసించిన పొడి ఈతులు మాత్రమే కోయండి. ఉదయం కోత శుభ్రమైన దూదిని ఇస్తుంది.",
+                    "action_en": "Do 3-4 pickings at 15 day intervals. Avoid picking wet bolls. Store in dry place. Destroy stalks after final picking.",
+                    "action_te": "15 రోజుల వ్యవధిలో 3-4 కోతలు చేయండి. తడి ఈతులు కోయకండి. పొడి చోట నిల్వ చేయండి. చివరి కోత తర్వాత మట్టలు నాశనం చేయండి.",
+                    "urgency": "low",
+                    "stage": [
+                        "boll_opening"
+                    ]
+                }
+            ]
+        },
+        "Chilli": {
+            "crop_te": "మిర్చి",
+            "faqs": [
+                {
+                    "id": "chilli_pest_001",
+                    "category": "pest",
+                    "question_en": "Chilli leaves curling upward",
+                    "question_te": "మిర్చి ఆకులు పైకి ముడుచుకుంటున్నాయి",
+                    "answer_en": "This is Thrips damage. They rasp the leaf surface causing upward curling and silvery appearance.",
+                    "answer_te": "ఇది థ్రిప్స్ నష్టం. అవి ఆకు ఉపరితలాన్ని రుబ్బి పైకి ముడుచుకోవడం మరియు వెండి రూపం కలిగిస్తాయి.",
+                    "action_en": "Spray Fipronil 80ml/acre. Install blue sticky traps (20/acre). Mulch with straw to reduce population.",
+                    "action_te": "ఫిప్రోనిల్ 80ml/ఎకరం పిచికారి చేయండి. నీలి అంటు ట్రాప్‌లు (20/ఎకరం) పెట్టండి. జనాభా తగ్గించడానికి గడ్డితో మల్చింగ్ చేయండి.",
+                    "urgency": "high",
+                    "stage": [
+                        "vegetative",
+                        "flowering"
+                    ]
+                },
+                {
+                    "id": "chilli_pest_002",
+                    "category": "pest",
+                    "question_en": "Chilli fruits have holes and rotting",
+                    "question_te": "మిర్చి పండ్లలో రంధ్రాలు ఉన్నాయి, కుళ్ళిపోతున్నాయి",
+                    "answer_en": "This is Fruit Borer attack. Caterpillars bore into fruits and feed inside causing rotting.",
+                    "answer_te": "ఇది ఫ్రూట్ బోరర్ దాడి. గొంగళి పురుగులు పండ్లలోకి చొచ్చుకొని లోపల తింటాయి, కుళ్ళడం కలిగిస్తాయి.",
+                    "action_en": "Spray Chlorantraniliprole 30ml/acre. Install pheromone traps. Remove and destroy affected fruits.",
+                    "action_te": "క్లోరాంట్రానిలిప్రోల్ 30ml/ఎకరం పిచికారి చేయండి. ఫెరోమోన్ ట్రాప్‌లు పెట్టండి. ప్రభావిత పండ్లు తొలగించి నాశనం చేయండి.",
+                    "urgency": "high",
+                    "stage": [
+                        "fruiting"
+                    ]
+                },
+                {
+                    "id": "chilli_dis_001",
+                    "category": "disease",
+                    "question_en": "Chilli plant wilting suddenly even with water",
+                    "question_te": "నీరు ఉన్నా మిర్చి మొక్క అకస్మాత్తుగా వాడిపోతోంది",
+                    "answer_en": "This is Bacterial Wilt or Fusarium Wilt. Plant wilts suddenly and dies. Cut stem shows brown discoloration.",
+                    "answer_te": "ఇది బ్యాక్టీరియల్ విల్ట్ లేదా ఫ్యూసేరియం విల్ట్. మొక్క అకస్మాత్తుగా వాడి చనిపోతుంది. కోసిన కాండం గోధుమ రంగు మారిక చూపిస్తుంది.",
+                    "action_en": "No cure. Remove infected plants with roots. Drench soil with Copper oxychloride 500g/100L water. Crop rotation is must.",
+                    "action_te": "నయం లేదు. సంక్రమిత మొక్కలను వేర్లతో తొలగించండి. కాపర్ ఆక్సీక్లోరైడ్ 500g/100L నీరు మట్టిలో పోయండి. పంట మార్పిడి తప్పనిసరి.",
+                    "urgency": "high",
+                    "stage": [
+                        "all"
+                    ]
+                },
+                {
+                    "id": "chilli_dis_002",
+                    "category": "disease",
+                    "question_en": "Chilli leaves have curled with mosaic pattern (Murda)",
+                    "question_te": "మిర్చి ఆకులు మొజాయిక్ నమూనాతో ముడుచుకున్నాయి (మూర్ఛ)",
+                    "answer_en": "This is Leaf Curl Virus (Murda). Transmitted by whiteflies. No cure once infected.",
+                    "answer_te": "ఇది లీఫ్ కర్ల్ వైరస్ (మూర్ఛ). వైట్‌ఫ్లైలు ద్వారా వ్యాప్తి. సంక్రమించిన తర్వాత నయం లేదు.",
+                    "action_en": "Remove infected plants immediately. Control whiteflies with Imidacloprid 100ml/acre. Plant resistant varieties.",
+                    "action_te": "సంక్రమిత మొక్కలను వెంటనే తొలగించండి. ఇమిడాక్లోప్రిడ్ 100ml/ఎకరంతో వైట్‌ఫ్లైలను నియంత్రించండి. నిరోధక రకాలు నాటండి.",
+                    "urgency": "high",
+                    "stage": [
+                        "all"
+                    ]
+                },
+                {
+                    "id": "chilli_fert_001",
+                    "category": "fertilizer",
+                    "question_en": "Chilli flowers dropping without forming fruits",
+                    "question_te": "మిర్చి పూలు పండ్లు ఏర్పడకుండా రాలిపోతున్నాయి",
+                    "answer_en": "Flower drop due to: high temperature, excess nitrogen, boron deficiency, or water stress.",
+                    "answer_te": "పూలు రాలడానికి కారణాలు: అధిక ఉష్ణోగ్రత, అధిక నత్రజని, బోరాన్ లోపం, లేదా నీటి ఒత్తిడి.",
+                    "action_en": "Spray Boron 0.2% (2g/L). Spray NAA 20ppm at flowering. Ensure regular irrigation. Avoid evening irrigation.",
+                    "action_te": "బోరాన్ 0.2% (2g/L) పిచికారి చేయండి. పుష్పించేటప్పుడు NAA 20ppm పిచికారి చేయండి. క్రమం తప్పకుండా నీటిపారుదల ఉంచండి. సాయంత్రం నీరు వేయకండి.",
+                    "urgency": "high",
+                    "stage": [
+                        "flowering"
+                    ]
+                },
+                {
+                    "id": "chilli_weather_001",
+                    "category": "weather",
+                    "question_en": "What to do after waterlogging in chilli field?",
+                    "question_te": "మిర్చి పొలంలో నీరు నిలిచిపోయిన తర్వాత ఏం చేయాలి?",
+                    "answer_en": "Chilli is very sensitive to waterlogging. It causes root rot and wilt within 24-48 hours.",
+                    "answer_te": "మిర్చి నీరు నిలిచిపోవడానికి చాలా సున్నితం. ఇది 24-48 గంటల్లో వేరు కుళ్ళు మరియు వాడిపోవడం కలిగిస్తుంది.",
+                    "action_en": "Drain immediately. Apply Copper fungicide drench at roots. Spray Potash 1% to boost plant recovery.",
+                    "action_te": "వెంటనే నీరు తీయండి. వేర్లలో కాపర్ శిలీంద్ర నాశిని పోయండి. మొక్క కోలుకోవడానికి పొటాష్ 1% పిచికారి చేయండి.",
+                    "urgency": "high",
+                    "stage": [
+                        "all"
+                    ]
+                }
+            ]
+        },
+        "Maize": {
+            "crop_te": "మొక్కజొన్న",
+            "faqs": [
+                {
+                    "id": "maize_pest_001",
+                    "category": "pest",
+                    "question_en": "Ragged holes in maize leaves with sawdust-like material in whorl",
+                    "question_te": "మొక్కజొన్న ఆకులలో గుర్తుల రంధ్రాలు, మధ్యలో రంపపు పొడి లాంటి పదార్థం",
+                    "answer_en": "This is Fall Armyworm attack. The caterpillar feeds in the whorl leaving ragged holes and frass (sawdust-like).",
+                    "answer_te": "ఇది ఫాల్ ఆర్మీవార్మ్ దాడి. గొంగళి పురుగు మధ్యలో తింటూ గర్తుల రంధ్రాలు మరియు ఫ్రాస్ (రంపపు పొడి లాంటిది) వదులుతుంది.",
+                    "action_en": "Spray Spinetoram 100ml/acre directly into whorl. Apply Metarhizium bio-pesticide. Scout in early morning.",
+                    "action_te": "స్పైనెటోరామ్ 100ml/ఎకరం నేరుగా మధ్యలో పిచికారి చేయండి. మెటార్హిజియం బయో-పెస్టిసైడ్ వేయండి. ఉదయాన్నే చూడండి.",
+                    "urgency": "high",
+                    "stage": [
+                        "vegetative"
+                    ]
+                },
+                {
+                    "id": "maize_fert_001",
+                    "category": "fertilizer",
+                    "question_en": "Maize leaves turning pale with purple streaks",
+                    "question_te": "మొక్కజొన్న ఆకులు ఊదా చారలతో లేత రంగుకు మారుతున్నాయి",
+                    "answer_en": "This is Phosphorus deficiency combined with cool temperatures. Purple color is due to anthocyanin accumulation.",
+                    "answer_te": "ఇది చల్లని ఉష్ణోగ్రతలతో కలిసిన భాస్వరం లోపం. యాంథోసైనిన్ నిల్వ వల్ల ఊదా రంగు.",
+                    "action_en": "Apply DAP 25kg/acre. Will recover as temperature rises. Ensure proper seed-fertilizer placement.",
+                    "action_te": "DAP 25kg/ఎకరం వేయండి. ఉష్ణోగ్రత పెరిగేకొద్దీ కోలుకుంటుంది. సరైన విత్తన-ఎరువు ఉంచడం ఉంచండి.",
+                    "urgency": "medium",
+                    "stage": [
+                        "seedling",
+                        "vegetative"
+                    ]
+                },
+                {
+                    "id": "maize_growth_001",
+                    "category": "growth",
+                    "question_en": "Maize tassels but no cobs forming",
+                    "question_te": "మొక్కజొన్న పరాగానికి వచ్చింది కానీ కంకులు ఏర్పడటం లేదు",
+                    "answer_en": "Poor pollination due to: drought during silking, heat stress, or nutrient deficiency.",
+                    "answer_te": "పేలవమైన పరాగసంపర్కానికి కారణాలు: సిల్కింగ్ సమయంలో కరువు, వేడి ఒత్తిడి, లేదా పోషకాల లోపం.",
+                    "action_en": "Ensure irrigation at silking. Hand pollination possible in small plots. Avoid water stress 10 days before silking.",
+                    "action_te": "సిల్కింగ్ సమయంలో నీటిపారుదల ఇవ్వండి. చిన్న ప్లాట్లలో చేతి పరాగసంపర్కం సాధ్యం. సిల్కింగ్‌కు 10 రోజుల ముందు నీటి ఒత్తిడి వాడకండి.",
+                    "urgency": "high",
+                    "stage": [
+                        "flowering"
+                    ]
+                }
+            ]
+        },
+        "Groundnut": {
+            "crop_te": "వేరుశెనగ",
+            "faqs": [
+                {
+                    "id": "gnut_pest_001",
+                    "category": "pest",
+                    "question_en": "Serpentine white lines on groundnut leaves",
+                    "question_te": "వేరుశెనగ ఆకులపై పాము వంటి తెల్ల గీతలు",
+                    "answer_en": "This is Leaf Miner damage. The larvae mine between leaf layers creating serpentine tunnels.",
+                    "answer_te": "ఇది లీఫ్ మైనర్ నష్టం. లార్వా ఆకు పొరల మధ్య తొలిచి పాము వంటి సొరంగాలు సృష్టిస్తుంది.",
+                    "action_en": "Spray Profenofos 500ml/acre. Remove heavily affected leaves. Crop rotation helps.",
+                    "action_te": "ప్రొఫెనోఫాస్ 500ml/ఎకరం పిచికారి చేయండి. తీవ్రంగా ప్రభావితమైన ఆకులు తొలగించండి. పంట మార్పిడి సహాయపడుతుంది.",
+                    "urgency": "medium",
+                    "stage": [
+                        "vegetative",
+                        "flowering"
+                    ]
+                },
+                {
+                    "id": "gnut_dis_001",
+                    "category": "disease",
+                    "question_en": "Circular brown spots on groundnut leaves (Tikka)",
+                    "question_te": "వేరుశెనగ ఆకులపై గుండ్రని గోధుమ మచ్చలు (టిక్కా)",
+                    "answer_en": "This is Tikka disease (Early and Late Leaf Spot). Major disease in groundnut causing defoliation.",
+                    "answer_te": "ఇది టిక్కా వ్యాధి (ఎర్లీ మరియు లేట్ లీఫ్ స్పాట్). వేరుశెనగలో ఆకులు రాలడానికి కారణమయ్యే ప్రధాన వ్యాధి.",
+                    "action_en": "Spray Chlorothalonil or Mancozeb 500g/acre at 30, 45, and 60 days after sowing. Crop rotation essential.",
+                    "action_te": "విత్తిన 30, 45, మరియు 60 రోజులకు క్లోరోథలోనిల్ లేదా మాంకోజెబ్ 500g/ఎకరం పిచికారి చేయండి. పంట మార్పిడి తప్పనిసరి.",
+                    "urgency": "high",
+                    "stage": [
+                        "vegetative",
+                        "flowering"
+                    ]
+                },
+                {
+                    "id": "gnut_fert_001",
+                    "category": "fertilizer",
+                    "question_en": "Groundnut pods not filling properly",
+                    "question_te": "వేరుశెనగ కాయలు సరిగ్గా నిండటం లేదు",
+                    "answer_en": "Poor pod filling due to Calcium deficiency. Gypsum application is critical for groundnut.",
+                    "answer_te": "కాల్షియం లోపం వల్ల పేలవమైన కాయ నింపడం. వేరుశెనగకు జిప్సమ్ వేయడం కీలకం.",
+                    "action_en": "Apply Gypsum 200kg/acre at 40-45 days (flowering/pegging). Apply in soil around plants, not on leaves.",
+                    "action_te": "40-45 రోజులకు (పుష్పించడం/పెగ్గింగ్) జిప్సమ్ 200kg/ఎకరం వేయండి. ఆకులపై కాదు, మొక్కల చుట్టూ మట్టిలో వేయండి.",
+                    "urgency": "high",
+                    "stage": [
+                        "flowering"
+                    ]
+                }
+            ]
+        }
+    },
+    "general_faqs": [
+        {
+            "id": "gen_001",
+            "category": "weather",
+            "question_en": "What to do in heavy rain for all crops?",
+            "question_te": "అన్ని పంటలకు భారీ వర్షంలో ఏం చేయాలి?",
+            "answer_en": "1) Ensure proper drainage 2) Avoid fertilizer application 3) Scout for diseases after 3-4 days 4) Spray preventive fungicide if humidity persists",
+            "answer_te": "1) సరైన డ్రైనేజ్ ఉండేలా చూడండి 2) ఎరువులు వేయకండి 3) 3-4 రోజుల తర్వాత వ్యాధులు చూడండి 4) తేమ కొనసాగితే నివారణ శిలీంద్ర నాశిని పిచికారి చేయండి",
+            "urgency": "high"
+        },
+        {
+            "id": "gen_002",
+            "category": "fertilizer",
+            "question_en": "Can I mix different fertilizers together?",
+            "question_te": "వేర్వేరు ఎరువులను కలపవచ్చా?",
+            "answer_en": "Some combinations are safe: DAP+MOP, Urea+DAP. Avoid: Urea+SSP (nitrogen loss), DAP+Lime (reduces phosphorus availability).",
+            "answer_te": "కొన్ని కలయికలు సురక్షితం: DAP+MOP, యూరియా+DAP. వద్దు: యూరియా+SSP (నత్రజని నష్టం), DAP+సున్నం (భాస్వరం తగ్గుతుంది).",
+            "urgency": "low"
+        },
+        {
+            "id": "gen_003",
+            "category": "pest",
+            "question_en": "What is the best time to spray pesticides?",
+            "question_te": "పురుగుమందులు పిచికారి చేయడానికి ఉత్తమ సమయం ఏమిటి?",
+            "answer_en": "Early morning (6-9 AM) or late afternoon (4-6 PM). Avoid midday heat. No rain expected for 4+ hours.",
+            "answer_te": "ఉదయం ప్రారంభంలో (6-9 AM) లేదా సాయంత్రం (4-6 PM). మధ్యాహ్నం వేడిలో వేయకండి. 4+ గంటలు వర్షం రాదు.",
+            "urgency": "low"
+        }
+    ]
+}

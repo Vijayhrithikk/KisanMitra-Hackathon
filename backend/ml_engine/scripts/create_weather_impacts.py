@@ -1,0 +1,182 @@
+"""
+Create Weather Impact Rules per crop per stage
+For intelligent weather-based action recommendations
+"""
+import json
+from datetime import datetime
+
+WEATHER_IMPACTS = {
+    "version": "1.0",
+    "generated": datetime.now().isoformat(),
+    "weather_scenarios": {
+        "heat_wave": {
+            "definition": {
+                "temp_min": 40,
+                "duration_days": 3,
+                "description": "Temperature above 40°C for 3+ consecutive days"
+            },
+            "crop_impacts": {
+                "Paddy": {
+                    "flowering": {"risk": "critical", "effect": "Spikelet sterility up to 80%", "yield_loss_percent": "30-80",
+                                 "actions_en": ["Irrigate in evening only", "Spray 2% KCl solution", "Avoid spraying at peak heat"],
+                                 "actions_te": ["సాయంత్రం మాత్రమే నీరు", "2% KCl పిచికారీ", "గరిష్ట వేడిలో పిచికారీ వద్దు"]},
+                    "grain_fill": {"risk": "high", "effect": "Reduced grain weight", "yield_loss_percent": "15-25",
+                                  "actions_en": ["Maintain 5cm water depth", "Avoid field work 11am-4pm"],
+                                  "actions_te": ["5సెం.మీ నీటి లోతు నిలపండి", "11am-4pm పొలం పని వద్దు"]}
+                },
+                "Cotton": {
+                    "squaring": {"risk": "critical", "effect": "Square shedding 40-60%", "yield_loss_percent": "20-40",
+                                "actions_en": ["Light irrigation every 2-3 days", "Spray PGR (NAA 20ppm)", "Mulching if possible"],
+                                "actions_te": ["2-3 రోజులకు తేలికపాటి నీరు", "PGR పిచికారీ", "వీలైతే మల్చింగ్"]},
+                    "flowering": {"risk": "high", "effect": "Flower drop", "yield_loss_percent": "15-30",
+                                 "actions_en": ["Increase irrigation frequency", "Avoid chemical sprays at midday"],
+                                 "actions_te": ["నీటి ఫ్రీక్వెన్సీ పెంచండి", "మధ్యాహ్నం రసాయన పిచికారి వద్దు"]}
+                },
+                "Maize": {
+                    "tasseling": {"risk": "critical", "effect": "Poor pollination, barren cobs", "yield_loss_percent": "40-70",
+                                 "actions_en": ["Irrigate immediately", "Apply foliar ZnSO4 0.5%"],
+                                 "actions_te": ["వెంటనే నీరు", "ఆకులపై ZnSO4 పిచికారీ"]},
+                    "silking": {"risk": "critical", "effect": "Silk drying, no kernel set", "yield_loss_percent": "50-80",
+                               "actions_en": ["Light irrigation twice daily if possible", "Avoid any stress"],
+                               "actions_te": ["వీలైతే రోజుకు రెండు సార్లు తేలికపాటి నీరు"]}
+                },
+                "Chilli": {
+                    "flowering": {"risk": "high", "effect": "Flower and fruit drop", "yield_loss_percent": "25-40",
+                                 "actions_en": ["Irrigate in evening", "Spray Boron 0.2%", "Provide shade if possible"],
+                                 "actions_te": ["సాయంత్రం నీరు", "బోరాన్ 0.2% పిచికారీ", "వీలైతే నీడ ఏర్పాటు"]}
+                }
+            }
+        },
+        "continuous_rain": {
+            "definition": {
+                "rainfall_mm": 50,
+                "duration_days": 3,
+                "description": "Rainfall >50mm over 3+ consecutive days"
+            },
+            "crop_impacts": {
+                "Paddy": {
+                    "tillering": {"risk": "medium", "effect": "Fungal disease buildup",
+                                 "actions_en": ["Drain excess water above 5cm", "Prepare fungicide for post-rain spray"],
+                                 "actions_te": ["5సెం.మీ పైన అదనపు నీరు తీసివేయండి", "వర్షం తర్వాత ఫంగిసైడ్ సిద్ధం చేయండి"]},
+                    "flowering": {"risk": "high", "effect": "Blast disease, poor pollination",
+                                 "actions_en": ["Spray Tricyclazole after rain stops", "Ensure drainage"],
+                                 "actions_te": ["వర్షం ఆగిన తర్వాత ట్రైసైక్లాజోల్ పిచికారీ", "డ్రైనేజ్ నిర్ధారించండి"]}
+                },
+                "Cotton": {
+                    "boll_opening": {"risk": "critical", "effect": "Boll rot, lint staining",
+                                    "actions_en": ["Delay picking until bolls dry", "Pick immediately after break in rain"],
+                                    "actions_te": ["కాయలు ఆరే వరకు కోత ఆపండి", "వర్షం విరామం తర్వాత వెంటనే కోయండి"]}
+                },
+                "Groundnut": {
+                    "maturity": {"risk": "high", "effect": "Pod sprouting, aflatoxin risk",
+                                "actions_en": ["Harvest as soon as possible", "Dry pods immediately"],
+                                "actions_te": ["వీలైనంత త్వరగా కోయండి", "కాయలు వెంటనే ఆరబెట్టండి"]}
+                }
+            }
+        },
+        "drought": {
+            "definition": {
+                "no_rain_days": 14,
+                "description": "No significant rainfall for 14+ days during crop period"
+            },
+            "crop_impacts": {
+                "Paddy": {
+                    "tillering": {"risk": "high", "effect": "Reduced tiller number",
+                                 "actions_en": ["Maintain minimum 3cm water", "Apply potash to improve stress tolerance"],
+                                 "actions_te": ["కనీసం 3సెం.మీ నీరు నిలపండి", "ఒత్తిడి తట్టుకునేందుకు పొటాష్ వేయండి"]},
+                    "flowering": {"risk": "critical", "effect": "Spikelet sterility",
+                                 "actions_en": ["Prioritize irrigation for flowering fields", "Irrigate daily if possible"],
+                                 "actions_te": ["పూత పొలాలకు నీటికి ప్రాధాన్యత", "వీలైతే రోజూ నీరు"]}
+                },
+                "Maize": {
+                    "tasseling": {"risk": "critical", "effect": "Complete crop failure possible",
+                                 "actions_en": ["Any irrigation can save 30-40% yield", "Focus on critical 10-day window"],
+                                 "actions_te": ["ఏదైనా నీరు 30-40% దిగుబడి కాపాడగలదు"]}
+                },
+                "Groundnut": {
+                    "pegging": {"risk": "critical", "effect": "Pegs cannot penetrate hard soil",
+                               "actions_en": ["Light irrigation essential", "Earthing up after irrigation"],
+                               "actions_te": ["తేలికపాటి నీరు అవసరం", "నీటి తర్వాత మట్టి వేయడం"]}
+                }
+            }
+        },
+        "high_humidity": {
+            "definition": {
+                "humidity_min": 85,
+                "duration_days": 3,
+                "description": "Relative humidity >85% for 3+ days"
+            },
+            "crop_impacts": {
+                "Paddy": {
+                    "tillering": {"risk": "high", "effect": "BPH buildup, Sheath blight",
+                                 "actions_en": ["Drain field intermittently", "Scout for BPH twice daily", "Prepare insecticide"],
+                                 "actions_te": ["అడపాదడపా పొలం ఆరబెట్టండి", "రోజుకు రెండు సార్లు BPH చూడండి"]},
+                    "flowering": {"risk": "high", "effect": "Blast epidemic risk",
+                                 "actions_en": ["Preventive Tricyclazole spray", "Avoid evening irrigation"],
+                                 "actions_te": ["నివారణగా ట్రైసైక్లాజోల్ పిచికారీ", "సాయంత్రం నీరు వద్దు"]}
+                },
+                "Cotton": {
+                    "boll_development": {"risk": "medium", "effect": "Boll rot, bacterial blight spread",
+                                        "actions_en": ["Improve aeration between rows", "Prophylactic COC spray"],
+                                        "actions_te": ["వరుసల మధ్య గాలి మెరుగుపరచండి", "COC పిచికారీ"]}
+                },
+                "Chilli": {
+                    "fruiting": {"risk": "high", "effect": "Fruit rot, Anthracnose",
+                                "actions_en": ["Remove infected fruits", "Spray Carbendazim or COC"],
+                                "actions_te": ["సోకిన కాయలు తీసివేయండి", "కార్బెండజిమ్ లేదా COC పిచికారీ"]}
+                }
+            }
+        },
+        "cold_wave": {
+            "definition": {
+                "temp_max": 15,
+                "duration_days": 2,
+                "description": "Temperature below 15°C for 2+ days"
+            },
+            "crop_impacts": {
+                "Paddy": {
+                    "nursery": {"risk": "high", "effect": "Poor germination, seedling death",
+                               "actions_en": ["Cover nursery with polythene", "Drain water at night"],
+                               "actions_te": ["నారుమడిని పాలిథీన్‌తో కప్పండి", "రాత్రి నీరు తీసివేయండి"]},
+                    "flowering": {"risk": "critical", "effect": "Spikelet sterility (cold-induced)",
+                                 "actions_en": ["Maintain deeper water (7-10cm)", "Delay transplanting if possible"],
+                                 "actions_te": ["లోతైన నీరు (7-10సెం.మీ) నిలపండి"]}
+                }
+            }
+        },
+        "strong_wind": {
+            "definition": {
+                "wind_speed_kmh": 40,
+                "description": "Wind speed >40 km/h"
+            },
+            "crop_impacts": {
+                "Paddy": {
+                    "grain_fill": {"risk": "high", "effect": "Lodging, grain shattering",
+                                  "actions_en": ["Drain field if lodging occurs", "Harvest immediately if mature"],
+                                  "actions_te": ["పడిపోతే పొలం ఆరబెట్టండి", "పరిపక్వమైతే వెంటనే కోయండి"]}
+                },
+                "Cotton": {
+                    "boll_opening": {"risk": "medium", "effect": "Lint blowing, mechanical damage",
+                                    "actions_en": ["Quick picking after wind subsides"],
+                                    "actions_te": ["గాలి తగ్గిన తర్వాత త్వరగా కోయండి"]}
+                },
+                "Maize": {
+                    "tasseling": {"risk": "high", "effect": "Lodging, poor pollination",
+                                 "actions_en": ["Earthing up to provide support", "Nothing can be done for lodged crop"],
+                                 "actions_te": ["ఆధారం కోసం మట్టి వేయండి"]}
+                }
+            }
+        }
+    }
+}
+
+# Save to file
+output_path = r"c:\Users\hi\KisanMitra-AI-v2\backend\ml_engine\data\weather_crop_impacts.json"
+with open(output_path, 'w', encoding='utf-8') as f:
+    json.dump(WEATHER_IMPACTS, f, indent=2, ensure_ascii=False)
+
+print(f"✅ Created Weather Impact Rules")
+print(f"   Weather Scenarios: {len(WEATHER_IMPACTS['weather_scenarios'])}")
+for scenario in WEATHER_IMPACTS['weather_scenarios']:
+    crops_affected = len(WEATHER_IMPACTS['weather_scenarios'][scenario]['crop_impacts'])
+    print(f"   {scenario}: affects {crops_affected} crops")

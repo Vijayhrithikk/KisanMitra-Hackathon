@@ -1,0 +1,4553 @@
+{
+  "crops": {
+    "Rice": {
+      "name_en": "Rice",
+      "name_te": "వరి",
+      "duration_days": 120,
+      "seasons": [
+        "Kharif",
+        "Rabi"
+      ],
+      "water_requirement": "High",
+      "optimal_temp": {
+        "min": 20,
+        "max": 35
+      },
+      "stages": [
+        {
+          "name_en": "Nursery Preparation",
+          "name_te": "నారుమడి తయారీ",
+          "week_start": 1,
+          "week_end": 3,
+          "tasks_en": [
+            "Prepare nursery bed with fine tilth",
+            "Apply basal fertilizer (DAP 100kg/ha)",
+            "Soak seeds for 24 hours before sowing",
+            "Sow seeds uniformly and cover lightly"
+          ],
+          "tasks_te": [
+            "నారుమడిని సన్నని మట్టితో సిద్ధం చేయండి",
+            "DAP 100kg/హెక్టారు వేయండి",
+            "విత్తనాలను 24 గంటలు నానబెట్టండి",
+            "విత్తనాలను సమానంగా వేసి తేలికగా కప్పండి"
+          ],
+          "irrigation": "Keep nursery moist, light irrigation daily",
+          "irrigation_te": "నారుమడిని తేమగా ఉంచండి, రోజూ తేలిక నీరు"
+        },
+        {
+          "name_en": "Transplanting",
+          "name_te": "నాట్లు వేయడం",
+          "week_start": 4,
+          "week_end": 5,
+          "tasks_en": [
+            "Prepare main field with 2-3 ploughings",
+            "Apply basal dose: Urea 40kg + MOP 40kg/ha",
+            "Transplant 21-25 day old seedlings",
+            "Maintain 2-3 seedlings per hill, 20x15 cm spacing"
+          ],
+          "tasks_te": [
+            "ప్రధాన పొలాన్ని 2-3 సార్లు దున్నండి",
+            "యూరియా 40kg + MOP 40kg/హెక్టారు వేయండి",
+            "21-25 రోజుల నారును నాటండి",
+            "ఒక్కో గుంటకు 2-3 మొక్కలు, 20x15 సెం.మీ. దూరం"
+          ],
+          "irrigation": "Maintain 5-7 cm standing water",
+          "irrigation_te": "5-7 సెం.మీ. నిలిచిన నీరు ఉంచండి"
+        },
+        {
+          "name_en": "Tillering Stage",
+          "name_te": "పిల్ల మొక్కల దశ",
+          "week_start": 6,
+          "week_end": 9,
+          "tasks_en": [
+            "Apply 1st top dressing: Urea 30kg/ha at 21 DAT",
+            "Weed management - manual or herbicide",
+            "Scout for stem borer, leaf folder",
+            "Maintain proper water level"
+          ],
+          "tasks_te": [
+            "మొదటి పైపెట్టు: యూరియా 30kg/హెక్టారు",
+            "కలుపు నిర్వహణ - చేతితో లేదా కలుపు మందు",
+            "కాండం తొలిచే పురుగు, ఆకు చుట్టే పురుగు కోసం చూడండి",
+            "సరైన నీటి మట్టం ఉంచండి"
+          ],
+          "irrigation": "Alternate wetting and drying (AWD)",
+          "irrigation_te": "తడి-పొడి (AWD) పద్ధతి"
+        },
+        {
+          "name_en": "Panicle Initiation",
+          "name_te": "కంకి ఏర్పాటు దశ",
+          "week_start": 10,
+          "week_end": 12,
+          "tasks_en": [
+            "Apply 2nd top dressing: Urea 30kg/ha",
+            "Critical stage - ensure adequate water",
+            "Scout for BPH (Brown Plant Hopper)",
+            "Spray micronutrients if deficiency observed"
+          ],
+          "tasks_te": [
+            "రెండవ పైపెట్టు: యూరియా 30kg/హెక్టారు",
+            "కీలక దశ - సరిపడా నీరు ఉండేలా చూడండి",
+            "BPH (గోధుమ రంగు వాటు) కోసం చూడండి",
+            "లోపం ఉంటే సూక్ష్మ పోషకాలు పిచికారి చేయండి"
+          ],
+          "irrigation": "Continuous flooding 5-7 cm",
+          "irrigation_te": "5-7 సెం.మీ నిరంతర నీరు"
+        },
+        {
+          "name_en": "Flowering & Grain Filling",
+          "name_te": "పూత మరియు గింజ నిండే దశ",
+          "week_start": 13,
+          "week_end": 15,
+          "tasks_en": [
+            "Most critical water requirement stage",
+            "Protect from birds",
+            "Monitor for neck blast disease",
+            "Avoid water stress during grain filling"
+          ],
+          "tasks_te": [
+            "అత్యంత కీలకమైన నీటి అవసరం దశ",
+            "పక్షుల నుండి రక్షించండి",
+            "మెడ బ్లాస్ట్ వ్యాధి కోసం చూడండి",
+            "గింజ నిండే సమయంలో నీటి కొరత ఉండకూడదు"
+          ],
+          "irrigation": "Maintain adequate moisture",
+          "irrigation_te": "సరిపడా తేమ ఉంచండి"
+        },
+        {
+          "name_en": "Maturity & Harvest",
+          "name_te": "పక్వత మరియు కోత",
+          "week_start": 16,
+          "week_end": 17,
+          "tasks_en": [
+            "Drain field 10-15 days before harvest",
+            "Harvest when 80-85% grains are straw colored",
+            "Thresh within 24 hours of cutting",
+            "Dry grains to 12-14% moisture for storage"
+          ],
+          "tasks_te": [
+            "కోతకు 10-15 రోజుల ముందు పొలం నీరు తీసేయండి",
+            "80-85% గింజలు గడ్డి రంగులోకి మారినప్పుడు కోయండి",
+            "కోసిన 24 గంటల్లో నూర్పిడి చేయండి",
+            "నిల్వ కోసం గింజలను 12-14% తేమకు ఎండబెట్టండి"
+          ],
+          "irrigation": "None - field should be dry",
+          "irrigation_te": "అక్కర్లేదు - పొలం ఆరిపోవాలి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Stem Borer",
+          "name_te": "కాండం తొలిచే పురుగు",
+          "risk_months": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "BPH",
+          "name_te": "గోధుమ వాటు",
+          "risk_months": [
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "name": "Leaf Folder",
+          "name_te": "ఆకు చుట్టే పురుగు",
+          "risk_months": [
+            7,
+            8
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Blast",
+          "name_te": "బ్లాస్ట్",
+          "conditions": "High humidity, cool nights"
+        },
+        {
+          "name": "Sheath Blight",
+          "name_te": "తొడుగు తెగులు",
+          "conditions": "Dense planting, high nitrogen"
+        }
+      ]
+    },
+    "Cotton": {
+      "name_en": "Cotton",
+      "name_te": "పత్తి",
+      "duration_days": 180,
+      "seasons": [
+        "Kharif"
+      ],
+      "water_requirement": "Medium",
+      "optimal_temp": {
+        "min": 21,
+        "max": 35
+      },
+      "stages": [
+        {
+          "name_en": "Land Preparation & Sowing",
+          "name_te": "భూమి సిద్ధం & విత్తనం",
+          "week_start": 1,
+          "week_end": 2,
+          "tasks_en": [
+            "Deep ploughing and leveling",
+            "Apply FYM 10 tonnes/ha",
+            "Seed treatment with Imidacloprid",
+            "Sow at 90x60 cm spacing"
+          ],
+          "tasks_te": [
+            "లోతుగా దున్ని సమం చేయండి",
+            "10 టన్నులు పశువుల ఎరువు వేయండి",
+            "ఇమిడాక్లోప్రిడ్‌తో విత్తన శుద్ధి",
+            "90x60 సెం.మీ. దూరంలో విత్తండి"
+          ],
+          "irrigation": "Pre-sowing irrigation, then after sowing",
+          "irrigation_te": "విత్తేముందు నీరు, ఆ తర్వాత విత్తిన తర్వాత"
+        },
+        {
+          "name_en": "Vegetative Growth",
+          "name_te": "ఆకు పెరుగుదల దశ",
+          "week_start": 3,
+          "week_end": 8,
+          "tasks_en": [
+            "Gap filling within 10 days",
+            "Thinning - maintain 1 plant per spot",
+            "Intercultivation at 20 and 40 DAS",
+            "Apply Urea 50kg/ha at 30 DAS"
+          ],
+          "tasks_te": [
+            "10 రోజుల్లో ఖాళీ భర్తీ",
+            "ఒక్కో చోట ఒక మొక్క ఉంచండి",
+            "20 మరియు 40 రోజులకు అంతర సేద్యం",
+            "30 రోజులకు యూరియా 50kg/హెక్టారు"
+          ],
+          "irrigation": "Every 8-10 days in dry periods",
+          "irrigation_te": "ఎండ సమయంలో ప్రతి 8-10 రోజులకు"
+        },
+        {
+          "name_en": "Square Formation",
+          "name_te": "మొగ్గ ఏర్పాటు",
+          "week_start": 9,
+          "week_end": 12,
+          "tasks_en": [
+            "Apply 2nd dose Urea 50kg/ha",
+            "Spray growth regulators if needed",
+            "Scout for bollworms, aphids",
+            "Install pheromone traps"
+          ],
+          "tasks_te": [
+            "రెండవ మోతాదు యూరియా 50kg వేయండి",
+            "అవసరమైతే పెరుగుదల నియంత్రకాలు పిచికారి చేయండి",
+            "కాయ తొలిచే పురుగులు, పేనులు చూడండి",
+            "ఫెరోమోన్ ఉచ్చులు పెట్టండి"
+          ],
+          "irrigation": "Critical - every 7 days",
+          "irrigation_te": "కీలకం - ప్రతి 7 రోజులకు"
+        },
+        {
+          "name_en": "Flowering & Boll Development",
+          "name_te": "పూత & కాయ ఏర్పాటు",
+          "week_start": 13,
+          "week_end": 18,
+          "tasks_en": [
+            "Peak flowering - critical irrigation",
+            "Spray for pink bollworm if detected",
+            "Apply foliar spray of MgSO4 1%",
+            "Monitor for leaf reddening"
+          ],
+          "tasks_te": [
+            "గరిష్ట పూత - కీలక నీటిపారుదల",
+            "గులాబీ కాయ పురుగు కనిపిస్తే మందు పిచికారి",
+            "MgSO4 1% ఆకు పిచికారి",
+            "ఆకు ఎర్రబడటం చూడండి"
+          ],
+          "irrigation": "Every 6-7 days",
+          "irrigation_te": "ప్రతి 6-7 రోజులకు"
+        },
+        {
+          "name_en": "Boll Opening & Picking",
+          "name_te": "కాయ తెరుచుకోవడం & ఏరడం",
+          "week_start": 19,
+          "week_end": 26,
+          "tasks_en": [
+            "Stop irrigation 15 days before harvest",
+            "First picking when 60% bolls open",
+            "Pick every 7-10 days (3-4 pickings)",
+            "Grade cotton before selling"
+          ],
+          "tasks_te": [
+            "కోతకు 15 రోజుల ముందు నీరు ఆపండి",
+            "60% కాయలు తెరుచుకున్నప్పుడు మొదటి ఏత",
+            "ప్రతి 7-10 రోజులకు ఏరండి (3-4 సార్లు)",
+            "అమ్మే ముందు పత్తిని గ్రేడ్ చేయండి"
+          ],
+          "irrigation": "None during picking",
+          "irrigation_te": "ఏరే సమయంలో అక్కర్లేదు"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Pink Bollworm",
+          "name_te": "గులాబీ కాయ పురుగు",
+          "risk_months": [
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "name": "American Bollworm",
+          "name_te": "అమెరికన్ కాయ పురుగు",
+          "risk_months": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "Whitefly",
+          "name_te": "తెల్ల దోమ",
+          "risk_months": [
+            9,
+            10,
+            11
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Leaf Spot",
+          "name_te": "ఆకు మచ్చ",
+          "conditions": "High humidity"
+        },
+        {
+          "name": "Root Rot",
+          "name_te": "వేరు కుళ్ళు",
+          "conditions": "Waterlogging"
+        }
+      ]
+    },
+    "Maize": {
+      "name_en": "Maize",
+      "name_te": "మొక్కజొన్న",
+      "duration_days": 100,
+      "seasons": [
+        "Kharif",
+        "Rabi",
+        "Summer"
+      ],
+      "water_requirement": "Medium",
+      "optimal_temp": {
+        "min": 18,
+        "max": 32
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Maize cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "మొక్కజొన్న సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Maize at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "మొక్కజొన్నను సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 7,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Maize requirement",
+          "irrigation_te": "మొక్కజొన్న అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 8,
+          "week_end": 9,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 10,
+          "week_end": 13,
+          "tasks_en": [
+            "Monitor Maize maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "మొక్కజొన్న పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 14,
+          "week_end": 15,
+          "tasks_en": [
+            "Harvest Maize at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "మొక్కజొన్నను సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Fall Armyworm",
+          "name_te": "ఆర్మీ పురుగు",
+          "risk_months": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "Stem Borer",
+          "name_te": "కాండం తొలిచే పురుగు",
+          "risk_months": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Downy Mildew",
+          "name_te": "తుప్పు తెగులు",
+          "conditions": "Cool humid weather"
+        },
+        {
+          "name": "Stalk Rot",
+          "name_te": "కాండం కుళ్ళు",
+          "conditions": "Water stress followed by rain"
+        }
+      ]
+    },
+    "Groundnut": {
+      "name_en": "Groundnut",
+      "name_te": "వేరుశెనగ",
+      "duration_days": 110,
+      "seasons": [
+        "Kharif",
+        "Rabi"
+      ],
+      "water_requirement": "Medium",
+      "optimal_temp": {
+        "min": 22,
+        "max": 30
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Groundnut cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "వేరుశెనగ సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Groundnut at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "వేరుశెనగను సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 7,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Groundnut requirement",
+          "irrigation_te": "వేరుశెనగ అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 8,
+          "week_end": 10,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 11,
+          "week_end": 14,
+          "tasks_en": [
+            "Monitor Groundnut maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "వేరుశెనగ పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 15,
+          "week_end": 16,
+          "tasks_en": [
+            "Harvest Groundnut at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "వేరుశెనగను సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Leaf Miner",
+          "name_te": "ఆకు తొలిచే పురుగు",
+          "risk_months": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "Red Hairy Caterpillar",
+          "name_te": "ఎర్ర రోమాల పురుగు",
+          "risk_months": [
+            8,
+            9
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Tikka (Leaf Spot)",
+          "name_te": "టిక్కా",
+          "conditions": "High humidity, continuous rain"
+        },
+        {
+          "name": "Collar Rot",
+          "name_te": "మొదలు కుళ్ళు",
+          "conditions": "Waterlogging"
+        }
+      ]
+    },
+    "Chilli": {
+      "name_en": "Chilli",
+      "name_te": "మిర్చి",
+      "duration_days": 150,
+      "seasons": [
+        "Kharif",
+        "Rabi"
+      ],
+      "water_requirement": "Medium",
+      "optimal_temp": {
+        "min": 20,
+        "max": 30
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Chilli cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "మిర్చి సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Chilli at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "మిర్చిను సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 10,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Chilli requirement",
+          "irrigation_te": "మిర్చి అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 11,
+          "week_end": 14,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 15,
+          "week_end": 20,
+          "tasks_en": [
+            "Monitor Chilli maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "మిర్చి పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 21,
+          "week_end": 22,
+          "tasks_en": [
+            "Harvest Chilli at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "మిర్చిను సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Thrips",
+          "name_te": "తామర పురుగులు",
+          "risk_months": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "name": "Fruit Borer",
+          "name_te": "కాయ తొలిచే పురుగు",
+          "risk_months": [
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "name": "Mites",
+          "name_te": "నల్లి పురుగులు",
+          "risk_months": [
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Leaf Curl Virus",
+          "name_te": "ఆకు ముడత వైరస్",
+          "conditions": "Whitefly transmission"
+        },
+        {
+          "name": "Anthracnose",
+          "name_te": "ఆంథ్రాక్నోస్",
+          "conditions": "Humid weather, rain"
+        }
+      ]
+    },
+    "Wheat": {
+      "name_en": "Wheat",
+      "name_te": "గోధుమ",
+      "duration_days": 120,
+      "seasons": [
+        "Rabi"
+      ],
+      "water_requirement": "Medium",
+      "optimal_temp": {
+        "min": 10,
+        "max": 25
+      },
+      "stages": [
+        {
+          "name_en": "Sowing",
+          "name_te": "విత్తడం",
+          "week_start": 1,
+          "week_end": 2,
+          "tasks_en": [
+            "Prepare fine seedbed",
+            "Seed treatment with fungicide",
+            "Sow at 22.5 cm row spacing",
+            "Apply basal NPK 60:40:40"
+          ],
+          "tasks_te": [
+            "సన్నని మడి తయారు చేయండి",
+            "శిలీంద్ర నాశినితో విత్తన శుద్ధి",
+            "22.5 సెం.మీ. వరుస దూరంలో విత్తండి",
+            "NPK 60:40:40 వేయండి"
+          ],
+          "irrigation": "Pre-sowing irrigation essential",
+          "irrigation_te": "విత్తేముందు నీరు తప్పనిసరి"
+        },
+        {
+          "name_en": "Crown Root Initiation",
+          "name_te": "మొదటి వేర్ల దశ",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "First irrigation at 21 DAS",
+            "Weed control",
+            "Apply Urea 30kg/ha"
+          ],
+          "tasks_te": [
+            "21 రోజులకు మొదటి నీరు",
+            "కలుపు నియంత్రణ",
+            "యూరియా 30kg వేయండి"
+          ],
+          "irrigation": "Critical - first irrigation",
+          "irrigation_te": "కీలకం - మొదటి నీరు"
+        },
+        {
+          "name_en": "Tillering",
+          "name_te": "పిలకలు దశ",
+          "week_start": 5,
+          "week_end": 7,
+          "tasks_en": [
+            "Second irrigation at 40 DAS",
+            "Top dressing Urea 30kg",
+            "Scout for aphids"
+          ],
+          "tasks_te": [
+            "40 రోజులకు రెండవ నీరు",
+            "యూరియా 30kg పైపెట్టు",
+            "పేనుల కోసం చూడండి"
+          ],
+          "irrigation": "Every 20-25 days",
+          "irrigation_te": "ప్రతి 20-25 రోజులకు"
+        },
+        {
+          "name_en": "Flowering & Grain Filling",
+          "name_te": "పూత & గింజ నిండే దశ",
+          "week_start": 8,
+          "week_end": 14,
+          "tasks_en": [
+            "Critical irrigation at boot stage",
+            "Monitor for rust disease",
+            "Avoid water stress"
+          ],
+          "tasks_te": [
+            "బూట్ దశలో కీలక నీరు",
+            "తుప్పు తెగులు చూడండి",
+            "నీటి కొరత వద్దు"
+          ],
+          "irrigation": "Most critical stage",
+          "irrigation_te": "అత్యంత కీలక దశ"
+        },
+        {
+          "name_en": "Maturity & Harvest",
+          "name_te": "పక్వత & కోత",
+          "week_start": 15,
+          "week_end": 17,
+          "tasks_en": [
+            "Harvest when grains are hard",
+            "Thresh and clean",
+            "Store at 12% moisture"
+          ],
+          "tasks_te": [
+            "గింజలు గట్టిగా ఉన్నప్పుడు కోయండి",
+            "నూర్పిడి చేసి శుభ్రం చేయండి",
+            "12% తేమలో నిల్వ చేయండి"
+          ],
+          "irrigation": "Stop 15 days before harvest",
+          "irrigation_te": "కోతకు 15 రోజుల ముందు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Aphids",
+          "name_te": "పేనులు",
+          "risk_months": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Rust",
+          "name_te": "తుప్పు",
+          "conditions": "Humid weather"
+        }
+      ]
+    },
+    "Sugarcane": {
+      "name_en": "Sugarcane",
+      "name_te": "చెరకు",
+      "duration_days": 360,
+      "seasons": [
+        "Year-round"
+      ],
+      "water_requirement": "High",
+      "optimal_temp": {
+        "min": 20,
+        "max": 35
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Sugarcane cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "చెరకు సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Sugarcane at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "చెరకును సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 25,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Sugarcane requirement",
+          "irrigation_te": "చెరకు అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 26,
+          "week_end": 34,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 35,
+          "week_end": 50,
+          "tasks_en": [
+            "Monitor Sugarcane maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "చెరకు పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 51,
+          "week_end": 52,
+          "tasks_en": [
+            "Harvest Sugarcane at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "చెరకును సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Early Shoot Borer",
+          "name_te": "ముందు చిగురు తొలిచే పురుగు",
+          "risk_months": [
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Red Rot",
+          "name_te": "ఎర్ర కుళ్ళు",
+          "conditions": "Waterlogging"
+        }
+      ]
+    },
+    "Pulses": {
+      "name_en": "Pulses (Red Gram)",
+      "name_te": "కంది పప్పు",
+      "duration_days": 150,
+      "seasons": [
+        "Kharif"
+      ],
+      "water_requirement": "Low",
+      "optimal_temp": {
+        "min": 18,
+        "max": 30
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Pulses cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "కంది పప్పు సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Pulses at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "కంది పప్పును సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 10,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Pulses requirement",
+          "irrigation_te": "కంది పప్పు అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 11,
+          "week_end": 14,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 15,
+          "week_end": 20,
+          "tasks_en": [
+            "Monitor Pulses maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "కంది పప్పు పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 21,
+          "week_end": 22,
+          "tasks_en": [
+            "Harvest Pulses at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "కంది పప్పును సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Pod Borer",
+          "name_te": "కాయ తొలిచే పురుగు",
+          "risk_months": [
+            9,
+            10,
+            11
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Wilt",
+          "name_te": "ఎండు తెగులు",
+          "conditions": "Waterlogging"
+        }
+      ]
+    },
+    "Turmeric": {
+      "name_en": "Turmeric",
+      "name_te": "పసుపు",
+      "duration_days": 270,
+      "seasons": [
+        "Kharif"
+      ],
+      "water_requirement": "High",
+      "optimal_temp": {
+        "min": 20,
+        "max": 30
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Turmeric cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "పసుపు సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Turmeric at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "పసుపును సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 19,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Turmeric requirement",
+          "irrigation_te": "పసుపు అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 20,
+          "week_end": 25,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 26,
+          "week_end": 37,
+          "tasks_en": [
+            "Monitor Turmeric maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "పసుపు పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 38,
+          "week_end": 39,
+          "tasks_en": [
+            "Harvest Turmeric at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "పసుపును సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Rhizome Scale",
+          "name_te": "దుంప పేను",
+          "risk_months": [
+            8,
+            9,
+            10
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Leaf Blotch",
+          "name_te": "ఆకు మచ్చ",
+          "conditions": "High humidity"
+        }
+      ]
+    },
+    "Tomato": {
+      "name_en": "Tomato",
+      "name_te": "టమాటా",
+      "duration_days": 90,
+      "seasons": [
+        "Kharif",
+        "Rabi",
+        "Zaid"
+      ],
+      "water_requirement": "Medium",
+      "optimal_temp": {
+        "min": 18,
+        "max": 27
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Tomato cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "టమాటా సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Tomato at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "టమాటాను సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 6,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Tomato requirement",
+          "irrigation_te": "టమాటా అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 7,
+          "week_end": 9,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 10,
+          "week_end": 11,
+          "tasks_en": [
+            "Monitor Tomato maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "టమాటా పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 12,
+          "week_end": 13,
+          "tasks_en": [
+            "Harvest Tomato at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "టమాటాను సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Fruit Borer",
+          "name_te": "కాయ పురుగు",
+          "risk_months": [
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "name": "Whitefly",
+          "name_te": "తెల్ల దోమ",
+          "risk_months": [
+            9,
+            10,
+            11
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Early Blight",
+          "name_te": "ముందస్తు తుప్పు",
+          "conditions": "Humid weather"
+        },
+        {
+          "name": "Late Blight",
+          "name_te": "ఆలస్య తుప్పు",
+          "conditions": "Cool humid nights"
+        }
+      ]
+    },
+    "Onion": {
+      "name_en": "Onion",
+      "name_te": "ఉల్లిపాయ",
+      "duration_days": 120,
+      "seasons": [
+        "Rabi",
+        "Kharif"
+      ],
+      "water_requirement": "Medium",
+      "optimal_temp": {
+        "min": 13,
+        "max": 24
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Onion cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "ఉల్లిపాయ సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Onion at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "ఉల్లిపాయను సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 8,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Onion requirement",
+          "irrigation_te": "ఉల్లిపాయ అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 9,
+          "week_end": 11,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 12,
+          "week_end": 16,
+          "tasks_en": [
+            "Monitor Onion maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "ఉల్లిపాయ పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 17,
+          "week_end": 18,
+          "tasks_en": [
+            "Harvest Onion at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "ఉల్లిపాయను సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Thrips",
+          "name_te": "తామర పురుగులు",
+          "risk_months": [
+            2,
+            3,
+            11
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Purple Blotch",
+          "name_te": "ఊదా మచ్చ",
+          "conditions": "High humidity"
+        }
+      ]
+    },
+    "Potato": {
+      "name_en": "Potato",
+      "name_te": "ఆలూగడ్డ",
+      "duration_days": 90,
+      "seasons": [
+        "Rabi"
+      ],
+      "water_requirement": "High",
+      "optimal_temp": {
+        "min": 15,
+        "max": 25
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Potato cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "ఆలూగడ్డ సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Potato at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "ఆలూగడ్డను సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 6,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Potato requirement",
+          "irrigation_te": "ఆలూగడ్డ అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 7,
+          "week_end": 9,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 10,
+          "week_end": 11,
+          "tasks_en": [
+            "Monitor Potato maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "ఆలూగడ్డ పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 12,
+          "week_end": 13,
+          "tasks_en": [
+            "Harvest Potato at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "ఆలూగడ్డను సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Aphids",
+          "name_te": "పేనులు",
+          "risk_months": [
+            11,
+            12,
+            1
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Late Blight",
+          "name_te": "ఆలస్య తుప్పు",
+          "conditions": "Cool humid weather"
+        }
+      ]
+    },
+    "Cabbage": {
+      "name_en": "Cabbage",
+      "name_te": "క్యాబేజీ",
+      "duration_days": 90,
+      "seasons": [
+        "Rabi"
+      ],
+      "water_requirement": "Medium",
+      "optimal_temp": {
+        "min": 15,
+        "max": 20
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Cabbage cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "క్యాబేజీ సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Cabbage at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "క్యాబేజీను సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 6,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Cabbage requirement",
+          "irrigation_te": "క్యాబేజీ అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 7,
+          "week_end": 9,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 10,
+          "week_end": 11,
+          "tasks_en": [
+            "Monitor Cabbage maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "క్యాబేజీ పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 12,
+          "week_end": 13,
+          "tasks_en": [
+            "Harvest Cabbage at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "క్యాబేజీను సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Common pests",
+          "name_te": "సాధారణ పురుగులు",
+          "risk_months": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Common diseases",
+          "name_te": "సాధారణ వ్యాధులు",
+          "conditions": "Varies"
+        }
+      ]
+    },
+    "Cauliflower": {
+      "name_en": "Cauliflower",
+      "name_te": "కాలీఫ్లవర్",
+      "duration_days": 100,
+      "seasons": [
+        "Rabi"
+      ],
+      "water_requirement": "Medium",
+      "optimal_temp": {
+        "min": 12,
+        "max": 22
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Cauliflower cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "కాలీఫ్లవర్ సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Cauliflower at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "కాలీఫ్లవర్ను సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 7,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Cauliflower requirement",
+          "irrigation_te": "కాలీఫ్లవర్ అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 8,
+          "week_end": 9,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 10,
+          "week_end": 13,
+          "tasks_en": [
+            "Monitor Cauliflower maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "కాలీఫ్లవర్ పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 14,
+          "week_end": 15,
+          "tasks_en": [
+            "Harvest Cauliflower at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "కాలీఫ్లవర్ను సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Common pests",
+          "name_te": "సాధారణ పురుగులు",
+          "risk_months": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Common diseases",
+          "name_te": "సాధారణ వ్యాధులు",
+          "conditions": "Varies"
+        }
+      ]
+    },
+    "Brinjal": {
+      "name_en": "Brinjal",
+      "name_te": "వంకాయ",
+      "duration_days": 120,
+      "seasons": [
+        "Kharif",
+        "Rabi"
+      ],
+      "water_requirement": "Medium",
+      "optimal_temp": {
+        "min": 22,
+        "max": 30
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Brinjal cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "వంకాయ సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Brinjal at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "వంకాయను సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 8,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Brinjal requirement",
+          "irrigation_te": "వంకాయ అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 9,
+          "week_end": 11,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 12,
+          "week_end": 16,
+          "tasks_en": [
+            "Monitor Brinjal maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "వంకాయ పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 17,
+          "week_end": 18,
+          "tasks_en": [
+            "Harvest Brinjal at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "వంకాయను సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Common pests",
+          "name_te": "సాధారణ పురుగులు",
+          "risk_months": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Common diseases",
+          "name_te": "సాధారణ వ్యాధులు",
+          "conditions": "Varies"
+        }
+      ]
+    },
+    "Okra": {
+      "name_en": "Okra",
+      "name_te": "బెండకాయ",
+      "duration_days": 60,
+      "seasons": [
+        "Kharif",
+        "Zaid"
+      ],
+      "water_requirement": "Low",
+      "optimal_temp": {
+        "min": 25,
+        "max": 37
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Okra cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "బెండకాయ సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Okra at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "బెండకాయను సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 6,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Okra requirement",
+          "irrigation_te": "బెండకాయ అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 7,
+          "week_end": 9,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 10,
+          "week_end": 11,
+          "tasks_en": [
+            "Monitor Okra maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "బెండకాయ పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 12,
+          "week_end": 13,
+          "tasks_en": [
+            "Harvest Okra at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "బెండకాయను సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Common pests",
+          "name_te": "సాధారణ పురుగులు",
+          "risk_months": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Common diseases",
+          "name_te": "సాధారణ వ్యాధులు",
+          "conditions": "Varies"
+        }
+      ]
+    },
+    "Carrot": {
+      "name_en": "Carrot",
+      "name_te": "క్యారెట్",
+      "duration_days": 90,
+      "seasons": [
+        "Rabi"
+      ],
+      "water_requirement": "Medium",
+      "optimal_temp": {
+        "min": 16,
+        "max": 20
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Carrot cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "క్యారెట్ సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Carrot at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "క్యారెట్ను సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 6,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Carrot requirement",
+          "irrigation_te": "క్యారెట్ అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 7,
+          "week_end": 9,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 10,
+          "week_end": 11,
+          "tasks_en": [
+            "Monitor Carrot maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "క్యారెట్ పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 12,
+          "week_end": 13,
+          "tasks_en": [
+            "Harvest Carrot at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "క్యారెట్ను సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Common pests",
+          "name_te": "సాధారణ పురుగులు",
+          "risk_months": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Common diseases",
+          "name_te": "సాధారణ వ్యాధులు",
+          "conditions": "Varies"
+        }
+      ]
+    },
+    "Mango": {
+      "name_en": "Mango",
+      "name_te": "మామిడి",
+      "duration_days": 120,
+      "seasons": [
+        "Kharif"
+      ],
+      "water_requirement": "Medium",
+      "optimal_temp": {
+        "min": 24,
+        "max": 35
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Mango cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "మామిడి సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Mango at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "మామిడిను సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 8,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Mango requirement",
+          "irrigation_te": "మామిడి అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 9,
+          "week_end": 11,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 12,
+          "week_end": 16,
+          "tasks_en": [
+            "Monitor Mango maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "మామిడి పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 17,
+          "week_end": 18,
+          "tasks_en": [
+            "Harvest Mango at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "మామిడిను సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Common pests",
+          "name_te": "సాధారణ పురుగులు",
+          "risk_months": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Common diseases",
+          "name_te": "సాధారణ వ్యాధులు",
+          "conditions": "Varies"
+        }
+      ]
+    },
+    "Banana": {
+      "name_en": "Banana",
+      "name_te": "అరటి",
+      "duration_days": 365,
+      "seasons": [
+        "Kharif",
+        "Rabi",
+        "Zaid"
+      ],
+      "water_requirement": "High",
+      "optimal_temp": {
+        "min": 15,
+        "max": 35
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Banana cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "అరటి సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Banana at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "అరటిను సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 26,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Banana requirement",
+          "irrigation_te": "అరటి అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 27,
+          "week_end": 34,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 35,
+          "week_end": 51,
+          "tasks_en": [
+            "Monitor Banana maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "అరటి పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 52,
+          "week_end": 53,
+          "tasks_en": [
+            "Harvest Banana at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "అరటిను సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Common pests",
+          "name_te": "సాధారణ పురుగులు",
+          "risk_months": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Common diseases",
+          "name_te": "సాధారణ వ్యాధులు",
+          "conditions": "Varies"
+        }
+      ]
+    },
+    "Papaya": {
+      "name_en": "Papaya",
+      "name_te": "బొప్పాయి",
+      "duration_days": 300,
+      "seasons": [
+        "Kharif",
+        "Rabi"
+      ],
+      "water_requirement": "Medium",
+      "optimal_temp": {
+        "min": 20,
+        "max": 35
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Papaya cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "బొప్పాయి సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Papaya at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "బొప్పాయిను సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 21,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Papaya requirement",
+          "irrigation_te": "బొప్పాయి అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 22,
+          "week_end": 28,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 29,
+          "week_end": 41,
+          "tasks_en": [
+            "Monitor Papaya maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "బొప్పాయి పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 42,
+          "week_end": 43,
+          "tasks_en": [
+            "Harvest Papaya at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "బొప్పాయిను సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Common pests",
+          "name_te": "సాధారణ పురుగులు",
+          "risk_months": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Common diseases",
+          "name_te": "సాధారణ వ్యాధులు",
+          "conditions": "Varies"
+        }
+      ]
+    },
+    "Guava": {
+      "name_en": "Guava",
+      "name_te": "జామపండు",
+      "duration_days": 180,
+      "seasons": [
+        "Kharif",
+        "Rabi"
+      ],
+      "water_requirement": "Medium",
+      "optimal_temp": {
+        "min": 20,
+        "max": 35
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Guava cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "జామపండు సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Guava at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "జామపండును సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 12,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Guava requirement",
+          "irrigation_te": "జామపండు అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 13,
+          "week_end": 16,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 17,
+          "week_end": 24,
+          "tasks_en": [
+            "Monitor Guava maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "జామపండు పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 25,
+          "week_end": 26,
+          "tasks_en": [
+            "Harvest Guava at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "జామపండును సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Common pests",
+          "name_te": "సాధారణ పురుగులు",
+          "risk_months": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Common diseases",
+          "name_te": "సాధారణ వ్యాధులు",
+          "conditions": "Varies"
+        }
+      ]
+    },
+    "Pomegranate": {
+      "name_en": "Pomegranate",
+      "name_te": "దానిమ్మ",
+      "duration_days": 180,
+      "seasons": [
+        "Kharif",
+        "Rabi"
+      ],
+      "water_requirement": "Low",
+      "optimal_temp": {
+        "min": 15,
+        "max": 38
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Pomegranate cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "దానిమ్మ సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Pomegranate at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "దానిమ్మను సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 12,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Pomegranate requirement",
+          "irrigation_te": "దానిమ్మ అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 13,
+          "week_end": 16,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 17,
+          "week_end": 24,
+          "tasks_en": [
+            "Monitor Pomegranate maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "దానిమ్మ పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 25,
+          "week_end": 26,
+          "tasks_en": [
+            "Harvest Pomegranate at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "దానిమ్మను సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Common pests",
+          "name_te": "సాధారణ పురుగులు",
+          "risk_months": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Common diseases",
+          "name_te": "సాధారణ వ్యాధులు",
+          "conditions": "Varies"
+        }
+      ]
+    },
+    "Grapes": {
+      "name_en": "Grapes",
+      "name_te": "ద్రాక్ష",
+      "duration_days": 150,
+      "seasons": [
+        "Kharif",
+        "Rabi"
+      ],
+      "water_requirement": "Medium",
+      "optimal_temp": {
+        "min": 15,
+        "max": 40
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Grapes cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "ద్రాక్ష సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Grapes at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "ద్రాక్షను సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 10,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Grapes requirement",
+          "irrigation_te": "ద్రాక్ష అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 11,
+          "week_end": 14,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 15,
+          "week_end": 20,
+          "tasks_en": [
+            "Monitor Grapes maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "ద్రాక్ష పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 21,
+          "week_end": 22,
+          "tasks_en": [
+            "Harvest Grapes at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "ద్రాక్షను సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Common pests",
+          "name_te": "సాధారణ పురుగులు",
+          "risk_months": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Common diseases",
+          "name_te": "సాధారణ వ్యాధులు",
+          "conditions": "Varies"
+        }
+      ]
+    },
+    "Watermelon": {
+      "name_en": "Watermelon",
+      "name_te": "పుచ్చకాయ",
+      "duration_days": 90,
+      "seasons": [
+        "Zaid",
+        "Summer",
+        "Kharif"
+      ],
+      "water_requirement": "High",
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Plow field 2-3 times to fine tilth",
+            "Apply FYM 10-15 tonnes per hectare",
+            "Prepare raised beds or pits 60cm x 60cm x 45cm",
+            "Apply basal fertilizers - 50kg N, 60kg P, 60kg K per hectare"
+          ],
+          "tasks_te": [
+            "పొలాన్ని 2-3 సార్లు దున్నండి",
+            "హెక్టారుకు 10-15 టన్నులు FYM వేయండి",
+            "60x60x45 సెం.మీ గుంటలు తవ్వండి",
+            "హెక్టారుకు 50 కిలో N, 60 కిలో P, 60 కిలో K వేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing",
+          "name_te": "విత్తడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow 2-3 seeds per pit at 2-3cm depth",
+            "Seed rate: 1.5-2 kg per hectare",
+            "Spacing: 2-3m between rows, 1-1.5m between plants",
+            "Treat seeds with Thiram 3g/kg before sowing"
+          ],
+          "tasks_te": [
+            "ప్రతి గుంటలో 2-3 విత్తనాలు 2-3 సెం.మీ లోతులో నాటండి",
+            "విత్తన రేటు: హెక్టారుకు 1.5-2 కిలో",
+            "వరుసల మధ్య 2-3 మీ, మొక్కల మధ్య 1-1.5 మీ",
+            "విత్తే ముందు థైరామ్ 3గ్రా/కిలోతో శుద్ధి చేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination",
+          "name_te": "మొలకెత్తడం",
+          "week_start": 3,
+          "week_end": 3,
+          "tasks_en": [
+            "Maintain soil moisture for germination",
+            "Thin to 2 plants per pit after germination",
+            "Monitor for cutworm and protect seedlings",
+            "Provide shade if temperature exceeds 40°C"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడానికి మట్టి తేమ నిలపండి",
+            "మొలకెత్తిన తర్వాత గుంటకు 2 మొక్కలు ఉంచండి",
+            "కట్‌వార్మ్ కోసం పరిశీలించండి",
+            "40°C దాటితే నీడ ఇవ్వండి"
+          ],
+          "irrigation_en": "Light irrigation every 2-3 days",
+          "irrigation_te": "2-3 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vine Growth",
+          "name_te": "తీగ పెరుగుదల",
+          "week_start": 4,
+          "week_end": 6,
+          "tasks_en": [
+            "Apply first top dressing - 25kg N per hectare",
+            "Train vines in one direction",
+            "Weed control - manual or mulching",
+            "Monitor for aphids and fruit flies",
+            "Apply straw mulch to conserve moisture"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ - హెక్టారుకు 25 కిలో N",
+            "తీగలను ఒక దిశలో పరచండి",
+            "కలుపు నియంత్రణ - చేతి లేదా మల్చింగ్",
+            "ఆఫిడ్స్ మరియు ఫ్రూట్ ఫ్లై కోసం పరిశీలించండి",
+            "తేమ నిలపడానికి గడ్డి మల్చ్ వేయండి"
+          ],
+          "irrigation_en": "Regular irrigation every 4-5 days",
+          "irrigation_te": "4-5 రోజులకు ఒకసారి నీరు"
+        },
+        {
+          "name": "Flowering",
+          "name_te": "పూత",
+          "week_start": 7,
+          "week_end": 8,
+          "tasks_en": [
+            "Critical stage - maintain adequate moisture",
+            "Apply second top dressing - 25kg N per hectare",
+            "Encourage bee activity for pollination",
+            "Avoid excess nitrogen to prevent excessive vegetative growth",
+            "Monitor for powdery mildew"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ - హెక్టారుకు 25 కిలో N",
+            "పరాగసంపర్కానికి తేనెటీగలను ప్రోత్సహించండి",
+            "అధిక ఆకుల పెరుగుదల నివారించడానికి తక్కువ నత్రజని",
+            "పౌడరీ మిల్డ్యూ కోసం పరిశీలించండి"
+          ],
+          "irrigation_en": "Regular irrigation, avoid water stress",
+          "irrigation_te": "క్రమం తప్పకుండా నీరు, నీటి ఒత్తిడి నివారించండి"
+        },
+        {
+          "name": "Fruit Development",
+          "name_te": "కాయ అభివృద్ధి",
+          "week_start": 9,
+          "week_end": 11,
+          "tasks_en": [
+            "Most critical irrigation stage",
+            "Support developing fruits with straw",
+            "Rotate fruits for uniform color development",
+            "Control fruit fly with traps and sprays",
+            "Apply potassium for fruit quality"
+          ],
+          "tasks_te": [
+            "అత్యంత క్లిష్టమైన నీటి దశ",
+            "పెరుగుతున్న కాయలకు గడ్డితో ఆధారం ఇవ్వండి",
+            "ఏకరీతి రంగు కోసం కాయలను తిప్పండి",
+            "ఫ్రూట్ ఫ్లై నియంత్రణ",
+            "కాయ నాణ్యత కోసం పొటాషియం వేయండి"
+          ],
+          "irrigation_en": "Regular deep irrigation every 5-6 days",
+          "irrigation_te": "5-6 రోజులకు ఒకసారి లోతైన నీరు"
+        },
+        {
+          "name": "Maturity & Harvest",
+          "name_te": "పరిపక్వత & కోత",
+          "week_start": 12,
+          "week_end": 13,
+          "tasks_en": [
+            "Reduce irrigation 7-10 days before harvest",
+            "Check maturity - tendril drying, thumb test, ground spot color",
+            "Harvest early morning for better quality",
+            "Leave 2-3 cm stem while harvesting",
+            "Handle carefully to avoid bruising"
+          ],
+          "tasks_te": [
+            "కోతకు 7-10 రోజుల ముందు నీరు తగ్గించండి",
+            "పరిపక్వత తనిఖీ - తీగ ఎండటం, బొటనవేలు పరీక్ష",
+            "మంచి నాణ్యత కోసం ఉదయం కోయండి",
+            "కోసేటప్పుడు 2-3 సెం.మీ కాడ ఉంచండి",
+            "జాగ్రత్తగా నిర్వహించండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Fruit Fly",
+          "name_te": "ఫ్రూట్ ఫ్లై",
+          "symptoms": "Maggots inside fruit, premature fruit drop",
+          "symptoms_te": "కాయలో పురుగులు, ముందుగా కాయ రాలడం",
+          "control": "Methyl eugenol traps, Malathion spray",
+          "control_te": "మిథైల్ యూజినాల్ ట్రాప్స్, మాలథియాన్ పిచికారీ",
+          "risk_months": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "name": "Aphids",
+          "name_te": "ఆఫిడ్స్",
+          "symptoms": "Curling leaves, sticky honeydew, stunted growth",
+          "symptoms_te": "ఆకులు ముడుచుకోవడం, జిగట పదార్థం",
+          "control": "Imidacloprid spray, neem oil",
+          "control_te": "ఇమిడాక్లోప్రిడ్ పిచికారీ, వేప నూనె",
+          "risk_months": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "Red Pumpkin Beetle",
+          "name_te": "ఎర్ర గుమ్మడికాయ పురుగు",
+          "symptoms": "Holes in leaves, defoliation",
+          "symptoms_te": "ఆకులలో రంధ్రాలు, ఆకులు రాలడం",
+          "control": "Carbaryl dust, hand picking",
+          "control_te": "కార్బరిల్ పొడి, చేతితో ఏరడం",
+          "risk_months": [
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Powdery Mildew",
+          "name_te": "పౌడరీ మిల్డ్యూ",
+          "symptoms": "White powdery spots on leaves",
+          "symptoms_te": "ఆకులపై తెల్లని పొడి మచ్చలు",
+          "conditions": "High humidity, 20-25°C",
+          "control": "Sulfur dust, Carbendazim spray",
+          "control_te": "సల్ఫర్ పొడి, కార్బెండజిమ్ పిచికారీ"
+        },
+        {
+          "name": "Anthracnose",
+          "name_te": "ఆంథ్రాక్నోస్",
+          "symptoms": "Brown spots on leaves and fruits",
+          "symptoms_te": "ఆకులు మరియు కాయలపై గోధుమ మచ్చలు",
+          "conditions": "Warm humid weather",
+          "control": "Mancozeb spray, remove infected parts",
+          "control_te": "మాంకోజెబ్ పిచికారీ, సోకిన భాగాలు తొలగించండి"
+        },
+        {
+          "name": "Fusarium Wilt",
+          "name_te": "ఫ్యూసేరియం విల్ట్",
+          "symptoms": "Yellowing and wilting of vines",
+          "symptoms_te": "తీగలు పసుపు మరియు వాడిపోవడం",
+          "conditions": "Soil-borne, warm weather",
+          "control": "Resistant varieties, crop rotation",
+          "control_te": "నిరోధక రకాలు, పంట భ్రమణం"
+        }
+      ]
+    },
+    "Orange": {
+      "name_en": "Orange",
+      "name_te": "నారింజ",
+      "duration_days": 240,
+      "seasons": [
+        "Kharif",
+        "Rabi"
+      ],
+      "water_requirement": "Medium",
+      "optimal_temp": {
+        "min": 13,
+        "max": 37
+      },
+      "stages": [
+        {
+          "name": "Land Preparation",
+          "name_en": "Land Preparation",
+          "name_te": "భూమి సిద్ధం",
+          "week_start": 1,
+          "week_end": 1,
+          "tasks_en": [
+            "Prepare land for Orange cultivation",
+            "Plow 2-3 times to fine tilth",
+            "Apply FYM or compost as basal dose",
+            "Level the field and prepare beds/ridges as needed"
+          ],
+          "tasks_te": [
+            "నారింజ సాగు కోసం భూమి సిద్ధం చేయండి",
+            "2-3 సార్లు దున్నండి",
+            "FYM లేదా కంపోస్ట్ వేయండి",
+            "పొలం సమం చేసి బెడ్లు/వరదలు తయారు చేయండి"
+          ],
+          "irrigation_en": "Pre-sowing irrigation for moisture",
+          "irrigation_te": "విత్తే ముందు తేమ కోసం నీరు"
+        },
+        {
+          "name": "Sowing/Planting",
+          "name_en": "Sowing/Planting",
+          "name_te": "విత్తడం/నాటడం",
+          "week_start": 2,
+          "week_end": 2,
+          "tasks_en": [
+            "Sow/plant Orange at recommended spacing",
+            "Treat seeds with fungicide before sowing",
+            "Ensure proper depth of sowing",
+            "Apply starter fertilizer"
+          ],
+          "tasks_te": [
+            "నారింజను సిఫార్సు చేసిన దూరంలో విత్తండి/నాటండి",
+            "విత్తే ముందు విత్తనాలకు ఫంగిసైడ్ శుద్ధి చేయండి",
+            "సరైన లోతు నిర్ధారించండి",
+            "స్టార్టర్ ఎరువు వేయండి"
+          ],
+          "irrigation_en": "Light irrigation after sowing",
+          "irrigation_te": "విత్తిన తర్వాత తేలికపాటి నీరు"
+        },
+        {
+          "name": "Germination/Establishment",
+          "name_en": "Germination/Establishment",
+          "name_te": "మొలకెత్తడం/స్థాపన",
+          "week_start": 3,
+          "week_end": 4,
+          "tasks_en": [
+            "Monitor germination and fill gaps",
+            "Maintain adequate soil moisture",
+            "Protect from birds and pests",
+            "First weeding if needed"
+          ],
+          "tasks_te": [
+            "మొలకెత్తడం పర్యవేక్షించండి మరియు ఖాళీలు నింపండి",
+            "తగినంత మట్టి తేమ నిలపండి",
+            "పక్షులు మరియు పురుగుల నుండి రక్షించండి",
+            "అవసరమైతే మొదటి కలుపు"
+          ],
+          "irrigation_en": "Regular light irrigation every 3-4 days",
+          "irrigation_te": "3-4 రోజులకు ఒకసారి తేలికపాటి నీరు"
+        },
+        {
+          "name": "Vegetative Growth",
+          "name_en": "Vegetative Growth",
+          "name_te": "వృక్ష పెరుగుదల",
+          "week_start": 5,
+          "week_end": 17,
+          "tasks_en": [
+            "Apply first top dressing of nitrogen",
+            "Weed control - manual or herbicide",
+            "Monitor for pest and disease symptoms",
+            "Ensure proper plant nutrition"
+          ],
+          "tasks_te": [
+            "మొదటి టాప్ డ్రెస్సింగ్ నత్రజని వేయండి",
+            "కలుపు నియంత్రణ",
+            "పురుగులు మరియు వ్యాధుల లక్షణాలు పరిశీలించండి",
+            "సరైన మొక్క పోషణ నిర్ధారించండి"
+          ],
+          "irrigation_en": "Regular irrigation as per Orange requirement",
+          "irrigation_te": "నారింజ అవసరానికి అనుగుణంగా నీరు"
+        },
+        {
+          "name": "Flowering/Fruiting",
+          "name_en": "Flowering/Fruiting",
+          "name_te": "పూత/కాయ",
+          "week_start": 18,
+          "week_end": 22,
+          "tasks_en": [
+            "Critical growth stage - maintain adequate moisture",
+            "Apply second top dressing",
+            "Monitor for pest and disease pressure",
+            "Avoid water stress during this period"
+          ],
+          "tasks_te": [
+            "క్లిష్టమైన పెరుగుదల దశ - తగినంత తేమ నిలపండి",
+            "రెండవ టాప్ డ్రెస్సింగ్ వేయండి",
+            "పురుగులు మరియు వ్యాధులు పర్యవేక్షించండి",
+            "ఈ సమయంలో నీటి ఒత్తిడి నివారించండి"
+          ],
+          "irrigation_en": "Critical - maintain uniform moisture",
+          "irrigation_te": "క్లిష్టమైన - ఏకరీతి తేమ నిలపండి"
+        },
+        {
+          "name": "Maturity",
+          "name_en": "Maturity",
+          "name_te": "పరిపక్వత",
+          "week_start": 23,
+          "week_end": 33,
+          "tasks_en": [
+            "Monitor Orange maturity signs",
+            "Reduce irrigation as crop matures",
+            "Prepare for harvest",
+            "Protect from late season pests"
+          ],
+          "tasks_te": [
+            "నారింజ పరిపక్వత సంకేతాలు పర్యవేక్షించండి",
+            "పంట పరిపక్వమవుతున్నప్పుడు నీరు తగ్గించండి",
+            "కోత కోసం సిద్ధం చేయండి",
+            "ఆలస్యంగా వచ్చే పురుగుల నుండి రక్షించండి"
+          ],
+          "irrigation_en": "Reduce irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు తగ్గించండి"
+        },
+        {
+          "name": "Harvest",
+          "name_en": "Harvest",
+          "name_te": "కోత",
+          "week_start": 34,
+          "week_end": 35,
+          "tasks_en": [
+            "Harvest Orange at proper maturity",
+            "Use appropriate harvesting tools",
+            "Handle carefully to avoid damage",
+            "Prepare for storage or sale"
+          ],
+          "tasks_te": [
+            "నారింజను సరైన పరిపక్వతలో కోయండి",
+            "సరైన కోత సాధనాలు వాడండి",
+            "నష్టం నివారించడానికి జాగ్రత్తగా నిర్వహించండి",
+            "నిల్వ లేదా అమ్మకం కోసం సిద్ధం చేయండి"
+          ],
+          "irrigation_en": "Stop irrigation before harvest",
+          "irrigation_te": "కోతకు ముందు నీరు ఆపండి"
+        }
+      ],
+      "pests": [
+        {
+          "name": "Common pests",
+          "name_te": "సాధారణ పురుగులు",
+          "risk_months": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "diseases": [
+        {
+          "name": "Common diseases",
+          "name_te": "సాధారణ వ్యాధులు",
+          "conditions": "Varies"
+        }
+      ]
+    }
+  }
+}

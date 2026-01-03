@@ -1,0 +1,422 @@
+{
+    "products": {
+        "urea": {
+            "name": "Urea",
+            "composition": {
+                "n": 46,
+                "p": 0,
+                "k": 0
+            },
+            "price_per_kg": 6.5,
+            "application_methods": [
+                "Broadcasting",
+                "Top dressing",
+                "Fertigation"
+            ],
+            "suitable_for": [
+                "all_crops"
+            ],
+            "organic": false,
+            "notes": "Most common nitrogen source. Apply in split doses to reduce leaching."
+        },
+        "dap": {
+            "name": "DAP (Diammonium Phosphate)",
+            "composition": {
+                "n": 18,
+                "p": 46,
+                "k": 0
+            },
+            "price_per_kg": 27,
+            "application_methods": [
+                "Basal application",
+                "Band placement"
+            ],
+            "suitable_for": [
+                "all_crops"
+            ],
+            "organic": false,
+            "notes": "Excellent phosphorus source. Best applied at sowing/planting."
+        },
+        "ssp": {
+            "name": "SSP (Single Super Phosphate)",
+            "composition": {
+                "n": 0,
+                "p": 16,
+                "k": 0,
+                "s": 11,
+                "ca": 20
+            },
+            "price_per_kg": 8,
+            "application_methods": [
+                "Basal application"
+            ],
+            "suitable_for": [
+                "all_crops"
+            ],
+            "organic": false,
+            "notes": "Contains sulphur and calcium. Good for oilseeds and pulses."
+        },
+        "mop": {
+            "name": "MOP (Muriate of Potash)",
+            "composition": {
+                "n": 0,
+                "p": 0,
+                "k": 60
+            },
+            "price_per_kg": 12,
+            "application_methods": [
+                "Basal application",
+                "Split application"
+            ],
+            "suitable_for": [
+                "all_crops"
+            ],
+            "organic": false,
+            "notes": "Primary potassium source. Essential for tuber crops and fruits."
+        },
+        "sop": {
+            "name": "SOP (Sulphate of Potash)",
+            "composition": {
+                "n": 0,
+                "p": 0,
+                "k": 50,
+                "s": 18
+            },
+            "price_per_kg": 35,
+            "application_methods": [
+                "Basal application",
+                "Foliar spray"
+            ],
+            "suitable_for": [
+                "tobacco",
+                "potato",
+                "tomato",
+                "grapes"
+            ],
+            "organic": false,
+            "notes": "Chloride-free potassium. Premium option for chloride-sensitive crops."
+        },
+        "npk_19_19_19": {
+            "name": "NPK 19:19:19",
+            "composition": {
+                "n": 19,
+                "p": 19,
+                "k": 19
+            },
+            "price_per_kg": 22,
+            "application_methods": [
+                "Fertigation",
+                "Top dressing"
+            ],
+            "suitable_for": [
+                "all_crops"
+            ],
+            "organic": false,
+            "notes": "Balanced complex fertilizer. Ideal for drip irrigation."
+        },
+        "npk_20_20_0_13": {
+            "name": "NPK 20:20:0:13 (with Sulphur)",
+            "composition": {
+                "n": 20,
+                "p": 20,
+                "k": 0,
+                "s": 13
+            },
+            "price_per_kg": 18,
+            "application_methods": [
+                "Basal application"
+            ],
+            "suitable_for": [
+                "oilseeds",
+                "pulses"
+            ],
+            "organic": false,
+            "notes": "Fortified with sulphur. Excellent for oilseeds."
+        },
+        "npk_12_32_16": {
+            "name": "NPK 12:32:16",
+            "composition": {
+                "n": 12,
+                "p": 32,
+                "k": 16
+            },
+            "price_per_kg": 24,
+            "application_methods": [
+                "Basal application"
+            ],
+            "suitable_for": [
+                "cereals",
+                "cotton",
+                "soybean"
+            ],
+            "organic": false,
+            "notes": "High phosphorus. Good starter fertilizer."
+        },
+        "fym": {
+            "name": "FYM (Farm Yard Manure)",
+            "composition": {
+                "n": 0.5,
+                "p": 0.2,
+                "k": 0.5,
+                "organic_matter": 20
+            },
+            "price_per_kg": 2,
+            "application_methods": [
+                "Broadcasting",
+                "Incorporation"
+            ],
+            "suitable_for": [
+                "all_crops"
+            ],
+            "organic": true,
+            "notes": "Organic option. Improves soil structure. Apply 5-10 tons/acre."
+        },
+        "vermicompost": {
+            "name": "Vermicompost",
+            "composition": {
+                "n": 1.5,
+                "p": 1.0,
+                "k": 1.5,
+                "organic_matter": 40
+            },
+            "price_per_kg": 6,
+            "application_methods": [
+                "Broadcasting",
+                "Pit application"
+            ],
+            "suitable_for": [
+                "all_crops"
+            ],
+            "organic": true,
+            "notes": "Rich in enzymes and microbes. Use 2-3 tons/acre."
+        },
+        "neem_cake": {
+            "name": "Neem Cake",
+            "composition": {
+                "n": 5,
+                "p": 1,
+                "k": 1,
+                "organic_matter": 85
+            },
+            "price_per_kg": 25,
+            "application_methods": [
+                "Soil incorporation"
+            ],
+            "suitable_for": [
+                "all_crops"
+            ],
+            "organic": true,
+            "notes": "Organic nitrogen source with pest repellent properties."
+        },
+        "zinc_sulphate": {
+            "name": "Zinc Sulphate (ZnSO4)",
+            "composition": {
+                "zn": 21,
+                "s": 10
+            },
+            "price_per_kg": 45,
+            "application_methods": [
+                "Soil application",
+                "Foliar spray"
+            ],
+            "suitable_for": [
+                "rice",
+                "wheat",
+                "maize"
+            ],
+            "organic": false,
+            "notes": "Micronutrient. Apply 25kg/hectare or 0.5% foliar spray."
+        },
+        "borax": {
+            "name": "Borax (Sodium Borate)",
+            "composition": {
+                "b": 11
+            },
+            "price_per_kg": 80,
+            "application_methods": [
+                "Soil application",
+                "Foliar spray"
+            ],
+            "suitable_for": [
+                "cotton",
+                "groundnut",
+                "sunflower"
+            ],
+            "organic": false,
+            "notes": "Boron source. Critical for flowering and fruiting. Use 10kg/hectare."
+        },
+        "gypsum": {
+            "name": "Gypsum (Calcium Sulphate)",
+            "composition": {
+                "ca": 22,
+                "s": 17
+            },
+            "price_per_kg": 3,
+            "application_methods": [
+                "Broadcasting"
+            ],
+            "suitable_for": [
+                "groundnut",
+                "cotton",
+                "soybean"
+            ],
+            "organic": false,
+            "notes": "Calcium and sulphur source. Also helps in soil reclamation."
+        },
+        "ferrous_sulphate": {
+            "name": "Ferrous Sulphate (FeSO4)",
+            "composition": {
+                "fe": 19,
+                "s": 11
+            },
+            "price_per_kg": 30,
+            "application_methods": [
+                "Soil application",
+                "Foliar spray"
+            ],
+            "suitable_for": [
+                "all_crops"
+            ],
+            "organic": false,
+            "notes": "Iron source for chlorosis correction. 0.5% foliar spray."
+        }
+    },
+    "application_guidelines": {
+        "split_application": {
+            "rice": [
+                {
+                    "stage": "Basal (0 days)",
+                    "n_percent": 25,
+                    "p_percent": 100,
+                    "k_percent": 50
+                },
+                {
+                    "stage": "Tillering (25 days)",
+                    "n_percent": 50,
+                    "p_percent": 0,
+                    "k_percent": 0
+                },
+                {
+                    "stage": "Panicle initiation (45 days)",
+                    "n_percent": 25,
+                    "p_percent": 0,
+                    "k_percent": 50
+                }
+            ],
+            "wheat": [
+                {
+                    "stage": "Basal (0 days)",
+                    "n_percent": 50,
+                    "p_percent": 100,
+                    "k_percent": 100
+                },
+                {
+                    "stage": "Crown root (21 days)",
+                    "n_percent": 25,
+                    "p_percent": 0,
+                    "k_percent": 0
+                },
+                {
+                    "stage": "Jointing (45 days)",
+                    "n_percent": 25,
+                    "p_percent": 0,
+                    "k_percent": 0
+                }
+            ],
+            "cotton": [
+                {
+                    "stage": "Basal (0 days)",
+                    "n_percent": 30,
+                    "p_percent": 100,
+                    "k_percent": 50
+                },
+                {
+                    "stage": "Square formation (30 days)",
+                    "n_percent": 35,
+                    "p_percent": 0,
+                    "k_percent": 25
+                },
+                {
+                    "stage": "Flowering (60 days)",
+                    "n_percent": 35,
+                    "p_percent": 0,
+                    "k_percent": 25
+                }
+            ],
+            "maize": [
+                {
+                    "stage": "Basal (0 days)",
+                    "n_percent": 40,
+                    "p_percent": 100,
+                    "k_percent": 50
+                },
+                {
+                    "stage": "Knee-high (25 days)",
+                    "n_percent": 30,
+                    "p_percent": 0,
+                    "k_percent": 25
+                },
+                {
+                    "stage": "Tasseling (45 days)",
+                    "n_percent": 30,
+                    "p_percent": 0,
+                    "k_percent": 25
+                }
+            ],
+            "default": [
+                {
+                    "stage": "Basal (0 days)",
+                    "n_percent": 40,
+                    "p_percent": 100,
+                    "k_percent": 50
+                },
+                {
+                    "stage": "Mid-season (30 days)",
+                    "n_percent": 30,
+                    "p_percent": 0,
+                    "k_percent": 25
+                },
+                {
+                    "stage": "Late-season (50 days)",
+                    "n_percent": 30,
+                    "p_percent": 0,
+                    "k_percent": 25
+                }
+            ]
+        },
+        "soil_type_adjustments": {
+            "Sandy": {
+                "note": "Split nitrogen into more doses to prevent leaching",
+                "k_increase_percent": 15
+            },
+            "Clay": {
+                "note": "Can hold nutrients longer. Reduce split applications.",
+                "p_increase_percent": 10
+            },
+            "Loamy": {
+                "note": "Ideal soil. Standard recommendations apply.",
+                "adjustment": 0
+            },
+            "Black Cotton": {
+                "note": "Rich in potash. Reduce K by 20%.",
+                "k_decrease_percent": 20
+            },
+            "Red Sandy": {
+                "note": "Often deficient in P and K. Increase by 15%.",
+                "p_increase_percent": 15,
+                "k_increase_percent": 15
+            },
+            "Alluvial": {
+                "note": "Nitrogen-responsive. Can use higher N rates.",
+                "n_increase_percent": 10
+            }
+        }
+    },
+    "sustainability_guidelines": {
+        "organic_first": "When soil health allows, prioritize FYM/vermicompost for 50% of N requirement",
+        "slow_release": "Use neem-coated urea to reduce nitrogen loss",
+        "micronutrient_care": "Apply zinc and boron based on soil test, not routine application",
+        "avoid_excess": "Excess fertilizer pollutes groundwater. Stay within recommended limits.",
+        "soil_test": "Conduct soil test every 2-3 years for accurate recommendations"
+    }
+}

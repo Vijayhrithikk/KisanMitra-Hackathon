@@ -1,0 +1,714 @@
+{
+    "version": "1.0",
+    "description": "Intelligent rules engine for weather-based crop action plans",
+    "weather_alert_rules": [
+        {
+            "id": "heavy_rain_alert",
+            "condition": {
+                "rainfall_mm": {
+                    "operator": ">=",
+                    "value": 20
+                }
+            },
+            "forecast_hours": 6,
+            "severity": "high",
+            "icon": "🌧️",
+            "title_en": "Heavy Rainfall Expected",
+            "title_te": "భారీ వర్షం రాబోతోంది",
+            "crops_at_risk": [
+                "Chilli",
+                "Cotton",
+                "Tomato",
+                "Onion"
+            ],
+            "risks_en": [
+                "Root damage",
+                "Fungal disease outbreak",
+                "Flower drop"
+            ],
+            "risks_te": [
+                "వేర్ల నష్టం",
+                "శిలీంద్ర వ్యాధి",
+                "పూలు రాలడం"
+            ],
+            "actions_en": [
+                "Stop irrigation immediately",
+                "Clear all drainage channels",
+                "Delay fertilizer application by 2-3 days",
+                "Prepare fungicide spray for post-rain"
+            ],
+            "actions_te": [
+                "వెంటనే నీరు ఆపండి",
+                "డ్రైనేజ్ కాలువలు శుభ్రం చేయండి",
+                "ఎరువులు 2-3 రోజులు ఆపండి",
+                "వర్షం తర్వాత శిలీంద్ర నాశిని సిద్ధం చేయండి"
+            ]
+        },
+        {
+            "id": "extreme_heat_alert",
+            "condition": {
+                "temp_max": {
+                    "operator": ">=",
+                    "value": 40
+                }
+            },
+            "forecast_hours": 24,
+            "severity": "high",
+            "icon": "🔥",
+            "title_en": "Extreme Heat Wave",
+            "title_te": "తీవ్ర వేడి తరంగం",
+            "crops_at_risk": [
+                "Paddy",
+                "Cotton",
+                "Chilli",
+                "Tomato",
+                "Cabbage",
+                "Cauliflower"
+            ],
+            "risks_en": [
+                "Heat stress",
+                "Flower abortion",
+                "Pollen sterility",
+                "Wilting"
+            ],
+            "risks_te": [
+                "వేడి ఒత్తిడి",
+                "పూలు నష్టం",
+                "పుప్పొడి నాశనం",
+                "వాడిపోవడం"
+            ],
+            "actions_en": [
+                "Irrigate in early morning (before 7 AM) or evening (after 5 PM)",
+                "Apply mulching around plants",
+                "Spray 1% KCl solution to reduce heat stress",
+                "Provide shade nets if possible"
+            ],
+            "actions_te": [
+                "ఉదయం 7 గంటలకు ముందు లేదా సాయంత్రం 5 తర్వాత నీరు",
+                "మొక్కల చుట్టూ మల్చింగ్ వేయండి",
+                "1% KCl ద్రావణం పిచికారి చేయండి",
+                "వీలైతే నీడ వలలు వేయండి"
+            ]
+        },
+        {
+            "id": "cold_wave_alert",
+            "condition": {
+                "temp_min": {
+                    "operator": "<=",
+                    "value": 10
+                }
+            },
+            "forecast_hours": 24,
+            "severity": "medium",
+            "icon": "❄️",
+            "title_en": "Cold Wave Warning",
+            "title_te": "చలి తరంగం హెచ్చరిక",
+            "crops_at_risk": [
+                "Paddy",
+                "Banana",
+                "Papaya",
+                "Okra"
+            ],
+            "risks_en": [
+                "Frost damage",
+                "Stunted growth",
+                "Delayed maturity"
+            ],
+            "risks_te": [
+                "మంచు నష్టం",
+                "ఎదుగుదల ఆగిపోవడం",
+                "పరిపక్వత ఆలస్యం"
+            ],
+            "actions_en": [
+                "Light irrigation in evening to maintain soil warmth",
+                "Cover nursery with plastic sheets",
+                "Delay transplanting until temperature rises",
+                "Apply smoke early morning if frost expected"
+            ],
+            "actions_te": [
+                "సాయంత్రం తేలికగా నీరు పెట్టండి",
+                " నర్సరీని ప్లాస్టిక్‌తో కప్పండి",
+                "ఉష్ణోగ్రత పెరిగే వరకు నాటడం ఆపండి",
+                "మంచు వస్తే ఉదయాన్నే పొగ వేయండి"
+            ]
+        },
+        {
+            "id": "high_humidity_alert",
+            "condition": {
+                "humidity": {
+                    "operator": ">=",
+                    "value": 85
+                }
+            },
+            "forecast_hours": 48,
+            "severity": "medium",
+            "icon": "💧",
+            "title_en": "High Humidity - Disease Risk",
+            "title_te": "అధిక తేమ - వ్యాధి ప్రమాదం",
+            "crops_at_risk": [
+                "Paddy",
+                "Cotton",
+                "Chilli",
+                "Groundnut",
+                "Pulses"
+            ],
+            "risks_en": [
+                "Fungal disease outbreak",
+                "Bacterial infections",
+                "Pest multiplication"
+            ],
+            "risks_te": [
+                "శిలీంద్ర వ్యాధి",
+                "బ్యాక్టీరియా సంక్రమణ",
+                "తెగుళ్ళు పెరుగుదల"
+            ],
+            "actions_en": [
+                "Spray preventive fungicide (Mancozeb/Copper)",
+                "Avoid overhead irrigation",
+                "Ensure good air circulation",
+                "Scout for early disease symptoms"
+            ],
+            "actions_te": [
+                "నివారణ శిలీంద్ర నాశిని పిచికారి చేయండి",
+                "పైనుండి నీరు వేయకండి",
+                "గాలి వచ్చేలా చూడండి",
+                "వ్యాధి లక్షణాలు చూడండి"
+            ]
+        },
+        {
+            "id": "drought_risk_alert",
+            "condition": {
+                "rainfall_mm": {
+                    "operator": "==",
+                    "value": 0
+                },
+                "days": 7
+            },
+            "forecast_hours": 168,
+            "severity": "high",
+            "icon": "🏜️",
+            "title_en": "No Rain Expected - Drought Risk",
+            "title_te": "వర్షం లేదు - కరువు ప్రమాదం",
+            "crops_at_risk": [
+                "Paddy",
+                "Sugarcane",
+                "Banana",
+                "Cotton"
+            ],
+            "risks_en": [
+                "Water stress",
+                "Yield reduction",
+                "Wilting"
+            ],
+            "risks_te": [
+                "నీటి ఒత్తిడి",
+                "దిగుబడి తగ్గుదల",
+                "వాడిపోవడం"
+            ],
+            "actions_en": [
+                "Plan supplementary irrigation",
+                "Apply mulching to conserve moisture",
+                "Consider drip irrigation",
+                "Prioritize critical growth stages"
+            ],
+            "actions_te": [
+                "అదనపు నీటిపారుదల ప్లాన్ చేయండి",
+                "తేమ కాపాడటానికి మల్చింగ్ వేయండి",
+                "డ్రిప్ ఇరిగేషన్ పరిశీలించండి",
+                "ముఖ్యమైన దశలకు ప్రాధాన్యత ఇవ్వండి"
+            ]
+        },
+        {
+            "id": "strong_wind_alert",
+            "condition": {
+                "wind_speed": {
+                    "operator": ">=",
+                    "value": 40
+                }
+            },
+            "forecast_hours": 12,
+            "severity": "medium",
+            "icon": "💨",
+            "title_en": "Strong Winds Expected",
+            "title_te": "బలమైన గాలులు రాబోతున్నాయి",
+            "crops_at_risk": [
+                "Banana",
+                "Papaya",
+                "Sugarcane",
+                "Maize"
+            ],
+            "risks_en": [
+                "Lodging",
+                "Physical damage",
+                "Flower drop"
+            ],
+            "risks_te": [
+                "పడిపోవడం",
+                "భౌతిక నష్టం",
+                "పూలు రాలడం"
+            ],
+            "actions_en": [
+                "Provide staking for tall plants",
+                "Delay pesticide spraying",
+                "Harvest mature produce if possible",
+                "Check and secure shade nets"
+            ],
+            "actions_te": [
+                "పొడవు మొక్కలకు ఊతం ఇవ్వండి",
+                "పురుగుమందు పిచికారి ఆపండి",
+                "పరిపక్వమైన పంట వీలైతే కోయండి",
+                "నీడ వలలు బిగించండి"
+            ]
+        },
+        {
+            "id": "fog_alert",
+            "condition": {
+                "visibility": {
+                    "operator": "<=",
+                    "value": 500
+                },
+                "temp_min": {
+                    "operator": "<=",
+                    "value": 15
+                }
+            },
+            "forecast_hours": 12,
+            "severity": "low",
+            "icon": "🌫️",
+            "title_en": "Dense Fog Expected",
+            "title_te": "దట్టమైన పొగమంచు",
+            "crops_at_risk": [
+                "Wheat",
+                "Pulses",
+                "Potato",
+                "Tomato"
+            ],
+            "risks_en": [
+                "Late blight in potato/tomato",
+                "Rust in wheat",
+                "Aphid multiplication"
+            ],
+            "risks_te": [
+                "ఆలస్య తెగులు",
+                "తుప్పు వ్యాధి",
+                "అఫిడ్స్ పెరుగుదల"
+            ],
+            "actions_en": [
+                "Spray border rows with insecticide",
+                "Apply preventive fungicide",
+                "Scout for aphid colonies"
+            ],
+            "actions_te": [
+                "అంచు వరుసలకు పురుగుమందు పిచికారి చేయండి",
+                "నివారణ శిలీంద్ర నాశిని వేయండి",
+                "అఫిడ్స్ కాలనీలు చూడండి"
+            ]
+        }
+    ],
+    "stage_based_rules": {
+        "Paddy": {
+            "nursery": {
+                "day_range": [
+                    0,
+                    21
+                ],
+                "daily_tasks_en": [
+                    "Check seed germination rate",
+                    "Maintain 1-2cm water level",
+                    "Scout for seedling diseases"
+                ],
+                "daily_tasks_te": [
+                    "విత్తన మొలకెత్తడం చూడండి",
+                    "1-2 సెం.మీ నీటి మట్టం ఉంచండి",
+                    "మొక్కల వ్యాధులు చూడండి"
+                ],
+                "weather_adjustments": {
+                    "heavy_rain": "Drain excess water immediately to prevent seedling rot",
+                    "high_temp": "Increase water depth to 3cm to protect seedlings"
+                },
+                "pest_focus": [
+                    "Thrips",
+                    "Green Leafhopper"
+                ],
+                "fertilizer_due": null
+            },
+            "transplanting": {
+                "day_range": [
+                    22,
+                    28
+                ],
+                "daily_tasks_en": [
+                    "Prepare main field with proper puddling",
+                    "Apply basal fertilizers",
+                    "Transplant 2-3 seedlings per hill"
+                ],
+                "daily_tasks_te": [
+                    "ప్రధాన పొలం దమ్ము చేయండి",
+                    "మూల ఎరువులు వేయండి",
+                    "కుప్పకు 2-3 మొక్కలు నాటండి"
+                ],
+                "weather_adjustments": {
+                    "heavy_rain": "Ideal for transplanting, proceed with work",
+                    "drought": "Delay transplanting until adequate water available"
+                },
+                "pest_focus": [],
+                "fertilizer_due": "DAP 50kg/acre"
+            },
+            "tillering": {
+                "day_range": [
+                    29,
+                    56
+                ],
+                "daily_tasks_en": [
+                    "Maintain 5-7cm water depth",
+                    "Scout for stem borer and BPH",
+                    "First nitrogen topdressing at 3 weeks after transplanting"
+                ],
+                "daily_tasks_te": [
+                    "5-7 సెం.మీ నీటి మట్టం ఉంచండి",
+                    "కాండం తొలిచే పురుగు, BPH చూడండి",
+                    "నాటిన 3 వారాల తర్వాత మొదటి నత్రజని"
+                ],
+                "weather_adjustments": {
+                    "high_humidity": "Spray for BPH if populations increasing",
+                    "drought": "Ensure critical water during active tillering"
+                },
+                "pest_focus": [
+                    "BPH",
+                    "Stem Borer",
+                    "Leaf Folder"
+                ],
+                "fertilizer_due": "Urea 25kg/acre at 21 DAT"
+            },
+            "panicle_initiation": {
+                "day_range": [
+                    57,
+                    70
+                ],
+                "daily_tasks_en": [
+                    "Critical water stage - maintain 5cm depth",
+                    "Second nitrogen topdressing",
+                    "Scout for neck blast symptoms"
+                ],
+                "daily_tasks_te": [
+                    "నిర్ణయాత్మక నీటి దశ - 5 సెం.మీ ఉంచండి",
+                    "రెండవ నత్రజని ఎరువు",
+                    "మెడ బ్లాస్ట్ లక్షణాలు చూడండి"
+                ],
+                "weather_adjustments": {
+                    "high_humidity": "Preventive spray for blast disease",
+                    "drought": "Critical - arrange irrigation immediately"
+                },
+                "pest_focus": [
+                    "Neck Blast",
+                    "BPH"
+                ],
+                "fertilizer_due": "Urea 25kg/acre at PI stage"
+            },
+            "flowering": {
+                "day_range": [
+                    71,
+                    85
+                ],
+                "daily_tasks_en": [
+                    "Maintain thin water layer",
+                    "No nitrogen after this stage",
+                    "Scout for grain discoloration"
+                ],
+                "daily_tasks_te": [
+                    "తక్కువ నీటి పొర ఉంచండి",
+                    "ఈ దశ తర్వాత నత్రజని వద్దు",
+                    "గింజల రంగు మారడం చూడండి"
+                ],
+                "weather_adjustments": {
+                    "heavy_rain": "Risk of grain discoloration - be vigilant",
+                    "high_temp": "Spikelet sterility risk - evening irrigation"
+                },
+                "pest_focus": [
+                    "Grain Discoloration",
+                    "False Smut"
+                ],
+                "fertilizer_due": null
+            },
+            "grain_filling": {
+                "day_range": [
+                    86,
+                    110
+                ],
+                "daily_tasks_en": [
+                    "Gradually reduce water",
+                    "Scout for storage pests",
+                    "Plan harvest date"
+                ],
+                "daily_tasks_te": [
+                    "నీటిని క్రమంగా తగ్గించండి",
+                    "నిల్వ తెగుళ్ళు చూడండి",
+                    "కోత తేదీ ప్లాన్ చేయండి"
+                ],
+                "weather_adjustments": {
+                    "heavy_rain": "Delay harvest if rain expected",
+                    "clear_weather": "Ideal for harvest - proceed"
+                },
+                "pest_focus": [
+                    "Ear-cutting caterpillar"
+                ],
+                "fertilizer_due": null
+            }
+        },
+        "Cotton": {
+            "seedling": {
+                "day_range": [
+                    0,
+                    25
+                ],
+                "daily_tasks_en": [
+                    "Gap filling if needed",
+                    "Light irrigation at 10 day intervals",
+                    "Scout for sucking pests"
+                ],
+                "daily_tasks_te": [
+                    "అవసరమైతే గ్యాప్ ఫిల్లింగ్",
+                    "10 రోజుల వ్యవధిలో తేలికగా నీరు",
+                    "పీల్చే పురుగులు చూడండి"
+                ],
+                "pest_focus": [
+                    "Jassids",
+                    "Aphids",
+                    "Thrips"
+                ],
+                "fertilizer_due": "DAP 50kg/acre at sowing"
+            },
+            "vegetative": {
+                "day_range": [
+                    26,
+                    60
+                ],
+                "daily_tasks_en": [
+                    "First earthing up at 30-35 days",
+                    "Apply first nitrogen dose",
+                    "Scout for pink bollworm moths"
+                ],
+                "daily_tasks_te": [
+                    "30-35 రోజుల్లో మొదటి మట్టి ఎత్తడం",
+                    "మొదటి నత్రజని మోతాదు వేయండి",
+                    "పింక్ బోల్‌వార్మ్ చిమ్మటలు చూడండి"
+                ],
+                "pest_focus": [
+                    "Pink Bollworm",
+                    "Spotted Bollworm"
+                ],
+                "fertilizer_due": "Urea 35kg/acre at 30 DAP"
+            },
+            "squaring": {
+                "day_range": [
+                    61,
+                    80
+                ],
+                "daily_tasks_en": [
+                    "Install pheromone traps (5/acre)",
+                    "Second nitrogen application",
+                    "Scout for American bollworm eggs"
+                ],
+                "daily_tasks_te": [
+                    "ఫెరోమోన్ ట్రాప్‌లు పెట్టండి (5/ఎకరం)",
+                    "రెండవ నత్రజని వేయండి",
+                    "అమెరికన్ బోల్‌వార్మ్ గుడ్లు చూడండి"
+                ],
+                "pest_focus": [
+                    "American Bollworm",
+                    "Pink Bollworm"
+                ],
+                "fertilizer_due": "Urea 35kg/acre at 50-55 DAP"
+            },
+            "flowering_boll": {
+                "day_range": [
+                    81,
+                    120
+                ],
+                "daily_tasks_en": [
+                    "Critical irrigation - no water stress",
+                    "Apply potash for fiber quality",
+                    "Regular moth counting in traps"
+                ],
+                "daily_tasks_te": [
+                    "నిర్ణయాత్మక నీరు - ఒత్తిడి వద్దు",
+                    "ఫైబర్ నాణ్యత కోసం పొటాష్ వేయండి",
+                    "ట్రాప్‌లలో చిమ్మట లెక్కించండి"
+                ],
+                "pest_focus": [
+                    "Pink Bollworm",
+                    "Whitefly",
+                    "Mealybug"
+                ],
+                "fertilizer_due": "MOP 25kg/acre at 75-80 DAP"
+            },
+            "boll_opening": {
+                "day_range": [
+                    121,
+                    180
+                ],
+                "daily_tasks_en": [
+                    "Reduce irrigation gradually",
+                    "First picking when 60% bolls open",
+                    "Destroy crop residue after final picking"
+                ],
+                "daily_tasks_te": [
+                    "నీరు క్రమంగా తగ్గించండి",
+                    "60% ఈతులు వికసించినప్పుడు మొదటి కోత",
+                    "చివరి కోత తర్వాత పంట అవశేషాలు నాశనం చేయండి"
+                ],
+                "pest_focus": [],
+                "fertilizer_due": null
+            }
+        },
+        "Chilli": {
+            "nursery": {
+                "day_range": [
+                    0,
+                    35
+                ],
+                "daily_tasks_en": [
+                    "Light watering twice daily",
+                    "Thin seedlings at 15 days",
+                    "Harden seedlings before transplanting"
+                ],
+                "daily_tasks_te": [
+                    "రోజు రెండుసార్లు తేలికగా నీరు",
+                    "15 రోజుల్లో మొక్కలు చంపండి",
+                    "నాటడానికి ముందు గట్టి చేయండి"
+                ],
+                "pest_focus": [
+                    "Damping off"
+                ],
+                "fertilizer_due": null
+            },
+            "transplanting": {
+                "day_range": [
+                    36,
+                    42
+                ],
+                "daily_tasks_en": [
+                    "Transplant healthy seedlings",
+                    "Apply basal fertilizers",
+                    "Provide shade for 3-4 days"
+                ],
+                "daily_tasks_te": [
+                    "ఆరోగ్యకరమైన మొక్కలు నాటండి",
+                    "మూల ఎరువులు వేయండి",
+                    "3-4 రోజులు నీడ ఇవ్వండి"
+                ],
+                "pest_focus": [],
+                "fertilizer_due": "DAP 50kg + MOP 35kg/acre"
+            },
+            "vegetative": {
+                "day_range": [
+                    43,
+                    70
+                ],
+                "daily_tasks_en": [
+                    "Irrigation at 7-10 day intervals",
+                    "First earthing up",
+                    "Scout for thrips and mites"
+                ],
+                "daily_tasks_te": [
+                    "7-10 రోజుల వ్యవధిలో నీరు",
+                    "మొదటి మట్టి ఎత్తడం",
+                    "థ్రిప్స్ మరియు పురుగులు చూడండి"
+                ],
+                "pest_focus": [
+                    "Thrips",
+                    "Mites",
+                    "Murda (Leaf Curl)"
+                ],
+                "fertilizer_due": "Urea 25kg/acre at 30 DAT"
+            },
+            "flowering": {
+                "day_range": [
+                    71,
+                    100
+                ],
+                "daily_tasks_en": [
+                    "Critical water stage",
+                    "Apply micronutrients spray",
+                    "Install blue sticky traps for thrips"
+                ],
+                "daily_tasks_te": [
+                    "నిర్ణయాత్మక నీటి దశ",
+                    "సూక్ష్మపోషకాలు పిచికారి చేయండి",
+                    "థ్రిప్స్ కోసం నీలి అంటు ట్రాప్‌లు పెట్టండి"
+                ],
+                "pest_focus": [
+                    "Thrips",
+                    "Fruit Borer",
+                    "Murda"
+                ],
+                "fertilizer_due": "Urea 25kg/acre + Micronutrient spray"
+            },
+            "fruiting": {
+                "day_range": [
+                    101,
+                    180
+                ],
+                "daily_tasks_en": [
+                    "Regular harvesting every 8-10 days",
+                    "Continue pest scouting",
+                    "Apply potash for quality"
+                ],
+                "daily_tasks_te": [
+                    "ప్రతి 8-10 రోజులకు క్రమం తప్పకుండా కోత",
+                    "తెగుళ్ళ తనిఖీ కొనసాగించండి",
+                    "నాణ్యత కోసం పొటాష్ వేయండి"
+                ],
+                "pest_focus": [
+                    "Fruit Borer",
+                    "Powdery Mildew"
+                ],
+                "fertilizer_due": "MOP 15kg/acre monthly during harvest"
+            }
+        }
+    },
+    "irrigation_rules": {
+        "default_frequency_days": 7,
+        "adjustments": {
+            "after_rain_25mm": {
+                "skip_days": 2
+            },
+            "after_rain_50mm": {
+                "skip_days": 4
+            },
+            "temp_above_38": {
+                "reduce_frequency_by": 2
+            },
+            "humidity_below_40": {
+                "reduce_frequency_by": 1
+            },
+            "sandy_soil": {
+                "reduce_frequency_by": 2
+            },
+            "clayey_soil": {
+                "increase_frequency_by": 2
+            }
+        }
+    },
+    "fertilizer_rules": {
+        "weather_delays": {
+            "heavy_rain_expected": {
+                "delay_days": 3,
+                "reason_en": "Fertilizer will wash away",
+                "reason_te": "ఎరువు కొట్టుకుపోతుంది"
+            },
+            "waterlogged": {
+                "delay_days": 5,
+                "reason_en": "Root damage risk, wait for soil to dry",
+                "reason_te": "వేర్ల నష్టం ప్రమాదం, మట్టి ఆరే వరకు వేచి ఉండండి"
+            }
+        },
+        "application_timing": {
+            "best_time": "early_morning_or_evening",
+            "avoid": [
+                "midday_heat",
+                "before_heavy_rain"
+            ]
+        }
+    }
+}

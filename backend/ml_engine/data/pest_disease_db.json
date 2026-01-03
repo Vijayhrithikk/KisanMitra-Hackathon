@@ -1,0 +1,859 @@
+{
+  "version": "1.0",
+  "generated": "2025-12-16T20:58:07.553256",
+  "pests": {
+    "Paddy": [
+      {
+        "id": "bph",
+        "name_en": "Brown Plant Hopper (BPH)",
+        "name_te": "గోధుమ రంగు మొక్కజొన్న ప్రాణి",
+        "scientific_name": "Nilaparvata lugens",
+        "type": "sucking",
+        "severity": "critical",
+        "triggers": {
+          "humidity_min": 80,
+          "temp_range": [
+            25,
+            35
+          ],
+          "stage": [
+            "tillering",
+            "booting",
+            "flowering"
+          ],
+          "conditions": [
+            "dense planting",
+            "excess nitrogen",
+            "continuous flooding"
+          ]
+        },
+        "symptoms": [
+          "Yellowing at base of plant",
+          "Hopperburn patches spreading in circles",
+          "Honeydew on leaves and sooty mold",
+          "Plants dry and turn brown"
+        ],
+        "economic_threshold": "5-10 hoppers per hill at vegetative, 10-15 at reproductive",
+        "prevention": [
+          "Avoid dense planting (20x15 cm spacing)",
+          "Balanced nitrogen use",
+          "Alternate wetting and drying (AWD)",
+          "Use resistant varieties like Swarna, MTU 1010"
+        ],
+        "treatment": {
+          "biological": [
+            "Release Lycosa pseudoannulata spiders",
+            "Spray 5% neem seed kernel extract"
+          ],
+          "chemical": [
+            {
+              "product": "Imidacloprid 17.8 SL",
+              "dose": "0.3 ml/L",
+              "timing": "evening"
+            },
+            {
+              "product": "Buprofezin 25 SC",
+              "dose": "1.6 ml/L",
+              "timing": "any"
+            },
+            {
+              "product": "Pymetrozine 50 WG",
+              "dose": "0.6 g/L",
+              "timing": "any"
+            }
+          ],
+          "cultural": [
+            "Drain field",
+            "Split nitrogen application"
+          ]
+        }
+      },
+      {
+        "id": "stem_borer",
+        "name_en": "Yellow Stem Borer",
+        "name_te": "పసుపు కాండం తొలుచు పురుగు",
+        "scientific_name": "Scirpophaga incertulas",
+        "type": "borer",
+        "severity": "high",
+        "triggers": {
+          "humidity_min": 70,
+          "temp_range": [
+            25,
+            35
+          ],
+          "stage": [
+            "tillering",
+            "booting"
+          ],
+          "conditions": [
+            "late planting",
+            "high nitrogen"
+          ]
+        },
+        "symptoms": [
+          "Dead hearts in vegetative stage",
+          "White ears in reproductive stage",
+          "Bore holes in stem with frass"
+        ],
+        "economic_threshold": "5% dead hearts or 1 egg mass/sqm",
+        "prevention": [
+          "Early planting",
+          "Remove stubbles after harvest",
+          "Install light traps during moth emergence"
+        ],
+        "treatment": {
+          "biological": [
+            "Release Trichogramma @ 5 cc/acre",
+            "Egg parasitoids"
+          ],
+          "chemical": [
+            {
+              "product": "Carbofuran 3G",
+              "dose": "8 kg/acre",
+              "timing": "in standing water"
+            },
+            {
+              "product": "Chlorantraniliprole 18.5 SC",
+              "dose": "0.3 ml/L",
+              "timing": "spray"
+            }
+          ]
+        }
+      },
+      {
+        "id": "leaf_folder",
+        "name_en": "Leaf Folder",
+        "name_te": "ఆకు మడత పురుగు",
+        "scientific_name": "Cnaphalocrocis medinalis",
+        "type": "defoliator",
+        "severity": "medium",
+        "triggers": {
+          "humidity_min": 75,
+          "temp_range": [
+            20,
+            30
+          ],
+          "stage": [
+            "tillering",
+            "booting"
+          ],
+          "conditions": [
+            "cloudy weather",
+            "high humidity"
+          ]
+        },
+        "symptoms": [
+          "Leaves folded longitudinally",
+          "Scraping marks inside folds",
+          "White streaks on leaves"
+        ],
+        "economic_threshold": "2 damaged leaves/hill",
+        "treatment": {
+          "chemical": [
+            {
+              "product": "Cartap hydrochloride 50 SP",
+              "dose": "1 g/L",
+              "timing": "spray"
+            },
+            {
+              "product": "Chlorpyriphos 20 EC",
+              "dose": "2 ml/L",
+              "timing": "spray"
+            }
+          ]
+        }
+      },
+      {
+        "id": "gall_midge",
+        "name_en": "Gall Midge",
+        "name_te": "గాల్ మిడ్జ్",
+        "scientific_name": "Orseolia oryzae",
+        "type": "gall_former",
+        "severity": "high",
+        "triggers": {
+          "humidity_min": 85,
+          "temp_range": [
+            25,
+            30
+          ],
+          "stage": [
+            "tillering"
+          ],
+          "conditions": [
+            "cloudy weather",
+            "continuous rain"
+          ]
+        },
+        "symptoms": [
+          "Silver shoot (onion leaf) formation",
+          "Galls at base of tillers"
+        ],
+        "economic_threshold": "5% silver shoot",
+        "treatment": {
+          "chemical": [
+            {
+              "product": "Carbofuran 3G",
+              "dose": "25 kg/ha",
+              "timing": "in standing water"
+            }
+          ]
+        }
+      }
+    ],
+    "Cotton": [
+      {
+        "id": "american_bollworm",
+        "name_en": "American Bollworm",
+        "name_te": "అమెరికన్ బోల్వార్మ్",
+        "scientific_name": "Helicoverpa armigera",
+        "type": "borer",
+        "severity": "critical",
+        "triggers": {
+          "temp_range": [
+            25,
+            35
+          ],
+          "stage": [
+            "squaring",
+            "flowering",
+            "boll_development"
+          ],
+          "conditions": [
+            "moth flight period",
+            "full moon nights"
+          ]
+        },
+        "symptoms": [
+          "Holes in squares and bolls",
+          "Frass on bolls",
+          "Caterpillars inside bolls"
+        ],
+        "economic_threshold": "1 larva/plant or 5% damage",
+        "treatment": {
+          "biological": [
+            "HaNPV 250 LE/acre",
+            "Spray Bt @ 1 g/L"
+          ],
+          "chemical": [
+            {
+              "product": "Emamectin benzoate 5 SG",
+              "dose": "0.4 g/L",
+              "timing": "evening"
+            },
+            {
+              "product": "Spinosad 45 SC",
+              "dose": "0.3 ml/L",
+              "timing": "evening"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pink_bollworm",
+        "name_en": "Pink Bollworm",
+        "name_te": "పింక్ బోల్వార్మ్",
+        "scientific_name": "Pectinophora gossypiella",
+        "type": "borer",
+        "severity": "critical",
+        "triggers": {
+          "stage": [
+            "boll_development",
+            "boll_opening"
+          ],
+          "conditions": [
+            "late season",
+            "residual population"
+          ]
+        },
+        "symptoms": [
+          "Rosette flowers",
+          "Pink larvae inside bolls",
+          "Lint damage"
+        ],
+        "economic_threshold": "8-10 moths/trap/night",
+        "treatment": {
+          "chemical": [
+            {
+              "product": "Profenophos 50 EC + Cypermethrin",
+              "dose": "2 ml/L",
+              "timing": "spray"
+            }
+          ],
+          "cultural": [
+            "Destroy crop residue",
+            "Deep ploughing"
+          ]
+        }
+      },
+      {
+        "id": "jassids",
+        "name_en": "Jassids (Leafhopper)",
+        "name_te": "జాసిడ్స్",
+        "scientific_name": "Amrasca biguttula",
+        "type": "sucking",
+        "severity": "high",
+        "triggers": {
+          "humidity_min": 60,
+          "temp_range": [
+            25,
+            35
+          ],
+          "stage": [
+            "seedling",
+            "vegetative",
+            "flowering"
+          ]
+        },
+        "symptoms": [
+          "Yellowing from leaf margins (hopper burn)",
+          "Curling of leaves"
+        ],
+        "economic_threshold": "2 jassids/leaf",
+        "treatment": {
+          "chemical": [
+            {
+              "product": "Imidacloprid 17.8 SL",
+              "dose": "0.3 ml/L",
+              "timing": "spray"
+            },
+            {
+              "product": "Dimethoate 30 EC",
+              "dose": "1.5 ml/L",
+              "timing": "spray"
+            }
+          ]
+        }
+      }
+    ],
+    "Maize": [
+      {
+        "id": "faw",
+        "name_en": "Fall Armyworm",
+        "name_te": "ఫాల్ ఆర్మీవార్మ్",
+        "scientific_name": "Spodoptera frugiperda",
+        "type": "defoliator",
+        "severity": "critical",
+        "triggers": {
+          "temp_range": [
+            25,
+            35
+          ],
+          "stage": [
+            "vegetative",
+            "tasseling"
+          ],
+          "conditions": [
+            "monsoon season",
+            "warm humid weather"
+          ]
+        },
+        "symptoms": [
+          "Windowpane damage on leaves",
+          "Frass in whorl",
+          "Ragged leaf edges",
+          "Large caterpillars with inverted Y on head"
+        ],
+        "economic_threshold": "5-10% plants with damage",
+        "prevention": [
+          "Early sowing",
+          "Intercropping",
+          "Pheromone traps @ 5/acre"
+        ],
+        "treatment": {
+          "biological": [
+            "Spray SNPV 250 LE/acre",
+            "Release Trichogramma"
+          ],
+          "chemical": [
+            {
+              "product": "Emamectin benzoate 5 SG",
+              "dose": "0.4 g/L",
+              "timing": "into whorl"
+            },
+            {
+              "product": "Spinetoram 11.7 SC",
+              "dose": "0.5 ml/L",
+              "timing": "into whorl"
+            },
+            {
+              "product": "Chlorantraniliprole 18.5 SC",
+              "dose": "0.3 ml/L",
+              "timing": "into whorl"
+            }
+          ]
+        }
+      },
+      {
+        "id": "stem_borer_maize",
+        "name_en": "Spotted Stem Borer",
+        "name_te": "మచ్చల కాండం తొలుచు పురుగు",
+        "scientific_name": "Chilo partellus",
+        "type": "borer",
+        "severity": "high",
+        "triggers": {
+          "stage": [
+            "vegetative"
+          ],
+          "conditions": [
+            "late sowing"
+          ]
+        },
+        "symptoms": [
+          "Dead hearts",
+          "Bore holes in stem",
+          "Frass at nodes"
+        ],
+        "treatment": {
+          "chemical": [
+            {
+              "product": "Carbofuran 3G",
+              "dose": "8-10 kg/acre in whorl"
+            }
+          ]
+        }
+      }
+    ],
+    "Chilli": [
+      {
+        "id": "thrips",
+        "name_en": "Thrips",
+        "name_te": "త్రిప్స్",
+        "scientific_name": "Scirtothrips dorsalis",
+        "type": "sucking",
+        "severity": "critical",
+        "triggers": {
+          "temp_range": [
+            25,
+            38
+          ],
+          "humidity_max": 60,
+          "stage": [
+            "vegetative",
+            "flowering"
+          ],
+          "conditions": [
+            "hot dry weather"
+          ]
+        },
+        "symptoms": [
+          "Upward curling of leaves",
+          "Silvery streaks on leaves",
+          "Boat-shaped leaves"
+        ],
+        "economic_threshold": "5 thrips/leaf",
+        "treatment": {
+          "chemical": [
+            {
+              "product": "Fipronil 5 SC",
+              "dose": "1.5-2 ml/L",
+              "timing": "evening"
+            },
+            {
+              "product": "Spinosad 45 SC",
+              "dose": "0.3 ml/L",
+              "timing": "evening"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fruit_borer",
+        "name_en": "Fruit Borer",
+        "name_te": "కాయ తొలుచు పురుగు",
+        "scientific_name": "Helicoverpa armigera",
+        "type": "borer",
+        "severity": "high",
+        "triggers": {
+          "stage": [
+            "flowering",
+            "fruiting"
+          ]
+        },
+        "symptoms": [
+          "Circular holes in fruits",
+          "Caterpillar inside fruit",
+          "Fruit rot"
+        ],
+        "economic_threshold": "1 larva/plant",
+        "treatment": {
+          "chemical": [
+            {
+              "product": "Spinosad 45 SC",
+              "dose": "0.3 ml/L",
+              "timing": "spray"
+            },
+            {
+              "product": "Emamectin benzoate 5 SG",
+              "dose": "0.4 g/L",
+              "timing": "spray"
+            }
+          ]
+        }
+      }
+    ],
+    "Groundnut": [
+      {
+        "id": "thrips_gn",
+        "name_en": "Thrips",
+        "name_te": "త్రిప్స్",
+        "scientific_name": "Scirtothrips dorsalis",
+        "type": "sucking",
+        "severity": "high",
+        "triggers": {
+          "temp_range": [
+            25,
+            35
+          ],
+          "humidity_max": 60,
+          "stage": [
+            "vegetative",
+            "flowering"
+          ]
+        },
+        "symptoms": [
+          "Silvery patches on leaves",
+          "Leaf curling",
+          "Stunted growth"
+        ],
+        "economic_threshold": "5 thrips/leaflet",
+        "treatment": {
+          "chemical": [
+            {
+              "product": "Fipronil 5 SC",
+              "dose": "2 ml/L"
+            }
+          ]
+        }
+      },
+      {
+        "id": "white_grub",
+        "name_en": "White Grub",
+        "name_te": "తెల్ల పురుగు",
+        "scientific_name": "Holotrichia consanguinea",
+        "type": "soil_pest",
+        "severity": "critical",
+        "triggers": {
+          "stage": [
+            "pegging",
+            "pod_development"
+          ],
+          "conditions": [
+            "sandy soil",
+            "monsoon"
+          ]
+        },
+        "symptoms": [
+          "Plants wilting",
+          "Roots eaten",
+          "Pods damaged underground"
+        ],
+        "treatment": {
+          "chemical": [
+            {
+              "product": "Chlorpyriphos 20 EC",
+              "dose": "2.5 L/ha in irrigation"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "diseases": {
+    "Paddy": [
+      {
+        "id": "blast",
+        "name_en": "Rice Blast",
+        "name_te": "వరి బ్లాస్ట్",
+        "pathogen": "Magnaporthe oryzae",
+        "type": "fungal",
+        "severity": "critical",
+        "triggers": {
+          "humidity_min": 90,
+          "temp_range": [
+            20,
+            30
+          ],
+          "conditions": [
+            "nitrogen excess",
+            "continuous rain",
+            "dew formation"
+          ]
+        },
+        "symptoms": {
+          "leaf_blast": "Spindle-shaped spots with grey center, brown margin",
+          "neck_blast": "Neck turns brown, panicle breaks",
+          "node_blast": "Nodes turn black"
+        },
+        "prevention": [
+          "Use resistant varieties",
+          "Balanced fertilization",
+          "Avoid late planting"
+        ],
+        "treatment": {
+          "fungicides": [
+            {
+              "product": "Tricyclazole 75 WP",
+              "dose": "0.6 g/L",
+              "timing": "preventive/curative"
+            },
+            {
+              "product": "Isoprothiolane 40 EC",
+              "dose": "1.5 ml/L",
+              "timing": "curative"
+            },
+            {
+              "product": "Kasugamycin 3 SL",
+              "dose": "2 ml/L",
+              "timing": "curative"
+            }
+          ]
+        }
+      },
+      {
+        "id": "sheath_blight",
+        "name_en": "Sheath Blight",
+        "name_te": "షీత్ బ్లైట్",
+        "pathogen": "Rhizoctonia solani",
+        "type": "fungal",
+        "severity": "high",
+        "triggers": {
+          "humidity_min": 85,
+          "temp_range": [
+            28,
+            32
+          ],
+          "conditions": [
+            "dense planting",
+            "excess nitrogen",
+            "continuous flooding"
+          ]
+        },
+        "symptoms": [
+          "Oval lesions on sheath near water level",
+          "Web-like fungal growth",
+          "Lesions spread to leaves"
+        ],
+        "treatment": {
+          "fungicides": [
+            {
+              "product": "Hexaconazole 5 EC",
+              "dose": "2 ml/L",
+              "timing": "spray"
+            },
+            {
+              "product": "Validamycin 3 SL",
+              "dose": "2 ml/L",
+              "timing": "spray"
+            }
+          ],
+          "cultural": [
+            "Drain field",
+            "Reduce nitrogen"
+          ]
+        }
+      },
+      {
+        "id": "blb",
+        "name_en": "Bacterial Leaf Blight",
+        "name_te": "బాక్టీరియల్ లీఫ్ బ్లైట్",
+        "pathogen": "Xanthomonas oryzae pv. oryzae",
+        "type": "bacterial",
+        "severity": "high",
+        "triggers": {
+          "humidity_min": 80,
+          "temp_range": [
+            26,
+            34
+          ],
+          "conditions": [
+            "rainy weather",
+            "wind damage",
+            "flooding"
+          ]
+        },
+        "symptoms": [
+          "Water-soaked lesions from leaf tip",
+          "Yellow to white lesions with wavy margins",
+          "Milky bacterial ooze in morning"
+        ],
+        "treatment": {
+          "antibiotics": [
+            {
+              "product": "Streptocycline",
+              "dose": "6 g/15L + COC 50 g",
+              "timing": "spray 3 times"
+            }
+          ],
+          "cultural": [
+            "Drain excess water",
+            "Avoid field work when wet"
+          ]
+        }
+      }
+    ],
+    "Cotton": [
+      {
+        "id": "bacterial_blight",
+        "name_en": "Bacterial Blight",
+        "name_te": "బాక్టీరియల్ బ్లైట్",
+        "pathogen": "Xanthomonas axonopodis pv. malvacearum",
+        "type": "bacterial",
+        "severity": "high",
+        "symptoms": [
+          "Angular water-soaked spots",
+          "Black arm on stems",
+          "Boll rot"
+        ],
+        "treatment": {
+          "antibiotics": [
+            {
+              "product": "Streptocycline + COC",
+              "dose": "6g + 50g/15L",
+              "timing": "spray"
+            }
+          ]
+        }
+      }
+    ],
+    "Chilli": [
+      {
+        "id": "anthracnose",
+        "name_en": "Anthracnose (Die-back)",
+        "name_te": "ఆంథ్రాక్నోస్ (డై-బ్యాక్)",
+        "pathogen": "Colletotrichum capsici",
+        "type": "fungal",
+        "severity": "high",
+        "triggers": {
+          "humidity_min": 80,
+          "conditions": [
+            "rainy season",
+            "warm humid weather"
+          ]
+        },
+        "symptoms": [
+          "Sunken lesions on fruits with concentric rings",
+          "Die-back of branches",
+          "Fruit rot"
+        ],
+        "treatment": {
+          "fungicides": [
+            {
+              "product": "Azoxystrobin 23 SC",
+              "dose": "1 ml/L",
+              "timing": "spray"
+            },
+            {
+              "product": "Carbendazim 50 WP",
+              "dose": "1 g/L",
+              "timing": "spray"
+            }
+          ]
+        }
+      },
+      {
+        "id": "leaf_curl",
+        "name_en": "Leaf Curl Virus",
+        "name_te": "లీఫ్ కర్ల్ వైరస్",
+        "pathogen": "Begomovirus (transmitted by whitefly)",
+        "type": "viral",
+        "severity": "critical",
+        "symptoms": [
+          "Upward curling of leaves",
+          "Thickening of veins",
+          "Stunted growth",
+          "No cure available"
+        ],
+        "prevention": [
+          "Use resistant varieties",
+          "Control whitefly vectors",
+          "Remove infected plants immediately"
+        ]
+      }
+    ],
+    "Groundnut": [
+      {
+        "id": "tikka",
+        "name_en": "Tikka Disease (Early/Late Leaf Spot)",
+        "name_te": "టిక్కా వ్యాధి",
+        "pathogen": "Cercospora arachidicola / Phaeoisariopsis personata",
+        "type": "fungal",
+        "severity": "high",
+        "triggers": {
+          "humidity_min": 80,
+          "temp_range": [
+            25,
+            30
+          ]
+        },
+        "symptoms": [
+          "Brown spots with concentric rings",
+          "Severe defoliation"
+        ],
+        "treatment": {
+          "fungicides": [
+            {
+              "product": "Mancozeb 75 WP",
+              "dose": "2.5 g/L"
+            }
+          ]
+        }
+      },
+      {
+        "id": "rust_gn",
+        "name_en": "Groundnut Rust",
+        "name_te": "తుప్పు",
+        "pathogen": "Puccinia arachidis",
+        "type": "fungal",
+        "severity": "high",
+        "triggers": {
+          "humidity_min": 85,
+          "temp_range": [
+            20,
+            30
+          ]
+        },
+        "symptoms": [
+          "Orange pustules on lower leaf surface",
+          "Premature leaf fall"
+        ],
+        "treatment": {
+          "fungicides": [
+            {
+              "product": "Triadimefon 25 WP",
+              "dose": "1 g/L"
+            }
+          ]
+        }
+      }
+    ],
+    "Maize": [
+      {
+        "id": "tlb",
+        "name_en": "Turcicum Leaf Blight",
+        "name_te": "టర్సికమ్ లీఫ్ బ్లైట్",
+        "pathogen": "Exserohilum turcicum",
+        "type": "fungal",
+        "severity": "high",
+        "triggers": {
+          "humidity_min": 80,
+          "temp_range": [
+            20,
+            30
+          ]
+        },
+        "symptoms": [
+          "Long elliptical grey-green lesions",
+          "Lesions coalesce"
+        ],
+        "treatment": {
+          "fungicides": [
+            {
+              "product": "Mancozeb 75 WP",
+              "dose": "2.5 g/L"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,850 @@
+{
+    "crops": {
+        "rice": {
+            "name": "Rice (Paddy)",
+            "npk_per_acre": {
+                "n": 120,
+                "p": 60,
+                "k": 40
+            },
+            "npk_per_hectare": {
+                "n": 300,
+                "p": 150,
+                "k": 100
+            },
+            "target_yield_tons_per_acre": 3.0,
+            "growth_stages": {
+                "vegetative": {
+                    "days": "0-40",
+                    "n": 40,
+                    "p": 60,
+                    "k": 20
+                },
+                "reproductive": {
+                    "days": "40-80",
+                    "n": 50,
+                    "p": 0,
+                    "k": 10
+                },
+                "maturity": {
+                    "days": "80-120",
+                    "n": 30,
+                    "p": 0,
+                    "k": 10
+                }
+            },
+            "micronutrients": [
+                "zinc",
+                "iron"
+            ],
+            "notes": "High nitrogen requirement. Zinc deficiency common."
+        },
+        "wheat": {
+            "name": "Wheat",
+            "npk_per_acre": {
+                "n": 100,
+                "p": 50,
+                "k": 30
+            },
+            "npk_per_hectare": {
+                "n": 250,
+                "p": 125,
+                "k": 75
+            },
+            "target_yield_tons_per_acre": 2.5,
+            "growth_stages": {
+                "tillering": {
+                    "days": "0-30",
+                    "n": 50,
+                    "p": 50,
+                    "k": 30
+                },
+                "stem_elongation": {
+                    "days": "30-60",
+                    "n": 25,
+                    "p": 0,
+                    "k": 0
+                },
+                "flowering": {
+                    "days": "60-90",
+                    "n": 25,
+                    "p": 0,
+                    "k": 0
+                }
+            },
+            "micronutrients": [
+                "zinc",
+                "iron"
+            ],
+            "notes": "Responsive to nitrogen. Phosphorus critical at early stage."
+        },
+        "maize": {
+            "name": "Maize (Corn)",
+            "npk_per_acre": {
+                "n": 120,
+                "p": 60,
+                "k": 50
+            },
+            "npk_per_hectare": {
+                "n": 300,
+                "p": 150,
+                "k": 125
+            },
+            "target_yield_tons_per_acre": 4.0,
+            "growth_stages": {
+                "early_vegetative": {
+                    "days": "0-30",
+                    "n": 40,
+                    "p": 60,
+                    "k": 25
+                },
+                "rapid_growth": {
+                    "days": "30-60",
+                    "n": 50,
+                    "p": 0,
+                    "k": 15
+                },
+                "silking": {
+                    "days": "60-100",
+                    "n": 30,
+                    "p": 0,
+                    "k": 10
+                }
+            },
+            "micronutrients": [
+                "zinc"
+            ],
+            "notes": "High potassium demand during silking."
+        },
+        "cotton": {
+            "name": "Cotton",
+            "npk_per_acre": {
+                "n": 150,
+                "p": 60,
+                "k": 60
+            },
+            "npk_per_hectare": {
+                "n": 375,
+                "p": 150,
+                "k": 150
+            },
+            "target_yield_tons_per_acre": 1.5,
+            "growth_stages": {
+                "vegetative": {
+                    "days": "0-45",
+                    "n": 45,
+                    "p": 60,
+                    "k": 30
+                },
+                "flowering": {
+                    "days": "45-90",
+                    "n": 60,
+                    "p": 0,
+                    "k": 15
+                },
+                "boll_development": {
+                    "days": "90-150",
+                    "n": 45,
+                    "p": 0,
+                    "k": 15
+                }
+            },
+            "micronutrients": [
+                "boron",
+                "zinc"
+            ],
+            "notes": "Boron critical for flower and boll retention. High K for fiber quality."
+        },
+        "sugarcane": {
+            "name": "Sugarcane",
+            "npk_per_acre": {
+                "n": 250,
+                "p": 100,
+                "k": 100
+            },
+            "npk_per_hectare": {
+                "n": 625,
+                "p": 250,
+                "k": 250
+            },
+            "target_yield_tons_per_acre": 40.0,
+            "growth_stages": {
+                "germination": {
+                    "days": "0-60",
+                    "n": 75,
+                    "p": 100,
+                    "k": 50
+                },
+                "tillering": {
+                    "days": "60-150",
+                    "n": 100,
+                    "p": 0,
+                    "k": 30
+                },
+                "grand_growth": {
+                    "days": "150-300",
+                    "n": 75,
+                    "p": 0,
+                    "k": 20
+                }
+            },
+            "micronutrients": [
+                "zinc",
+                "iron"
+            ],
+            "notes": "Very high nutrient demand. Long-duration crop."
+        },
+        "groundnut": {
+            "name": "Groundnut (Peanut)",
+            "npk_per_acre": {
+                "n": 25,
+                "p": 60,
+                "k": 40
+            },
+            "npk_per_hectare": {
+                "n": 62.5,
+                "p": 150,
+                "k": 100
+            },
+            "target_yield_tons_per_acre": 1.2,
+            "growth_stages": {
+                "vegetative": {
+                    "days": "0-30",
+                    "n": 15,
+                    "p": 60,
+                    "k": 25
+                },
+                "flowering": {
+                    "days": "30-60",
+                    "n": 5,
+                    "p": 0,
+                    "k": 10
+                },
+                "pod_development": {
+                    "days": "60-120",
+                    "n": 5,
+                    "p": 0,
+                    "k": 5
+                }
+            },
+            "micronutrients": [
+                "calcium",
+                "sulphur",
+                "boron"
+            ],
+            "notes": "Legume with nitrogen fixation. High calcium and sulphur need. Apply gypsum."
+        },
+        "soybean": {
+            "name": "Soybean",
+            "npk_per_acre": {
+                "n": 30,
+                "p": 80,
+                "k": 40
+            },
+            "npk_per_hectare": {
+                "n": 75,
+                "p": 200,
+                "k": 100
+            },
+            "target_yield_tons_per_acre": 1.5,
+            "growth_stages": {
+                "early": {
+                    "days": "0-30",
+                    "n": 20,
+                    "p": 80,
+                    "k": 25
+                },
+                "flowering": {
+                    "days": "30-60",
+                    "n": 5,
+                    "p": 0,
+                    "k": 10
+                },
+                "pod_fill": {
+                    "days": "60-100",
+                    "n": 5,
+                    "p": 0,
+                    "k": 5
+                }
+            },
+            "micronutrients": [
+                "sulphur",
+                "boron",
+                "molybdenum"
+            ],
+            "notes": "Legume crop. High phosphorus requirement. Sulphur fortified fertilizers recommended."
+        },
+        "potato": {
+            "name": "Potato",
+            "npk_per_acre": {
+                "n": 120,
+                "p": 80,
+                "k": 100
+            },
+            "npk_per_hectare": {
+                "n": 300,
+                "p": 200,
+                "k": 250
+            },
+            "target_yield_tons_per_acre": 10.0,
+            "growth_stages": {
+                "planting": {
+                    "days": "0-20",
+                    "n": 40,
+                    "p": 80,
+                    "k": 50
+                },
+                "tuber_initiation": {
+                    "days": "20-50",
+                    "n": 50,
+                    "p": 0,
+                    "k": 30
+                },
+                "bulking": {
+                    "days": "50-90",
+                    "n": 30,
+                    "p": 0,
+                    "k": 20
+                }
+            },
+            "micronutrients": [
+                "calcium",
+                "magnesium"
+            ],
+            "notes": "Very high potassium requirement for tuber quality. Avoid MOP, use SOP."
+        },
+        "tomato": {
+            "name": "Tomato",
+            "npk_per_acre": {
+                "n": 100,
+                "p": 50,
+                "k": 50
+            },
+            "npk_per_hectare": {
+                "n": 250,
+                "p": 125,
+                "k": 125
+            },
+            "target_yield_tons_per_acre": 15.0,
+            "growth_stages": {
+                "vegetative": {
+                    "days": "0-30",
+                    "n": 30,
+                    "p": 50,
+                    "k": 20
+                },
+                "flowering": {
+                    "days": "30-60",
+                    "n": 40,
+                    "p": 0,
+                    "k": 15
+                },
+                "fruiting": {
+                    "days": "60-120",
+                    "n": 30,
+                    "p": 0,
+                    "k": 15
+                }
+            },
+            "micronutrients": [
+                "calcium",
+                "boron"
+            ],
+            "notes": "Calcium prevents blossom end rot. Balanced nutrition throughout growth."
+        },
+        "chilli": {
+            "name": "Chilli (Hot Pepper)",
+            "npk_per_acre": {
+                "n": 100,
+                "p": 50,
+                "k": 50
+            },
+            "npk_per_hectare": {
+                "n": 250,
+                "p": 125,
+                "k": 125
+            },
+            "target_yield_tons_per_acre": 2.0,
+            "growth_stages": {
+                "vegetative": {
+                    "days": "0-40",
+                    "n": 35,
+                    "p": 50,
+                    "k": 25
+                },
+                "flowering": {
+                    "days": "40-80",
+                    "n": 35,
+                    "p": 0,
+                    "k": 15
+                },
+                "fruiting": {
+                    "days": "80-150",
+                    "n": 30,
+                    "p": 0,
+                    "k": 10
+                }
+            },
+            "micronutrients": [
+                "calcium",
+                "magnesium"
+            ],
+            "notes": "Long-duration crop. Regular feeding needed."
+        },
+        "onion": {
+            "name": "Onion",
+            "npk_per_acre": {
+                "n": 80,
+                "p": 40,
+                "k": 40
+            },
+            "npk_per_hectare": {
+                "n": 200,
+                "p": 100,
+                "k": 100
+            },
+            "target_yield_tons_per_acre": 8.0,
+            "growth_stages": {
+                "early": {
+                    "days": "0-30",
+                    "n": 30,
+                    "p": 40,
+                    "k": 20
+                },
+                "bulb_initiation": {
+                    "days": "30-60",
+                    "n": 30,
+                    "p": 0,
+                    "k": 10
+                },
+                "bulb_development": {
+                    "days": "60-120",
+                    "n": 20,
+                    "p": 0,
+                    "k": 10
+                }
+            },
+            "micronutrients": [
+                "sulphur"
+            ],
+            "notes": "Sulphur important for pungency and quality. Avoid excess nitrogen late in season."
+        },
+        "banana": {
+            "name": "Banana",
+            "npk_per_acre_per_year": {
+                "n": 200,
+                "p": 60,
+                "k": 200
+            },
+            "npk_per_hectare_per_year": {
+                "n": 500,
+                "p": 150,
+                "k": 500
+            },
+            "target_yield_tons_per_acre": 20.0,
+            "growth_stages": {
+                "vegetative": {
+                    "months": "0-6",
+                    "n_percent": 40,
+                    "p_percent": 100,
+                    "k_percent": 40
+                },
+                "flowering": {
+                    "months": "6-9",
+                    "n_percent": 30,
+                    "p_percent": 0,
+                    "k_percent": 30
+                },
+                "fruiting": {
+                    "months": "9-12",
+                    "n_percent": 30,
+                    "p_percent": 0,
+                    "k_percent": 30
+                }
+            },
+            "micronutrients": [
+                "zinc",
+                "boron"
+            ],
+            "notes": "Very high potassium demand. Monthly split applications recommended."
+        },
+        "mango": {
+            "name": "Mango",
+            "npk_per_tree_per_year": {
+                "n": 600,
+                "p": 250,
+                "k": 500
+            },
+            "trees_per_acre": 40,
+            "target_yield_kg_per_tree": 100,
+            "growth_stages": {
+                "dormant": {
+                    "months": "Nov-Jan",
+                    "fertilizer": "Apply 50% of annual dose"
+                },
+                "flowering": {
+                    "months": "Feb-Mar",
+                    "fertilizer": "Micronutrients spray"
+                },
+                "fruit_development": {
+                    "months": "Apr-Jun",
+                    "fertilizer": "Apply remaining 50%"
+                }
+            },
+            "micronutrients": [
+                "zinc",
+                "boron",
+                "iron"
+            ],
+            "notes": "Apply fertilizers in two split doses. Micronutrient sprays improve flowering."
+        },
+        "papaya": {
+            "name": "Papaya",
+            "npk_per_plant_per_month": {
+                "n": 50,
+                "p": 50,
+                "k": 100
+            },
+            "plants_per_acre": 500,
+            "target_yield_tons_per_acre": 40.0,
+            "growth_stages": {
+                "establishment": {
+                    "months": "0-3",
+                    "n": 30,
+                    "p": 50,
+                    "k": 60
+                },
+                "flowering": {
+                    "months": "3-6",
+                    "n": 50,
+                    "p": 50,
+                    "k": 100
+                },
+                "fruiting": {
+                    "months": "6-24",
+                    "n": 50,
+                    "p": 50,
+                    "k": 100
+                }
+            },
+            "micronutrients": [
+                "calcium",
+                "boron"
+            ],
+            "notes": "Continuous feeder. Monthly fertilizer application throughout life."
+        },
+        "grapes": {
+            "name": "Grapes",
+            "npk_per_acre_per_year": {
+                "n": 400,
+                "p": 400,
+                "k": 500
+            },
+            "npk_per_hectare_per_year": {
+                "n": 1000,
+                "p": 1000,
+                "k": 1250
+            },
+            "target_yield_tons_per_acre": 8.0,
+            "growth_stages": {
+                "dormant": {
+                    "period": "Pruning",
+                    "fertilizer": "No fertilizer"
+                },
+                "bud_break": {
+                    "days": "0-30",
+                    "n_percent": 30,
+                    "p_percent": 100,
+                    "k_percent": 30
+                },
+                "flowering": {
+                    "days": "30-60",
+                    "n_percent": 30,
+                    "p_percent": 0,
+                    "k_percent": 30
+                },
+                "berry_development": {
+                    "days": "60-120",
+                    "n_percent": 40,
+                    "p_percent": 0,
+                    "k_percent": 40
+                }
+            },
+            "micronutrients": [
+                "zinc",
+                "boron",
+                "iron"
+            ],
+            "notes": "High nutrient demand. Drip fertigation ideal. Potassium for berry quality."
+        },
+        "millets": {
+            "name": "Millets (Pearl/Finger)",
+            "npk_per_acre": {
+                "n": 40,
+                "p": 40,
+                "k": 20
+            },
+            "npk_per_hectare": {
+                "n": 100,
+                "p": 100,
+                "k": 50
+            },
+            "target_yield_tons_per_acre": 1.0,
+            "notes": "Climate-resilient nutri-cereals. Low input requirements."
+        },
+        "tobacco": {
+            "name": "Tobacco",
+            "npk_per_acre": {
+                "n": 60,
+                "p": 40,
+                "k": 120
+            },
+            "npk_per_hectare": {
+                "n": 150,
+                "p": 100,
+                "k": 300
+            },
+            "target_yield_tons_per_acre": 1.0,
+            "notes": "High potassium for leaf quality. Avoid chloride fertilizers."
+        },
+        "turmeric": {
+            "name": "Turmeric",
+            "npk_per_acre": {
+                "n": 60,
+                "p": 50,
+                "k": 120
+            },
+            "npk_per_hectare": {
+                "n": 150,
+                "p": 125,
+                "k": 300
+            },
+            "target_yield_tons_per_acre": 4.0,
+            "notes": "Long-duration spice crop. High potassium. FYM essential."
+        },
+        "pulses": {
+            "name": "Pulses (Red Gram/Arhar)",
+            "npk_per_acre": {
+                "n": 20,
+                "p": 60,
+                "k": 30
+            },
+            "npk_per_hectare": {
+                "n": 50,
+                "p": 150,
+                "k": 75
+            },
+            "target_yield_tons_per_acre": 0.8,
+            "notes": "Legume. N-fixing. High P need. Rhizobium treatment."
+        },
+        "oil seeds": {
+            "name": "Oil Seeds (Mustard/Sunflower)",
+            "npk_per_acre": {
+                "n": 60,
+                "p": 40,
+                "k": 30
+            },
+            "npk_per_hectare": {
+                "n": 150,
+                "p": 100,
+                "k": 75
+            },
+            "target_yield_tons_per_acre": 1.2,
+            "notes": "Sulphur critical for oil content."
+        },
+        "barley": {
+            "name": "Barley",
+            "npk_per_acre": {
+                "n": 60,
+                "p": 40,
+                "k": 30
+            },
+            "npk_per_hectare": {
+                "n": 150,
+                "p": 100,
+                "k": 75
+            },
+            "target_yield_tons_per_acre": 2.0,
+            "notes": "Drought and salinity tolerant. Moderate needs."
+        },
+        "bengal gram": {
+            "name": "Bengal Gram (Chickpea)",
+            "npk_per_acre": {
+                "n": 20,
+                "p": 60,
+                "k": 30
+            },
+            "npk_per_hectare": {
+                "n": 50,
+                "p": 150,
+                "k": 75
+            },
+            "target_yield_tons_per_acre": 1.0,
+            "notes": "Major pulse. Legume with N-fixation. High P."
+        },
+        "cabbage": {
+            "name": "Cabbage",
+            "npk_per_acre": {
+                "n": 150,
+                "p": 75,
+                "k": 75
+            },
+            "npk_per_hectare": {
+                "n": 375,
+                "p": 187,
+                "k": 187
+            },
+            "target_yield_tons_per_acre": 12.0,
+            "notes": "Heavy feeder. Boron needed."
+        },
+        "cauliflower": {
+            "name": "Cauliflower",
+            "npk_per_acre": {
+                "n": 120,
+                "p": 60,
+                "k": 60
+            },
+            "npk_per_hectare": {
+                "n": 300,
+                "p": 150,
+                "k": 150
+            },
+            "target_yield_tons_per_acre": 10.0,
+            "notes": "Boron and molybdenum important."
+        },
+        "brinjal": {
+            "name": "Brinjal (Eggplant)",
+            "npk_per_acre": {
+                "n": 100,
+                "p": 50,
+                "k": 50
+            },
+            "npk_per_hectare": {
+                "n": 250,
+                "p": 125,
+                "k": 125
+            },
+            "target_yield_tons_per_acre": 8.0,
+            "notes": "Long-duration vegetable. Regular feeding."
+        },
+        "okra": {
+            "name": "Okra (Bhindi)",
+            "npk_per_acre": {
+                "n": 80,
+                "p": 40,
+                "k": 40
+            },
+            "npk_per_hectare": {
+                "n": 200,
+                "p": 100,
+                "k": 100
+            },
+            "target_yield_tons_per_acre": 4.0,
+            "notes": "Warm season crop. Drought tolerant."
+        },
+        "carrot": {
+            "name": "Carrot",
+            "npk_per_acre": {
+                "n": 50,
+                "p": 50,
+                "k": 75
+            },
+            "npk_per_hectare": {
+                "n": 125,
+                "p": 125,
+                "k": 187
+            },
+            "target_yield_tons_per_acre": 8.0,
+            "notes": "High K for root development. Avoid fresh manure."
+        },
+        "guava": {
+            "name": "Guava",
+            "npk_per_tree_per_year": {
+                "n": 400,
+                "p": 200,
+                "k": 400
+            },
+            "trees_per_acre": 100,
+            "target_yield_kg_per_tree": 50,
+            "notes": "Hardy fruit tree. Apply in 3-4 split doses."
+        },
+        "paddy": {
+            "name": "Paddy (alias for Rice)",
+            "npk_per_acre": {
+                "n": 120,
+                "p": 60,
+                "k": 40
+            },
+            "npk_per_hectare": {
+                "n": 300,
+                "p": 150,
+                "k": 100
+            },
+            "target_yield_tons_per_acre": 3.0,
+            "notes": "Same as rice. High nitrogen requirement."
+        },
+        "ground nuts": {
+            "name": "Ground Nuts (alias)",
+            "npk_per_acre": {
+                "n": 25,
+                "p": 60,
+                "k": 40
+            },
+            "npk_per_hectare": {
+                "n": 62.5,
+                "p": 150,
+                "k": 100
+            },
+            "target_yield_tons_per_acre": 1.2,
+            "notes": "Legume. Gypsum critical. Low N needed."
+        },
+        "orange": {
+            "name": "Orange (Citrus)",
+            "npk_per_tree_per_year": {
+                "n": 500,
+                "p": 250,
+                "k": 500
+            },
+            "trees_per_acre": 80,
+            "target_yield_kg_per_tree": 80,
+            "notes": "Citrus fruit. High K for fruit quality. Split applications recommended. Micronutrients important."
+        },
+        "pomegranate": {
+            "name": "Pomegranate",
+            "npk_per_acre": {
+                "n": 120,
+                "p": 80,
+                "k": 120
+            },
+            "npk_per_hectare": {
+                "n": 300,
+                "p": 200,
+                "k": 300
+            },
+            "target_yield_tons_per_acre": 4.0,
+            "notes": "Fruit crop. Balanced NPK. Micronutrients (Zn, Fe, Mn) critical for fruit quality."
+        },
+        "watermelon": {
+            "name": "Watermelon",
+            "npk_per_acre": {
+                "n": 100,
+                "p": 60,
+                "k": 100
+            },
+            "npk_per_hectare": {
+                "n": 250,
+                "p": 150,
+                "k": 250
+            },
+            "target_yield_tons_per_acre": 15.0,
+            "notes": "Cucurbit. High water need. High K for fruit sweetness. Drip fertigation ideal."
+        }
+    },
+    "general_guidelines": {
+        "soil_test_importance": "These are baseline recommendations. Adjust based on soil test results.",
+        "organic_matter": "Add 5-10 tons FYM/compost per acre to improve soil health",
+        "timing": "Apply fertilizers at the right growth stage for maximum efficiency",
+        "method": "Use band placement or fertigation for better nutrient use efficiency",
+        "avoid_wastage": "Don't over-apply. Excess fertilizer harms crops and environment"
+    }
+}

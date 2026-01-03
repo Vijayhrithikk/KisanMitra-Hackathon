@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pandas
+scikit-learn
+joblib
+requests
+python-dotenv
+tensorflow
+pillow
+numpy
+python-multipart
+beautifulsoup4
+pymongo
