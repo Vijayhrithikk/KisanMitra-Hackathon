@@ -978,7 +978,7 @@ async def get_crop_advisory(request: CropAdvisoryRequest):
             sowing_date = datetime.now()
         
         advisory_service = get_crop_advisory_service()
-        advisory = advisory_service.generate_advisory(
+        advisory = await advisory_service.generate_advisory(
             crop=request.crop,
             lat=request.lat,
             lon=request.lon,

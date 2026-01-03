@@ -17,6 +17,7 @@ from datetime import datetime, timedelta
 from typing import Dict, List, Optional
 
 from .nasa_power_service import get_nasa_power_service
+from .fertilizer_optimizer_service import fertilizer_optimizer
 
 logger = logging.getLogger(__name__)
 
@@ -44,7 +45,7 @@ class CropAdvisoryService:
         self.nasa_service = get_nasa_power_service()
         self.crop_db = CROP_DATABASE.get("crops", {})
     
-    def generate_advisory(
+    async def generate_advisory(
         self, 
         crop: str, 
         lat: float, 
@@ -75,7 +76,7 @@ class CropAdvisoryService:
         
         # Get historical weather patterns
         duration_months = (crop_data["duration_days"] // 30) + 1
-        weather_forecast = self.nasa_service.get_growing_season_forecast(
+        weather_forecast = await self.nasa_service.get_growing_season_forecast_async(
             lat, lon, 
             start_month=sowing_date.month,
             duration_months=duration_months
@@ -95,13 +96,28 @@ class CropAdvisoryService:
         # Generate pest/disease alerts
         alerts = self._generate_alerts(crop_data, weather_forecast, language)
         
+        # Generate fertilizer plan
+        fertilizer_plan = None
+        try:
+            # Default to standard soil values if not known
+            fertilizer_plan = fertilizer_optimizer.get_complete_recommendation(
+                crop_name=crop_data.get("name_en", crop),
+                current_npk={'n': 140, 'p': 50, 'k': 60},  # Average Indian soil
+                soil_type="Red Loamy",
+                farming_type='balanced'
+            )
+        except Exception as e:
+            logger.warning(f"Fertilizer plan error: {e}")
+
         return {
             "crop": {
                 "name_en": crop_data["name_en"],
                 "name_te": crop_data["name_te"],
                 "duration_days": crop_data["duration_days"],
-                "water_requirement": crop_data["water_requirement"]
+                "water_requirement": crop_data["water_requirement"],
+                "fertilizer_plan": fertilizer_plan  # Include in crop details for frontend compatibility
             },
+            "fertilizer_plan": fertilizer_plan,  # Also at root
             "location": {"lat": lat, "lon": lon},
             "sowing_date": sowing_date.strftime("%Y-%m-%d"),
             "harvest_date": (sowing_date + timedelta(days=crop_data["duration_days"])).strftime("%Y-%m-%d"),
